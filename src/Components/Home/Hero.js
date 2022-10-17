@@ -48,9 +48,9 @@ const Hero = () => {
 
                 {/* summery part */}
                 <div class="row g-4">
-                    <div class="col-lg-3 col-12 col-md-6">
+                    <div class="col-lg-3 col-12 col-md-6 ">
                         <div className=''>
-                            <img src="https://i.ibb.co/nkWZkJg/verify-icon.png" class="" alt="..." />
+                            <img src="https://i.ibb.co/nkWZkJg/verify-icon.png" class="mx-auto d-block" alt="..." />
                         </div>
                         <div className='text-center'>
                             <h3>1500+</h3>
@@ -59,29 +59,29 @@ const Hero = () => {
                     </div>
                     <div class="col-lg-3 col-12 col-md-6">
                         <div className=''>
-                            <img src="https://i.ibb.co/zZ5xjq3/happy-client.png" class="" alt="..." />
+                            <img src="https://i.ibb.co/zZ5xjq3/happy-client.png" class="mx-auto d-block" alt="..." />
                         </div>
                         <div className='text-center'>
-                            <h3>1500+</h3>
-                            <h3>VERIFIED AGENTS</h3>
+                            <h3>1 LAKH+</h3>
+                            <h3>HAPPY GUESTS</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-12 col-md-6">
                         <div className=''>
-                            <img src="https://i.ibb.co/7bNCkqD/booking-icon.png" class="" alt="..." />
+                            <img src="https://i.ibb.co/7bNCkqD/booking-icon.png" class="mx-auto d-block" alt="..." />
                         </div>
                         <div className='text-center'>
-                            <h3>1500+</h3>
-                            <h3>VERIFIED AGENTS</h3>
+                            <h3>2 LAKH+</h3>
+                            <h3>BOOKINGS DONE</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-12 col-md-6">
                         <div className=''>
-                            <img src="https://i.ibb.co/pRt0XrG/package-icon.png" class="" alt="..." />
+                            <img src="https://i.ibb.co/pRt0XrG/package-icon.png" class="mx-auto d-block" alt="..." />
                         </div>
                         <div className='text-center'>
-                            <h3>1500+</h3>
-                            <h3>VERIFIED AGENTS</h3>
+                            <h3>1K+</h3>
+                            <h3>PACKAGES</h3>
                         </div>
                     </div>
 
