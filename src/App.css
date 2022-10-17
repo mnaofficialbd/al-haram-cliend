@@ -34,6 +34,21 @@
 .font-bold{
   font-weight: 700;
 }
+.bg-infoSky{
+  background-color: #02A3C1;
+}
+.bg-1{
+  background-color: #B7975F47;
+}
+.bg-2{
+  background-color: #D0E5D6;
+}
+.bg-3{
+  background-color: #D1E7F4;
+}
+.bg-4{
+  background-color:  #FCEEC0;
+}
 
 @keyframes App-logo-spin {
   from {
