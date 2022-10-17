@@ -4,7 +4,7 @@ import brandIcon from '../../Assets/Icons/alHaramIcon.png';
 
 const Navber = () => {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar style={{backgroundColor: '#02A3C1'}} expand="lg" className='fixed-top'>
             <Container fluid>
                 <Navbar.Brand href="#"><img src={brandIcon} alt="" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
@@ -13,37 +13,35 @@ const Navber = () => {
                         {/* <Nav.Link href="#action1">Home</Nav.Link><Nav.Link href="#"> Link </Nav.Link> */}
                     </Nav>
                     <Nav className="d-flex">
-                        <Nav.Link href="#action2" className="text-uppercase">travel agent? join us</Nav.Link>
-                        <Nav.Link href="#action2" className="text-uppercase">blogs</Nav.Link>
-                        <Nav.Link href="#action2" className="text-uppercase">offers</Nav.Link>
-                        <Nav.Link href="#action2" className="text-uppercase">Download app</Nav.Link>
+                        <Nav.Link href="#action2" className="text-uppercase text-white">travel agent? join us</Nav.Link>
+                        <Nav.Link href="#action2" className="text-uppercase text-white">blogs</Nav.Link>
+                        <Nav.Link href="#action2" className="text-uppercase text-white">offers</Nav.Link>
+                        <Nav.Link href="#action2" className="text-uppercase text-white">Download app</Nav.Link>
 
-                        <div class="border border-dark d-flex">
+                        <div class="border border-white d-flex">
 
                             <NavDropdown title="USD" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="#action3" className="text-uppercase">USD</NavDropdown.Item>
                                 <NavDropdown.Item href="#action4">
-                                    Taka
+                                    TAKA
                                 </NavDropdown.Item>
-                                <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action5">
-                                    Rup
+                                    RUPEE
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <div class="border border-dark"></div>
-                            <NavDropdown title="ENG" id="navbarScrollingDropdown">
+                            <div class="border border-white"></div>
+                            <NavDropdown title="ENG" id="navbarScrollingDropdown" className='text-white'>
                                 <NavDropdown.Item href="#action3" className="text-uppercase">ENG</NavDropdown.Item>
                                 <NavDropdown.Item href="#action4">
                                     Ben
                                 </NavDropdown.Item>
-                                <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action5">
                                     Hin
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </div>
 
-                        <Button className="text-uppercase mx-2" variant="outline-success">Log in</Button>
+                        <Button className="text-uppercase mx-2" variant="outline-light">Log in</Button>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

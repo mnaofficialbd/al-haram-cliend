@@ -12,7 +12,7 @@ const UmrahPacksCards = () => {
                 
                 <div class="col">
                     <div class="card h-100">
-                        <div class="card-header bg-info">
+                        <div class="card-header" style={{backgroundColor: '#02A3C1'}}>
                             <div className="d-flex justify-content-between text-white">
                                 <div className="text-[16px] font-semibold">Al Bushra Tours & Travels</div>
                                 <div><small className="text-[12px]">11 Aug 2022</small></div>
@@ -32,14 +32,14 @@ const UmrahPacksCards = () => {
                         <div class="card-footer">
                         <div className="d-flex justify-content-between align-items-center">
                                 <div><h5 className="text-[20px]"><span className='font-semibold'>Price  :</span>  ₹ 120,000</h5></div>
-                                <div><button className='btn btn-info text-white'>View Details</button></div>
+                                <div><button className='btn text-white' style={{backgroundColor: '#02A3C1'}}>View Details</button></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <div class="card-header bg-info">
+                        <div class="card-header" style={{backgroundColor: '#02A3C1'}}>
                             <div className="d-flex justify-content-between text-white">
                                 <div className="text-[16px] font-semibold">Al Bushra Tours & Travels</div>
                                 <div><small className="text-[12px]">11 Aug 2022</small></div>
@@ -59,14 +59,14 @@ const UmrahPacksCards = () => {
                         <div class="card-footer">
                         <div className="d-flex justify-content-between align-items-center">
                                 <div><h5 className="text-[20px]"><span className='font-semibold'>Price  :</span>  ₹ 120,000</h5></div>
-                                <div><button className='btn btn-info text-white'>View Details</button></div>
+                                <div><button className='btn text-white' style={{backgroundColor: '#02A3C1'}}>View Details</button></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <div class="card-header bg-info">
+                        <div class="card-header" style={{backgroundColor: '#02A3C1'}}>
                             <div className="d-flex justify-content-between text-white">
                                 <div className="text-[16px] font-semibold">Al Bushra Tours & Travels</div>
                                 <div><small className="text-[12px]">11 Aug 2022</small></div>
@@ -86,14 +86,14 @@ const UmrahPacksCards = () => {
                         <div class="card-footer">
                         <div className="d-flex justify-content-between align-items-center">
                                 <div><h5 className="text-[20px]"><span className='font-semibold'>Price  :</span>  ₹ 120,000</h5></div>
-                                <div><button className='btn btn-info text-white'>View Details</button></div>
+                                <div><button className='btn text-white' style={{backgroundColor: '#02A3C1'}}>View Details</button></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <div class="card-header bg-info">
+                        <div class="card-header" style={{backgroundColor: '#02A3C1'}}>
                             <div className="d-flex justify-content-between text-white">
                                 <div className="text-[16px] font-semibold">Al Bushra Tours & Travels</div>
                                 <div><small className="text-[12px]">11 Aug 2022</small></div>
@@ -113,7 +113,7 @@ const UmrahPacksCards = () => {
                         <div class="card-footer">
                         <div className="d-flex justify-content-between align-items-center">
                                 <div><h5 className="text-[20px]"><span className='font-semibold'>Price  :</span>  ₹ 120,000</h5></div>
-                                <div><button className='btn btn-info text-white'>View Details</button></div>
+                                <div><button className='btn text-white' style={{backgroundColor: '#02A3C1'}}>View Details</button></div>
                             </div>
                         </div>
                     </div>

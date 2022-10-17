@@ -9,7 +9,7 @@ const UmrahP = () => {
                     <p>Trending Umrah Packages From Popular Destinations</p>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-outline-primary py-2 px-5 text-[20px] font-bold">View All Umrah Packages</button>
+                    <button type="button" class="btn btn-outline-primary py-2 px-5 text-[20px] font-bold" >View All Umrah Packages</button>
                 </div>
             </div>
         </div>
