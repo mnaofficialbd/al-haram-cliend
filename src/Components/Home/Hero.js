@@ -3,7 +3,7 @@ import bgImg from '../../Assets/Backgrounds/alHaramTopBennerBg.png';
 
 const Hero = () => {
     return (
-        <div style={{ background: `url(${bgImg})` }} className='bg-dark px-10 py-14 '>
+        <div style={{ background: `url(${bgImg})`,backgroundSize: 'cover'}} className='bg-dark px-10 py-14 '>
             <div className="container py-4">
                 {/* top title part */}
                 <div className='text-center my-10 py-4 text-white'>
@@ -47,7 +47,7 @@ const Hero = () => {
                 </div>
 
                 {/* summery part */}
-                <div class="row g-4">
+                <div class="row g-4 text-white">
                     <div class="col-lg-3 col-12 col-md-6 ">
                         <div className=''>
                             <img src="https://i.ibb.co/nkWZkJg/verify-icon.png" class="mx-auto d-block" alt="..." />
