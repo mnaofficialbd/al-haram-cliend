@@ -1,0 +1,93 @@
+import React from 'react';
+import PPack1 from '../../Assets/ClassicPackages/pack1.png';
+import PPack2 from '../../Assets/PremiumPackages/PPack2.png';
+import PPack3 from '../../Assets/PremiumPackages/PPack3.png';
+import PPack4 from '../../Assets/PremiumPackages/PPack4.png';
+
+const OffersDiscountsCards = () => {
+    return (
+        <section className='container my-4 py-4'>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src={PPack2} class="card-img-top" alt="..." />
+                        <div class="card-header" style={{ backgroundColor: '#02A3C1' }}>
+                            <div className="">
+                                <h5 class="text-center text-white text-[20px]">Premuium Umrah Package</h5>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <h4 class="card-title text-center text-[20px] py-2">Al Bushra Tour & Travels</h4>
+                            <div className="text-[13px] text-center my-2"><small className='bg-1 p-1'>we are offering 25% discount on all packages</small> </div>
+                        </div>
+                        <div class="py-2">
+                            <div className="d-flex justify-content-center align-items-center">
+                                <div><button className='btn text-white' style={{ backgroundColor: '#02A3C1' }}>View Details</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src={PPack2} class="card-img-top" alt="..." />
+                        <div class="card-header" style={{ backgroundColor: '#02A3C1' }}>
+                            <div className="">
+                                <h5 class="text-center text-white text-[20px]">Premuium Umrah Package</h5>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <h4 class="card-title text-center text-[20px] py-2">Al Bushra Tour & Travels</h4>
+                            <div className="text-[13px] text-center my-2"><small className='bg-1 p-1'>we are offering 25% discount on all packages</small> </div>
+                        </div>
+                        <div class="py-2">
+                            <div className="d-flex justify-content-center align-items-center">
+                                <div><button className='btn text-white' style={{ backgroundColor: '#02A3C1' }}>View Details</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src={PPack3} class="card-img-top" alt="..." />
+                        <div class="card-header" style={{ backgroundColor: '#02A3C1' }}>
+                            <div className="">
+                                <h5 class="text-center text-white text-[20px]">Premuium Umrah Package</h5>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <h4 class="card-title text-center text-[20px] py-2">Al Bushra Tour & Travels</h4>
+                            <div className="text-[13px] text-center my-2"><small className='bg-1 p-1'>we are offering 25% discount on all packages</small> </div>
+                        </div>
+                        <div class="py-2">
+                            <div className="d-flex justify-content-center align-items-center">
+                                <div><button className='btn text-white' style={{ backgroundColor: '#02A3C1' }}>View Details</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src={PPack4} class="card-img-top" alt="..." />
+                        <div class="card-header" style={{ backgroundColor: '#02A3C1' }}>
+                            <div className="">
+                                <h5 class="text-center text-white text-[20px]">Premuium Umrah Package</h5>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <h4 class="card-title text-center text-[20px] py-2">Al Bushra Tour & Travels</h4>
+                            <div className="text-[13px] text-center my-2"><small className='bg-1 p-1'>we are offering 25% discount on all packages</small> </div>
+                        </div>
+                        <div class="py-2">
+                            <div className="d-flex justify-content-center align-items-center">
+                                <div><button className='btn text-white' style={{ backgroundColor: '#02A3C1' }}>View Details</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default OffersDiscountsCards;

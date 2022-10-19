@@ -7,7 +7,7 @@ import pack4 from '../../Assets/ClassicPackages/pack4.png';
 
 const UmrahPacksCards = () => {
     return (
-        <section className='container'>
+        <section className='container mb-4 py-2'>
             <div class="row row-cols-1 row-cols-md-4 g-4">
                 
                 <div class="col">
