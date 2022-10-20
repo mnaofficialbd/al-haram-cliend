@@ -23,7 +23,7 @@ const OffersDiscountsCards = () => {
                         </div>
                         <div class="py-2">
                             <div className="d-flex justify-content-center align-items-center">
-                                <div><button className='primary-btn'>View Details</button></div>
+                                <div><button className='details-btn'>View Details</button></div>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ const OffersDiscountsCards = () => {
                         </div>
                         <div class="py-2">
                             <div className="d-flex justify-content-center align-items-center">
-                                <div><button className='primary-btn'>View Details</button></div>
+                                <div><button className='details-btn'>View Details</button></div>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ const OffersDiscountsCards = () => {
                         </div>
                         <div class="py-2">
                             <div className="d-flex justify-content-center align-items-center">
-                                <div><button className='primary-btn'>View Details</button></div>
+                                <div><button className='details-btn'>View Details</button></div>
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ const OffersDiscountsCards = () => {
                         </div>
                         <div class="py-2">
                             <div className="d-flex justify-content-center align-items-center">
-                                <div><button className='primary-btn'>View Details</button></div>
+                                <div><button className='details-btn'>View Details</button></div>
                             </div>
                         </div>
                     </div>
