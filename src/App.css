@@ -53,7 +53,9 @@
 .primary-btn {
   border: 1px solid #02A3C1;
   color: #02A3C1;
-  padding: 6px 20px;
+  padding: 0px 20px;
+  width: 310px;
+  height: 49.08px;
 }
 
 .primary-btn:hover {

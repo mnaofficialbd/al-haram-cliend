@@ -2,7 +2,7 @@ import React from 'react';
 
 const LandPacks = () => {
     return (
-        <div className='container mt-4 py-2'>
+        <div className='container my-4 py-2'>
             <div className="d-flex justify-content-between align-items-end">
                 <div>
                     <h3 className='text-uppercase text-[40px] font-semibold'>Land Packages</h3>

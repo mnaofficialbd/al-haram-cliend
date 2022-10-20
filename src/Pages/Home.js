@@ -6,6 +6,8 @@ import UmrahP from '../Components/Home/UmrahP';
 import UmrahPacksCards from '../Components/Home/UmrahPacksCards';
 import LandPacks from '../Components/Home/LandPacks';
 import LandPacksCards from '../Components/Home/LandPacksCards';
+import ExploreSA from '../Components/Home/ExploreSA';
+import ExploreSACards from '../Components/Home/ExploreSACards';
 
 const Home = () => {
     return (
@@ -17,6 +19,8 @@ const Home = () => {
             <OffersDiscountsCards />
             <LandPacks />
             <LandPacksCards />
+            <ExploreSA />
+            <ExploreSACards />
         </div>
     );
 };
