@@ -1,19 +1,19 @@
 import React from 'react';
 
-const OfferDiscount = () => {
+const LandPacks = () => {
     return (
         <div className='container mt-4 py-2'>
             <div className="d-flex justify-content-between align-items-end">
                 <div>
-                    <h3 className='text-uppercase text-[40px] font-semibold'>offers & discounts</h3>
+                    <h3 className='text-uppercase text-[40px] font-semibold'>Land Packages</h3>
                     <p>Trending Umrah Packages From Popular Destinations</p>
                 </div>
                 <div>
-                    <button type="button" class="primary-btn text-[20px] font-bold">View All Umrah Offers</button>
+                    <button type="button" class="primary-btn text-[20px] font-bold">View All Land Packages</button>
                 </div>
             </div>
         </div>
     );
 };
 
-export default OfferDiscount;
+export default LandPacks;

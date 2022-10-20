@@ -28,6 +28,9 @@
   color: #61dafb;
 }
 
+/* ===================
+      Custom CSS
+   =================== */
 .font-semibold{
   font-weight: 600;
 }
@@ -45,6 +48,29 @@
 }
 .bg-4{
   background-color:  #FCEEC0;
+}
+
+.primary-btn {
+  border: 1px solid #02A3C1;
+  color: #02A3C1;
+  padding: 6px 20px;
+}
+
+.primary-btn:hover {
+  background-color: #02A3C1;
+  color:white;
+  border: 1px solid white;
+}
+.details-btn {
+  border: 1px solid #02A3C1;
+  color: #02A3C1;
+  padding: 2px 8px;
+}
+
+.details-btn:hover {
+  background-color: #02A3C1;
+  color:white;
+  border: 1px solid white;
 }
 
 @keyframes App-logo-spin {
