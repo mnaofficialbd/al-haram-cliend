@@ -8,6 +8,7 @@ import LandPacks from '../Components/Home/LandPacks';
 import LandPacksCards from '../Components/Home/LandPacksCards';
 import ExploreSA from '../Components/Home/ExploreSA';
 import ExploreSACards from '../Components/Home/ExploreSACards';
+import PopularAirlines from '../Components/Home/PopularAirlines';
 
 const Home = () => {
     return (
@@ -21,6 +22,8 @@ const Home = () => {
             <LandPacksCards />
             <ExploreSA />
             <ExploreSACards />
+
+            <PopularAirlines />
         </div>
     );
 };

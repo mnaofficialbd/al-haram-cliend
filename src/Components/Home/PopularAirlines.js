@@ -12,11 +12,11 @@ const PopularAirlines = () => {
                     <h3 className='text-uppercase text-[40px] font-semibold'>Explore Saudi Arabia</h3>
                 </div>
                 <div className='d-flex mb-4'>
-                    <img src={indiGo} alt="" className='mx-2' />
-                    <img src={qatar} alt="" className='mx-2' />
-                    <img src={saudia} alt="" className='mx-2' />
-                    <img src={vistana} alt="" className='mx-2' />
-                    <img src={flydubai} alt="" className='mx-2' />
+                    <img src={indiGo} alt="" className='mx-1' style={{height: '76px'}} />
+                    <img src={qatar} alt="" className='mx-1' style={{height: '76px'}} />
+                    <img src={saudia} alt="" className='mx-1' style={{height: '76px'}} />
+                    <img src={vistana} alt="" className='mx-1' style={{height: '76px'}} />
+                    <img src={flydubai} alt="" className='mx-1' style={{height: '76px'}} />
                 </div>
         </section>
     );
