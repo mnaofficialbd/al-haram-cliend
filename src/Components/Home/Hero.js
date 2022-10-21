@@ -13,33 +13,33 @@ const Hero = () => {
 
                     {/* select part */}
                     <div className='my-4 py-4'>
-                        <div class="row g-4 bg-white py-4">
-                            <div class="col-lg-2 col-6 col-md-4">
+                        <div className="row g-4 bg-white py-4">
+                            <div className="col-lg-2 col-6 col-md-4">
                                 <div className='text-center'>
                                     <h3>1500+</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-6 col-md-4">
+                            <div className="col-lg-2 col-6 col-md-4">
                                 <div className='text-center'>
                                     <h3>1500+</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-6 col-md-4">
+                            <div className="col-lg-2 col-6 col-md-4">
                                 <div className='text-center'>
                                     <h3>1500+</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-6 col-md-4">
+                            <div className="col-lg-2 col-6 col-md-4">
                                 <div className='text-center'>
                                     <h3>1500+</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-6 col-md-4">
+                            <div className="col-lg-2 col-6 col-md-4">
                                 <div className='text-center'>
                                     <h3>1500+</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-6 col-md-4">
+                            <div className="col-lg-2 col-6 col-md-4">
                                 <div className='text-center'>
                                     <h3>1500+</h3>
                                 </div>
@@ -48,37 +48,37 @@ const Hero = () => {
                     </div>
 
                     {/* summery part */}
-                    <div class="row g-4 text-white">
-                        <div class="col-lg-3 col-12 col-md-6 ">
+                    <div className="row g-4 text-white">
+                        <div className="col-lg-3 col-12 col-md-6 ">
                             <div className=''>
-                                <img src="https://i.ibb.co/nkWZkJg/verify-icon.png" class="mx-auto d-block" alt="..." />
+                                <img src="https://i.ibb.co/nkWZkJg/verify-icon.png" className="mx-auto d-block" alt="..." />
                             </div>
                             <div className='text-center'>
                                 <h3>1500+</h3>
                                 <h3>VERIFIED AGENTS</h3>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-12 col-md-6">
+                        <div className="col-lg-3 col-12 col-md-6">
                             <div className=''>
-                                <img src="https://i.ibb.co/zZ5xjq3/happy-client.png" class="mx-auto d-block" alt="..." />
+                                <img src="https://i.ibb.co/zZ5xjq3/happy-client.png" className="mx-auto d-block" alt="..." />
                             </div>
                             <div className='text-center'>
                                 <h3>1 LAKH+</h3>
                                 <h3>HAPPY GUESTS</h3>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-12 col-md-6">
+                        <div className="col-lg-3 col-12 col-md-6">
                             <div className=''>
-                                <img src="https://i.ibb.co/7bNCkqD/booking-icon.png" class="mx-auto d-block" alt="..." />
+                                <img src="https://i.ibb.co/7bNCkqD/booking-icon.png" className="mx-auto d-block" alt="..." />
                             </div>
                             <div className='text-center'>
                                 <h3>2 LAKH+</h3>
                                 <h3>BOOKINGS DONE</h3>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-12 col-md-6">
+                        <div className="col-lg-3 col-12 col-md-6">
                             <div className=''>
-                                <img src="https://i.ibb.co/pRt0XrG/package-icon.png" class="mx-auto d-block" alt="..." />
+                                <img src="https://i.ibb.co/pRt0XrG/package-icon.png" className="mx-auto d-block" alt="..." />
                             </div>
                             <div className='text-center'>
                                 <h3>1K+</h3>

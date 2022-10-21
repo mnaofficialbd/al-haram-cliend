@@ -9,7 +9,7 @@ const ExploreSA = () => {
                     <p className='text-uppercase'>Discover best things to do restaurants, shopping, hotels, cafes and places</p>
                 </div>
                 <div>
-                    <button type="button" class="primary-btn text-[20px] font-bold">Explore</button>
+                    <button type="button" className="primary-btn text-[20px] font-bold">Explore</button>
                 </div>
             </div>
         </section>

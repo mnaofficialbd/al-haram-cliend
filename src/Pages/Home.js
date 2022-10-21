@@ -9,6 +9,7 @@ import LandPacksCards from '../Components/Home/LandPacksCards';
 import ExploreSA from '../Components/Home/ExploreSA';
 import ExploreSACards from '../Components/Home/ExploreSACards';
 import PopularAirlines from '../Components/Home/PopularAirlines';
+import WhyBookUs from '../Components/Home/WhyBookUs';
 
 const Home = () => {
     return (
@@ -22,8 +23,8 @@ const Home = () => {
             <LandPacksCards />
             <ExploreSA />
             <ExploreSACards />
-
             <PopularAirlines />
+            <WhyBookUs />
         </div>
     );
 };

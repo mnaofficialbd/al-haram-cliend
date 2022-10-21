@@ -9,7 +9,7 @@ const LandPacks = () => {
                     <p>Trending Umrah Packages From Popular Destinations</p>
                 </div>
                 <div>
-                    <button type="button" class="primary-btn text-[20px] font-bold">View All Land Packages</button>
+                    <button type="button" className="primary-btn text-[20px] font-bold">View All Land Packages</button>
                 </div>
             </div>
         </div>

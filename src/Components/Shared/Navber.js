@@ -18,7 +18,7 @@ const Navber = () => {
                         <Nav.Link href="#action2" className="text-uppercase text-white">offers</Nav.Link>
                         <Nav.Link href="#action2" className="text-uppercase text-white">Download app</Nav.Link>
 
-                        <div class="border border-white d-flex">
+                        <div className="border border-white d-flex">
 
                             <NavDropdown title="USD" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="#action3" className="text-uppercase">USD</NavDropdown.Item>
@@ -29,7 +29,7 @@ const Navber = () => {
                                     RUPEE
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <div class="border border-white"></div>
+                            <div className="border border-white"></div>
                             <NavDropdown title="ENG" id="navbarScrollingDropdown" className='text-white'>
                                 <NavDropdown.Item href="#action3" className="text-uppercase">ENG</NavDropdown.Item>
                                 <NavDropdown.Item href="#action4">
