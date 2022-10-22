@@ -25,7 +25,7 @@ const UltimateCompanion = () => {
                                 <option value="2">+96</option>
                                 <option value="3">+97</option>
                             </select>
-                            <input type="text" className="form-control-lg" aria-label="Dollar amount (with dot and two decimal places)" />
+                            <input type="text" className="form-control-lg" placeholder='123 4567 8910' aria-label="Dollar amount (with dot and two decimal places)" />
                             <button className="details-btn text-uppercase" type="button">Send</button>
                         </div>
                     </div>
