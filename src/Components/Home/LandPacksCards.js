@@ -5,7 +5,7 @@ import cardVector from '../../Assets/ClassicPackages/cardVector.png'
 
 const LandPacksCards = () => {
     return (
-        <section className='container mb-4 py-2'>
+        <section className='container my-4 py-2'>
             <div className="row row-cols-1 row-cols-md-4 g-4">
                 
                 <div className="col">

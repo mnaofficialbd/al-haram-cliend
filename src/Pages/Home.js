@@ -20,10 +20,10 @@ const Home = () => {
             <UmrahPacksCards />
             <OfferDiscount />
             <OffersDiscountsCards />
-            <LandPacks />
-            <LandPacksCards />
             <ExploreSA />
             <ExploreSACards />
+            <LandPacks />
+            <LandPacksCards />
             <UltimateCompanion />
             <PopularAirlines />
             <WhyBookUs />
