@@ -2,7 +2,7 @@ import React from 'react';
 
 const UltimateCompanion = () => {
     return (
-        <section className=' container p-2'>
+        <section className=' container p-2' style={{background: '#ECFCFF'}}>
             <div className="row">
                 <div className="col-6">
                     <div className="row">

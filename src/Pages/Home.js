@@ -10,6 +10,7 @@ import ExploreSA from '../Components/Home/ExploreSA';
 import ExploreSACards from '../Components/Home/ExploreSACards';
 import PopularAirlines from '../Components/Home/PopularAirlines';
 import WhyBookUs from '../Components/Home/WhyBookUs';
+import UltimateCompanion from '../Components/Home/UltimateCompanion';
 
 const Home = () => {
     return (
@@ -23,6 +24,7 @@ const Home = () => {
             <LandPacksCards />
             <ExploreSA />
             <ExploreSACards />
+            <UltimateCompanion />
             <PopularAirlines />
             <WhyBookUs />
         </div>
