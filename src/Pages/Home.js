@@ -11,6 +11,7 @@ import ExploreSACards from '../Components/Home/ExploreSACards';
 import PopularAirlines from '../Components/Home/PopularAirlines';
 import WhyBookUs from '../Components/Home/WhyBookUs';
 import UltimateCompanion from '../Components/Home/UltimateCompanion';
+import Footer from '../Components/Shared/Footer';
 
 const Home = () => {
     return (
@@ -27,6 +28,7 @@ const Home = () => {
             <UltimateCompanion />
             <PopularAirlines />
             <WhyBookUs />
+            <Footer />
         </div>
     );
 };
