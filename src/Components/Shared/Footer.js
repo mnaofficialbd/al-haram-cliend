@@ -34,32 +34,69 @@ const Footer = () => {
                     </div>
                 </div>
                 <div class="col-2 text-white">
-                    <h5>Section</h5>
+                    <h5>COMPANY</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Home</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Features</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">About</a></li>
+                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Faq</a></li>
+                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Services</a></li>
+                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Blog</a></li>
                     </ul>
                 </div>
                 <div class="col-2 text-white">
-                    <h5>Section</h5>
+                    <h5>EXPLORE</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Home</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Features</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">About</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">About</a></li>
+                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Umrah Packages</a></li>
+                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Hajj Packages</a></li>
+                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Hotels</a></li>
+                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Flights</a></li>
+                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Umrah Guide</a></li>
+                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Hajj Guide</a></li>
                     </ul>
                 </div>
                 <div class="col-3 text-white">
-                    <h5>Section</h5>
+                    <h5>GET IN TOUCH</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Home</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Features</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Pricing</a></li>
+                        <li class="nav-item mb-2">
+                            <div className="d-flex">
+                                <div>
+                                    <img src="" alt="" />
+                                </div>
+                                <div>
+                                    <a href="/" class="nav-link p-0 text-white">
+                                        <p>
+                                            Al Haram <br />
+                                            Al-Aqsa Business Park 8711, Alrehab <br />
+                                            Dist. Jeddah, Unit No 310, Saudi Arabia
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item mb-2">
+                        <div className="d-flex">
+                                <div>
+                                    <img src="" alt="" />
+                                </div>
+                                <div>
+                                    <a href="/" class="nav-link p-0 text-white">
+                                        <p>support@alharam.com</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item mb-2">
+                        <div className="d-flex">
+                                <div>
+                                    <img src="" alt="" />
+                                </div>
+                                <div>
+                                    <a href="/" class="nav-link p-0 text-white">
+                                        <p>+91 121345678910</p>
+                                    </a>
+                                </div>
+                            </div>
+                            </li>
                     </ul>
                 </div>
                 <div className="text-white col-2">
