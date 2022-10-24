@@ -6,12 +6,17 @@ import fbLogo from '../../Assets/Footer/fbIcon.png';
 import twitLogo from '../../Assets/Footer/twitIcon.png';
 import insLogo from '../../Assets/Footer/instaIcon.png';
 import linLogo from '../../Assets/Footer/linkedInVector.png';
+import locationLogo from '../../Assets/Footer/LocationVactor.png';
+import mailWLogo from '../../Assets/Footer/mailVectorWhite.png';
+import phoneLogo from '../../Assets/Footer/PhoneVector.png';
+import mailLogo from '../../Assets/Footer/mailVector.png';
+import whatsapLogo from '../../Assets/Footer/whatsappIcon.png';
 
 const Footer = () => {
     return (
         <footer className='p-5' style={{ background: '#02A3C1' }}>
-            <div className="row">
-                <div className="col-3">
+            <div className="row row-cols-sm-1 row-cols-md-5 g-5">
+                <div className="col col-3">
                     <div>
                         <img src={alHaramLogo} alt="" />
                     </div>
@@ -33,7 +38,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col-2 text-white">
+                <div class="col col-2 text-white">
                     <h5>COMPANY</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Home</a></li>
@@ -43,7 +48,7 @@ const Footer = () => {
                         <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Blog</a></li>
                     </ul>
                 </div>
-                <div class="col-2 text-white">
+                <div class="col col-2 text-white">
                     <h5>EXPLORE</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Umrah Packages</a></li>
@@ -54,13 +59,13 @@ const Footer = () => {
                         <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Hajj Guide</a></li>
                     </ul>
                 </div>
-                <div class="col-3 text-white">
+                <div class="col col-3 text-white">
                     <h5>GET IN TOUCH</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2">
-                            <div className="d-flex">
+                        <li class="nav-item ">
+                            <div className="d-flex align-items-center">
                                 <div>
-                                    <img src="" alt="" />
+                                    <img src={locationLogo} alt="" />
                                 </div>
                                 <div>
                                     <a href="/" class="nav-link p-0 text-white">
@@ -73,22 +78,22 @@ const Footer = () => {
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item mb-2">
-                        <div className="d-flex">
+                        <li class="nav-item">
+                            <div className="d-flex">
                                 <div>
-                                    <img src="" alt="" />
+                                    <img src={mailWLogo} alt="" />
                                 </div>
                                 <div>
                                     <a href="/" class="nav-link p-0 text-white">
-                                        <p>support@alharam.com</p>
+                                        <p className='px-2'>support@alharam.com</p>
                                     </a>
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item mb-2">
-                        <div className="d-flex">
+                        <li class="nav-item">
+                            <div className="d-flex">
                                 <div>
-                                    <img src="" alt="" />
+                                    <img src={phoneLogo} alt="" />
                                 </div>
                                 <div>
                                     <a href="/" class="nav-link p-0 text-white">
@@ -96,10 +101,10 @@ const Footer = () => {
                                     </a>
                                 </div>
                             </div>
-                            </li>
+                        </li>
                     </ul>
                 </div>
-                <div className="text-white col-2">
+                <div className="text-white col col-2">
                     <h6 className='font-bold' style={{ fontSize: '24px' }}>Download The App</h6>
                     <div className="d-flex border border-light text-white my-3 align-items-center p-2">
                         <div className='p-2'>
@@ -121,9 +126,30 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="row">
-                <div className="col-6"></div>
-                <div className="col-6"></div>
+            <div className="d-flex justify-content-between align-items-center mt-4">
+                <div className="">
+                    <p className='text-capitalize text-white'>
+                        <span className="font-bold">Newsletter : </span>subscribe to our newsletter to get your weekly dose of news
+                    </p>
+                </div>
+                <div className="">
+                    <div className="d-flex bg-white my-2 align-items-center">
+                        <img src={whatsapLogo} alt="" className='m-2 p-2' />
+                        <p className='text-capitalize pe-2'>subscribe to our whatsapp channel</p>
+                    </div>
+                    <div className="d-flex bg-white my-2 align-items-center">
+                        <div>
+                            <img src={mailLogo} alt="" className='m-2 p-2' />
+                        </div>
+                        <div className='d-flex align-items-center'>
+                            <p className='text-capitalize'>enter your email adress</p>
+                            <div className='h-1 w-1 bg-dark mx-2'></div>
+                            <p className='text-uppercase'>Submit</p>
+                        </div>
+
+                    </div>
+                    <div><p className="text-white text-end">Terms of Use | Privacy Policy</p></div>
+                </div>
             </div>
         </footer>
     );
