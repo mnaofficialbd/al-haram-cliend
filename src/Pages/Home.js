@@ -12,11 +12,13 @@ import PopularAirlines from '../Components/Home/PopularAirlines';
 import WhyBookUs from '../Components/Home/WhyBookUs';
 import UltimateCompanion from '../Components/Home/UltimateCompanion';
 import Footer from '../Components/Shared/Footer';
+import AdBanner from '../Components/Home/AdBanner';
 
 const Home = () => {
     return (
         <div>
             <Hero />
+            <AdBanner />
             <UmrahP />
             <UmrahPacksCards />
             <OfferDiscount />
