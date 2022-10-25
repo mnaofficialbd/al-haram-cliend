@@ -13,6 +13,7 @@ import WhyBookUs from '../Components/Home/WhyBookUs';
 import UltimateCompanion from '../Components/Home/UltimateCompanion';
 import Footer from '../Components/Shared/Footer';
 import AdBanner from '../Components/Home/AdBanner';
+import Reviews from '../Components/Home/Reviews';
 
 const Home = () => {
     return (
@@ -25,6 +26,7 @@ const Home = () => {
             <OffersDiscountsCards />
             <ExploreSA />
             <ExploreSACards />
+            <Reviews />
             <LandPacks />
             <LandPacksCards />
             <UltimateCompanion />
