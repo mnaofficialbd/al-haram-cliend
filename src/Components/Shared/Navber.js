@@ -13,14 +13,14 @@ const Navber = () => {
                         {/* <Nav.Link href="#action1">Home</Nav.Link><Nav.Link href="#"> Link </Nav.Link> */}
                     </Nav>
                     <Nav className="d-flex">
-                        <Nav.Link href="#action2" className="text-uppercase text-white">travel agent? join us</Nav.Link>
-                        <Nav.Link href="#action2" className="text-uppercase text-white">blogs</Nav.Link>
-                        <Nav.Link href="#action2" className="text-uppercase text-white">offers</Nav.Link>
-                        <Nav.Link href="#action2" className="text-uppercase text-white">Download app</Nav.Link>
+                        <Nav.Link href="/" className="text-uppercase text-white">travel agent? join us</Nav.Link>
+                        <Nav.Link href="/" className="text-uppercase text-white">blogs</Nav.Link>
+                        <Nav.Link href="/" className="text-uppercase text-white">offers</Nav.Link>
+                        <Nav.Link href="/" className="text-uppercase text-white">Download app</Nav.Link>
 
-                        <div className="border border-white d-flex">
+                        {/* <div className="border border-white d-flex"> */}
 
-                            <NavDropdown title="USD" id="navbarScrollingDropdown">
+                            <NavDropdown title="USD" id="navbarScrollingDropdown" className="border border-white">
                                 <NavDropdown.Item href="#action3" className="text-uppercase">USD</NavDropdown.Item>
                                 <NavDropdown.Item href="#action4">
                                     TAKA
@@ -29,8 +29,8 @@ const Navber = () => {
                                     RUPEE
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <div className="border border-white"></div>
-                            <NavDropdown title="ENG" id="navbarScrollingDropdown" className='text-white'>
+                            {/* <div className="border border-white"></div> */}
+                            <NavDropdown title="ENG" id="navbarScrollingDropdown" className='text-white border border-white'>
                                 <NavDropdown.Item href="#action3" className="text-uppercase">ENG</NavDropdown.Item>
                                 <NavDropdown.Item href="#action4">
                                     Ben
@@ -39,7 +39,7 @@ const Navber = () => {
                                     Hin
                                 </NavDropdown.Item>
                             </NavDropdown>
-                        </div>
+                        {/* </div> */}
 
                         <Button className="text-uppercase mx-2" variant="outline-light">Log in</Button>
                     </Nav>

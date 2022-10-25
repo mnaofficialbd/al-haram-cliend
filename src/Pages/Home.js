@@ -14,10 +14,12 @@ import UltimateCompanion from '../Components/Home/UltimateCompanion';
 import Footer from '../Components/Shared/Footer';
 import AdBanner from '../Components/Home/AdBanner';
 import Reviews from '../Components/Home/Reviews';
+import SubNavber from '../Components/Home/SubNavber';
 
 const Home = () => {
     return (
         <div>
+            <SubNavber />
             <Hero />
             <AdBanner />
             <UmrahP />

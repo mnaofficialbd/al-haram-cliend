@@ -142,9 +142,13 @@ const Footer = () => {
                             <img src={mailLogo} alt="" className='m-2 p-2' />
                         </div>
                         <div className='d-flex align-items-center'>
-                            <p className='text-capitalize'>enter your email adress</p>
-                            <div className='h-1 w-1 bg-dark mx-2'></div>
-                            <p className='text-uppercase'>Submit</p>
+                            <div>
+                                <p className='text-capitalize'>enter your email adress</p>
+                            </div>
+                            <div className="border border-dark mx-2" style={{ height: '45px' }}></div>
+                            <div>
+                                <p className='text-uppercase'>Submit</p>
+                            </div>
                         </div>
 
                     </div>
