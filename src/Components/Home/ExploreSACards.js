@@ -11,7 +11,7 @@ const ExploreSACards = () => {
                 <div className="col">
                     <div className="card h-100 ">
                         <img src={makkahImg} className="card-img" alt="..." />
-                        <div className="card-img-overlay text-center align-items-end">
+                        <div className="card-img-overlay text-center">
                             <h2 className='text-uppercase'>Makkah</h2>
                             <p className='text-uppercase'>The holy city of prophet muhammad (pbuh)</p>
                         </div>

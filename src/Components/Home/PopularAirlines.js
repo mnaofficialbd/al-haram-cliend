@@ -9,14 +9,14 @@ const PopularAirlines = () => {
     return (
         <section className='container mt-4 py-2'>
                 <div className='my-4 py-4'>
-                    <h3 className='text-uppercase text-[40px] font-semibold'>Explore Saudi Arabia</h3>
+                    <h3 className='text-uppercase text-[40px] font-semibold'>Popular Airlines</h3>
                 </div>
                 <div className='d-flex mb-4'>
-                    <img src={indiGo} alt="" className='mx-1' style={{height: '76px'}} />
-                    <img src={qatar} alt="" className='mx-1' style={{height: '76px'}} />
-                    <img src={saudia} alt="" className='mx-1' style={{height: '76px'}} />
-                    <img src={vistana} alt="" className='mx-1' style={{height: '76px'}} />
-                    <img src={flydubai} alt="" className='mx-1' style={{height: '76px'}} />
+                    <img src={indiGo} alt="" className='mx-1' />
+                    <img src={qatar} alt="" className='mx-1' />
+                    <img src={saudia} alt="" className='mx-1' />
+                    <img src={vistana} alt="" className='mx-1' />
+                    <img src={flydubai} alt="" className='mx-1' />
                 </div>
         </section>
     );
