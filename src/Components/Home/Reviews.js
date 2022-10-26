@@ -9,7 +9,7 @@ const Reviews = () => {
             <h3 className="font-bold text-capitalize text-center">What our Travelers are saying</h3>
             <div className="d-flex">
                 <div><img src={mokkaMadina} alt="" /></div>
-                <div class="d-flex position-absolute top-50 start-50">
+                <div class="d-md-flex position-absolute top-25 start-50">
                     <div className='bg-white m-2 p-4 border border-secondary d-flex flex-column '>
                         <div className="d-flex">
                             <img src={star} alt="" style={{ width: '26px' }} />
