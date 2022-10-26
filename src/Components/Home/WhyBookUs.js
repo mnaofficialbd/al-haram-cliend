@@ -13,7 +13,7 @@ const WhyBookUs = () => {
     ]
     return (
         <section className='mt-4 py-4' style={{background: '#B5E1E9'}}>
-            <div className="d-flex align-items-center justify-content-around">
+            <div className="d-md-flex align-items-center justify-content-around">
 
                 <div className="">
                     <p className='align-items-center text-center' style={{fontSize: '40px'}}>Why Book With Us ?</p>
@@ -21,7 +21,7 @@ const WhyBookUs = () => {
                 {
                     bookDatas.map(bookData =>
                     (<div key={bookData?.id} className="align-items-center">
-                        <div className='d-flex align-items-center'>
+                        <div className='d-flex m-1 align-items-center'>
                             <div className='p-2' style={{background: '#0E93AC'}}>
                                 <img src={bookData?.img} alt="" style={{width:'40px'}}/>
                             </div>
