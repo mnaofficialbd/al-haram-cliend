@@ -8,16 +8,26 @@ import flydubai from '../../Assets/PopularAirlines/flydubai.png';
 const PopularAirlines = () => {
     return (
         <section className='container mt-4 py-2'>
-                <div className='my-4 py-4'>
-                    <h3 className='text-uppercase text-[40px] font-semibold'>Popular Airlines</h3>
+            <div className='my-4 py-4'>
+                <h3 className='text-uppercase text-[40px] font-semibold'>Popular Airlines</h3>
+            </div>
+            <div className='d-md-flex mb-4'>
+                <div>
+                    <img src={indiGo} alt="" className='m-1' />
                 </div>
-                <div className='d-flex mb-4'>
-                    <img src={indiGo} alt="" className='mx-1' />
-                    <img src={qatar} alt="" className='mx-1' />
-                    <img src={saudia} alt="" className='mx-1' />
-                    <img src={vistana} alt="" className='mx-1' />
-                    <img src={flydubai} alt="" className='mx-1' />
+                <div>
+                    <img src={qatar} alt="" className='m-1' />
                 </div>
+                <div>
+                    <img src={saudia} alt="" className='m-1' />
+                </div>
+                <div>
+                    <img src={vistana} alt="" className='m-1' />
+                </div>
+                <div>
+                    <img src={flydubai} alt="" className='m-1' />
+                </div>
+            </div>
         </section>
     );
 };

@@ -4,7 +4,7 @@ import bgImg from '../../Assets/Backgrounds/alHaramTopBennerBg.png';
 const Hero = () => {
     return (
         <section className=''>
-            <div style={{ background: `url(${bgImg})`, backgroundSize: 'cover', height: "95vh", backgroundRepeat: 'no-repeat' }} className='bg-dark px-10 py-14'>
+            <div style={{ background: `url(${bgImg})`, backgroundSize: 'cover', height: "100vh", backgroundRepeat: 'no-repeat' }} className='bg-dark px-10 py-14'>
                 <div className="container py-5">
                     {/* top title part */}
                     <div className='text-center my-5 pt-5 text-white'>
