@@ -29,7 +29,7 @@ const UltimateCompanion = () => {
                             <button className="details-btn text-uppercase" type="button">Send</button>
                         </div>
                     </div>
-                    <div className="m-5">
+                    <div className="my-5 px-2">
                         <div>
                             <h6 className='font-bold text-center ' style={{ fontSize: '24px' }}>Scan QR Code</h6>
                         </div>
@@ -61,7 +61,7 @@ const UltimateCompanion = () => {
                 </div>
             </div>
             <div className=" mx-auto">
-                <img src={mobileFrame} alt="" style={{ width: '260px' }} />
+                <img src={mobileFrame} alt="" className=" px-2" style={{ width: '260px' }} />
             </div>
         </section>
     );

@@ -25,7 +25,7 @@ const PopularAirlines = () => {
                     <img src={vistana} alt="" className='m-1' />
                 </div>
                 <div>
-                    <img src={flydubai} alt="" className='m-1' />
+                    <img src={flydubai} alt="" className='m-1 w-75' />
                 </div>
             </div>
         </section>
