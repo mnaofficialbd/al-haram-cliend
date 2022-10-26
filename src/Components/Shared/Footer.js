@@ -15,13 +15,17 @@ import whatsapLogo from '../../Assets/Footer/whatsappIcon.png';
 const Footer = () => {
     return (
         <footer className='p-5' style={{ background: '#02A3C1' }}>
-            <div className="row row-cols-sm-1 row-cols-md-5 g-5">
-                <div className="col col-3">
+            <div className="d-md-flex justify-content-between">
+                <div className="m-4">
                     <div>
                         <img src={alHaramLogo} alt="" />
                     </div>
-                    <p className="text-capitalize text-white">
-                        One of the most trusted travel group providing best services with to its clients since decades. Our director’s lorem ipsum a sons of Maxim’s founder lorem ipsum, are running these companies.lorem ipsum and glow is offering personalised services at every step, as not only a travel agency but also for exclusive.
+                    <p className="text-capitalize text-white"> 
+                        One of the most trusted travel group providing best <br></br>
+                        services with to its clients since decades. Our director’s <br></br>
+                        lorem ipsum a sons of Maxim’s founder lorem ipsum, <br></br>
+                        are running these companies.lorem ipsum and glow is <br></br>
+                        offering personalised services at every step, as not only 
                     </p>
                     <div className="d-flex">
                         <div className='me-2'>
@@ -38,7 +42,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col col-2 text-white">
+                <div class="text-white m-4">
                     <h5>COMPANY</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Home</a></li>
@@ -48,7 +52,7 @@ const Footer = () => {
                         <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Blog</a></li>
                     </ul>
                 </div>
-                <div class="col col-2 text-white">
+                <div class="text-white m-4">
                     <h5>EXPLORE</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Umrah Packages</a></li>
@@ -59,7 +63,7 @@ const Footer = () => {
                         <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Hajj Guide</a></li>
                     </ul>
                 </div>
-                <div class="col col-3 text-white">
+                <div class="text-white m-4">
                     <h5>GET IN TOUCH</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item ">
@@ -104,7 +108,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="text-white col col-2">
+                <div className="text-white m-4">
                     <h6 className='font-bold' style={{ fontSize: '24px' }}>Download The App</h6>
                     <div className="d-flex border border-light text-white my-3 align-items-center p-2">
                         <div className='p-2'>
@@ -126,18 +130,18 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="d-flex justify-content-between align-items-center mt-4">
+            <div className="d-md-flex justify-content-between text-center align-items-center mt-4">
                 <div className="">
                     <p className='text-capitalize text-white'>
                         <span className="font-bold">Newsletter : </span>subscribe to our newsletter to get your weekly dose of news
                     </p>
                 </div>
                 <div className="">
-                    <div className="d-flex bg-white my-2 align-items-center">
+                    <div className="d-flex justify-content-center bg-white my-2 align-items-center">
                         <img src={whatsapLogo} alt="" className='m-2 p-2' />
                         <p className='text-capitalize pe-2'>subscribe to our whatsapp channel</p>
                     </div>
-                    <div className="d-flex bg-white my-2 align-items-center">
+                    <div className="d-flex justify-content-center bg-white my-2 align-items-center">
                         <div>
                             <img src={mailLogo} alt="" className='m-2 p-2' />
                         </div>

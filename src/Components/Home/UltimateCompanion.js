@@ -7,17 +7,17 @@ import aStore from '../../Assets/UltimateCompanion/aStoreLogo.png';
 
 const UltimateCompanion = () => {
     return (
-        <section className=' container p-4 row mx-auto' style={{ background: '#ECFCFF' }}>
-            <div className="col-9">
-                    <div><img src={alHaramLogo} alt="" /></div>
+        <section className=' container p-4 d-md-flex ' style={{ background: '#ECFCFF' }}>
+            <div className="">
+                <div><img src={alHaramLogo} alt="" /></div>
                 <div className='my-4 py-2'>
-                    <h4 className='font-bold' style={{fontSize: '40px'}}>Your ultimate spiritual travel companion</h4>
-                    <p className='font-semibold text-capitalize' style={{fontSize: '24px',color:'#757575'}}>Book in advance or last-minute with al-haram. <br />
-                    Receive instant confirmation. Access your booking info offline.</p>
+                    <h4 className='font-bold' style={{ fontSize: '40px' }}>Your ultimate spiritual travel companion</h4>
+                    <p className='font-semibold text-capitalize' style={{ fontSize: '24px', color: '#757575' }}>Book in advance or last-minute with al-haram. <br />
+                        Receive instant confirmation. Access your booking info offline.</p>
                 </div>
-                <div className="d-flex justify-content-around ">
-                    <div className="">
-                        <h6 className='font-bold' style={{fontSize: '24px'}}>Send A Link To Your Mobile Phone</h6>
+                <div className="d-md-flex justify-content-around ">
+                    <div className="my-5">
+                        <h6 className='font-bold' style={{ fontSize: '24px' }}>Send A Link To Your Mobile Phone</h6>
                         <div className="input-group">
                             <select className="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
                                 <option selected>+91</option>
@@ -29,13 +29,17 @@ const UltimateCompanion = () => {
                             <button className="details-btn text-uppercase" type="button">Send</button>
                         </div>
                     </div>
-                    <div className="">
-                        <h6 className='font-bold text-center' style={{fontSize: '24px'}}>Scan QR Code</h6>
-                        <img src={qrCode} alt=""/>
+                    <div className="m-5">
+                        <div>
+                            <h6 className='font-bold text-center ' style={{ fontSize: '24px' }}>Scan QR Code</h6>
+                        </div>
+                        <div>
+                            <img src={qrCode} alt="" className='' />
+                        </div>
                     </div>
-                    <div className="">
-                        <h6 className='font-bold' style={{fontSize: '24px'}}>Download The App</h6>
-                        <div className="d-flex bg-dark text-white my-3 align-items-center p-2">
+                    <div className="my-5">
+                        <h6 className='font-bold' style={{ fontSize: '24px' }}>Download The App</h6>
+                        <div className="d-flex bg-dark justify-content-center text-white my-3 align-items-center p-2">
                             <div className='p-2'>
                                 <img src={pStore} alt="" style={{ width: '36px' }} />
                             </div>
@@ -44,7 +48,7 @@ const UltimateCompanion = () => {
                                 <p className='m-0' style={{ fontSize: '14px' }}>Google Play Store</p>
                             </div>
                         </div>
-                        <div className="d-flex bg-dark text-white my-3 align-items-center p-2">
+                        <div className="d-flex bg-dark text-white justify-content-center my-3 align-items-center p-2">
                             <div className='p-2'>
                                 <img src={aStore} alt="" style={{ width: '36px' }} />
                             </div>
@@ -56,8 +60,8 @@ const UltimateCompanion = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-2 mx-auto">
-                <img src={mobileFrame} alt="" style={{ width: '245px' }} />
+            <div className=" mx-auto">
+                <img src={mobileFrame} alt="" style={{ width: '260px' }} />
             </div>
         </section>
     );

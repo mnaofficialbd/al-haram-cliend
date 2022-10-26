@@ -8,7 +8,7 @@ import caterVector from '../../Assets/NavberIcons/caterVactor.png';
 
 const SubNavber = () => {
     return (
-        <div className='d-flex justify-content-between mt-5 py-3'>
+        <div className='d-md-flex justify-content-between mt-5 py-3'>
             <div>
                 <Nav className="d-flex">
                     <Nav.Link href="/" className="text-uppercase text-black"><button className='details-btn'>Plan My Umrah</button></Nav.Link>
