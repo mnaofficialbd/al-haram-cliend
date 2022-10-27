@@ -1,10 +1,6 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import brandIcon from '../../Assets/Icons/alHaramIcon.png';
-import manVector from '../../Assets/NavberIcons/manVector.png';
-import blogVector from '../../Assets/NavberIcons/blogVector.png';
-import offerVector from '../../Assets/NavberIcons/offerVector.png';
-import appVector from '../../Assets/NavberIcons/appVector.png';
 
 const Navber = () => {
     return (
@@ -17,12 +13,9 @@ const Navber = () => {
 
                         </Nav>
                         <Nav className="d-flex">
-                            <Nav.Link href="/" className="text-uppercase text-white"><img src={manVector} alt="" /> travel agent? join us</Nav.Link>
-                            <Nav.Link href="/" className="text-uppercase text-white"><img src={blogVector} alt="" /> blogs</Nav.Link>
-                            <Nav.Link href="/" className="text-uppercase text-white"><img src={offerVector} alt="" /> offers</Nav.Link>
-                            <Nav.Link href="/" className="text-uppercase text-white"><img src={appVector} alt="" /> Download app</Nav.Link>
+                            <Nav.Link href="/" className="text-uppercase text-white">travel agent? join us</Nav.Link>
 
-                            <NavDropdown title="USD" id="navbarScrollingDropdown" className="border border-white">
+                            <NavDropdown title="USD" id="navbarScrollingDropdown" className="">
                                 <NavDropdown.Item href="#action3" className="text-uppercase">USD</NavDropdown.Item>
                                 <NavDropdown.Item href="#action4">
                                     TAKA
@@ -31,7 +24,7 @@ const Navber = () => {
                                     RUPEE
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <NavDropdown title="ENG" id="navbarScrollingDropdown" className='text-white border border-white'>
+                            <NavDropdown title="ENG" id="navbarScrollingDropdown" className='text-white'>
                                 <NavDropdown.Item href="#action3" className="text-uppercase">ENG</NavDropdown.Item>
                                 <NavDropdown.Item href="#action4">
                                     Ben
