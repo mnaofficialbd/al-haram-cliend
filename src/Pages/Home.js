@@ -15,12 +15,14 @@ import Footer from '../Components/Shared/Footer';
 import AdBanner from '../Components/Home/AdBanner';
 import Reviews from '../Components/Home/Reviews';
 import SubNavber from '../Components/Home/SubNavber';
+import FormSection from '../Components/Home/FormSection';
 
 const Home = () => {
     return (
         <div>
             <SubNavber />
             <Hero />
+            <FormSection />
             <AdBanner />
             <UmrahP />
             <UmrahPacksCards />
