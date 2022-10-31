@@ -12,22 +12,22 @@ const PopularUmrahDCards = () => {
                 </div>
                 <div className='mx-1'>
                     <button className='details-btn'>
-                        Umrah Packages
+                        Land Packages
                     </button>
                 </div>
                 <div className='mx-1'>
                     <button className='details-btn'>
-                        Umrah Packages
+                        Hajj Packages
                     </button>
                 </div>
                 <div className='mx-1'>
                     <button className='details-btn'>
-                        Umrah Packages
+                        Trending Packages
                     </button>
                 </div>
                 <div className='mx-1'>
                     <button className='details-btn'>
-                        Umrah Packages
+                        Hotels
                     </button>
                 </div>
             </div>

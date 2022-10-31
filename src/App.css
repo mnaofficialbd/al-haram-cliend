@@ -64,6 +64,19 @@
   color:white;
   border: 1px solid white;
 }
+.search-btn{
+  border: 1px solid #02A3C1;
+  color: #02A3C1;
+  padding: 0px 20px;
+  background-color: white;
+  width: 230px;
+  height: 40px;
+}
+.search-btn:hover {
+  background-color: #02A3C1;
+  color:white;
+  border: 1px solid white;
+}
 .details-btn {
   border: 1px solid #02A3C1;
   color: #02A3C1;
