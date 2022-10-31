@@ -2,8 +2,7 @@ import React from 'react';
 import Hero from '../Components/Home/Hero';
 import OfferDiscount from '../Components/Home/OfferDiscount';
 import OffersDiscountsCards from '../Components/Home/OffersDiscountsCards';
-import UmrahP from '../Components/Home/UmrahP';
-import UmrahPacksCards from '../Components/Home/UmrahPacksCards';
+// import UmrahP from '../Components/Home/UmrahP';
 import LandPacks from '../Components/Home/LandPacks';
 import LandPacksCards from '../Components/Home/LandPacksCards';
 import ExploreSA from '../Components/Home/ExploreSA';
@@ -17,6 +16,7 @@ import Reviews from '../Components/Home/Reviews';
 import SubNavber from '../Components/Home/SubNavber';
 import HeroSummerySection from '../Components/Home/HeroSummerySection';
 import SpecialOffer from '../Components/Home/SpecialOffer';
+import PopularUDeals from '../Components/Home/PopularUDeals';
 
 const Home = () => {
     return (
@@ -25,9 +25,9 @@ const Home = () => {
             <Hero />
             <HeroSummerySection />
             <SpecialOffer/>
+            <PopularUDeals />
             {/* <AdBanner /> */}
-            <UmrahP />
-            <UmrahPacksCards />
+            {/* <UmrahP /> */}
             <OfferDiscount />
             <OffersDiscountsCards />
             <ExploreSA />

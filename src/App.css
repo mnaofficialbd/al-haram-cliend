@@ -54,8 +54,9 @@
   border: 1px solid #02A3C1;
   color: #02A3C1;
   padding: 0px 20px;
-  width: 310px;
-  height: 49.08px;
+  background-color: white;
+  width: 298px;
+  height: 55px;
 }
 
 .primary-btn:hover {
@@ -66,7 +67,10 @@
 .details-btn {
   border: 1px solid #02A3C1;
   color: #02A3C1;
-  padding: 2px 8px;
+  padding: 6px 25px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: white;
 }
 
 .details-btn:hover {
@@ -74,7 +78,11 @@
   color:white;
   border: 1px solid white;
 }
-
+.vactor-border{
+  border: 1px solid #02A3C1;
+  padding: 5px 8px;
+  margin: 10px 8px 5px 0px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
