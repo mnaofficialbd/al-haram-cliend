@@ -12,18 +12,20 @@ import PopularAirlines from '../Components/Home/PopularAirlines';
 import WhyBookUs from '../Components/Home/WhyBookUs';
 import UltimateCompanion from '../Components/Home/UltimateCompanion';
 import Footer from '../Components/Shared/Footer';
-import AdBanner from '../Components/Home/AdBanner';
+// import AdBanner from '../Components/Home/AdBanner';
 import Reviews from '../Components/Home/Reviews';
 import SubNavber from '../Components/Home/SubNavber';
-import FormSection from '../Components/Home/FormSection';
+import HeroSummerySection from '../Components/Home/HeroSummerySection';
+import SpecialOffer from '../Components/Home/SpecialOffer';
 
 const Home = () => {
     return (
         <div>
             <SubNavber />
             <Hero />
-            <FormSection />
-            <AdBanner />
+            <HeroSummerySection />
+            <SpecialOffer/>
+            {/* <AdBanner /> */}
             <UmrahP />
             <UmrahPacksCards />
             <OfferDiscount />

@@ -14,8 +14,9 @@ const HeroSearchSection = () => {
                         </div>
                         <hr className='m-0' />
                         <div>
-                            <p  className='text-center font-semibold fs-4 m-0'>INDIA</p>
-                            {/* <input type="text" name="country" placeholder='INDIA' className='text-center border-0 shadow' /> */}
+                            {/* <p  className='text-center font-semibold fs-4 m-0'>INDIA</p> */}
+                            <input type="search" placeholder='INDIA' class="form-control text-center fs-4 border-0" />
+                            {/* <input type="text" name="country" placeholder='INDIA' className='font-semibold fs-4 border-0 ' /> */}
                         </div>
                     </div>
                     <div className="col py-3 border border-secondary">
