@@ -5,7 +5,7 @@ import avatar from '../../Assets/Reviews/avatar.png';
 
 const Reviews = () => {
     return (
-        <div className='container p-4 position-relative' style={{ backgroundColor: '#D6F8FF' }}>
+        <div className='container pt-5 my-5 position-relative' style={{ backgroundColor: '#D6F8FF' }}>
             <h3 className="font-bold text-capitalize text-center">What our Travelers are saying</h3>
             <div className="d-flex">
                 <div><img src={mokkaMadina} alt="" /></div>

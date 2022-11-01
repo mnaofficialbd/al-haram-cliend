@@ -6,9 +6,8 @@ import Hero from '../Components/Home/Hero';
 // import LandPacks from '../Components/Home/LandPacks';
 // import LandPacksCards from '../Components/Home/LandPacksCards';
 import ExploreSA from '../Components/Home/ExploreSA';
-// import ExploreSACards from '../Components/Home/ExploreSACards';
 // import PopularAirlines from '../Components/Home/PopularAirlines';
-import WhyBookUs from '../Components/Home/WhyBookUs';
+import WhyChooseUs from '../Components/Home/WhyChooseUs';
 import UltimateCompanion from '../Components/Home/UltimateCompanion';
 import Footer from '../Components/Shared/Footer';
 // import AdBanner from '../Components/Home/AdBanner';
@@ -26,14 +25,13 @@ const Home = () => {
             <HeroSummerySection />
             <SpecialOffer/>
             <PopularUDeals />
-            <WhyBookUs />
+            <WhyChooseUs />
             {/* <AdBanner /> */}
             {/* <UmrahP /> */}
             {/* <OfferDiscount /> */}
             {/* <OffersDiscountsCards /> */}
             <Reviews />
             <ExploreSA />
-            {/* <ExploreSACards /> */}
             {/* <LandPacks /> */}
             {/* <LandPacksCards /> */}
             <UltimateCompanion />

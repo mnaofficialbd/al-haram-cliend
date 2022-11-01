@@ -4,7 +4,7 @@ import priceImg from '../../Assets/Footer/priceVector.png';
 import dealsImg from '../../Assets/Footer/dealsVector.png';
 import supportImg from '../../Assets/Footer/SupportVector.png';
 
-const WhyBookUs = () => {
+const WhyChooseUs = () => {
 
     return (
         <section className='mt-5 py-4 text-white'>
@@ -74,4 +74,4 @@ const WhyBookUs = () => {
     );
 };
 
-export default WhyBookUs;
+export default WhyChooseUs;
