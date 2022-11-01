@@ -14,7 +14,7 @@ import whatsapLogo from '../../Assets/Footer/whatsappIcon.png';
 
 const Footer = () => {
     return (
-        <footer className='p-5' style={{ background: '#02A3C1' }}>
+        <footer className='p-5 mt-5' style={{ background: '#02A3C1' }}>
             <div className="d-md-flex justify-content-between">
                 <div className="m-4">
                     <div>
