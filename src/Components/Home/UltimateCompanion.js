@@ -1,6 +1,6 @@
 import React from 'react';
 import mobileFrame from '../../Assets/UltimateCompanion/mobileFrame.png';
-import alHaramLogo from '../../Assets/UltimateCompanion/alHaramLogo.png';
+import alHaramLogo from '../../Assets/Icons/al-haram-final-logo.png';
 import qrCode from '../../Assets/UltimateCompanion/qrCode.png';
 import pStore from '../../Assets/UltimateCompanion/playStoreLogo.png';
 import aStore from '../../Assets/UltimateCompanion/aStoreLogo.png';

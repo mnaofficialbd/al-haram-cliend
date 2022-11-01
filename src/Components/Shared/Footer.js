@@ -2,10 +2,6 @@ import React from 'react';
 import alHaramLogo from '../../Assets/UltimateCompanion/alHaramLogo.png';
 import pStore from '../../Assets/UltimateCompanion/playStoreLogo.png';
 import aStore from '../../Assets/UltimateCompanion/aStoreLogo.png';
-import fbLogo from '../../Assets/Footer/fbIcon.png';
-import twitLogo from '../../Assets/Footer/twitIcon.png';
-import insLogo from '../../Assets/Footer/instaIcon.png';
-import linLogo from '../../Assets/Footer/linkedInVector.png';
 import locationLogo from '../../Assets/Footer/LocationVactor.png';
 import mailWLogo from '../../Assets/Footer/mailVectorWhite.png';
 import phoneLogo from '../../Assets/Footer/PhoneVector.png';
@@ -14,7 +10,8 @@ import whatsapLogo from '../../Assets/Footer/whatsappIcon.png';
 
 const Footer = () => {
     return (
-        <footer className='p-5 mt-5' style={{ background: '#02A3C1' }}>
+        <footer className='pt-5 mt-5' >
+            <div className='p-5' style={{ background: '#02A3C1' }}>
             <div className="d-md-flex justify-content-between">
                 <div className="m-4">
                     <div>
@@ -27,33 +24,20 @@ const Footer = () => {
                         are running these companies.lorem ipsum and glow is <br></br>
                         offering personalised services at every step, as not only 
                     </p>
-                    <div className="d-flex">
-                        <div className='me-2'>
-                            <img src={fbLogo} alt="" />
-                        </div>
-                        <div className='me-2'>
-                            <img src={twitLogo} alt="" />
-                        </div>
-                        <div className='me-2'>
-                            <img src={insLogo} alt="" />
-                        </div>
-                        <div className='me-2'>
-                            <img src={linLogo} alt="" />
-                        </div>
-                    </div>
                 </div>
                 <div class="text-white m-4">
                     <h5>COMPANY</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Home</a></li>
                         <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">About Us</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Faq</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Services</a></li>
+                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Career</a></li>
+                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Press</a></li>
+                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Travel Agent</a></li>
                         <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Blog</a></li>
                     </ul>
                 </div>
                 <div class="text-white m-4">
-                    <h5>EXPLORE</h5>
+                    <h5>SERVICES</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Umrah Packages</a></li>
                         <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Hajj Packages</a></li>
@@ -135,13 +119,7 @@ const Footer = () => {
                     <p className='text-capitalize text-white'>
                         <span className="font-bold">Newsletter : </span>subscribe to our newsletter to get your weekly dose of news
                     </p>
-                </div>
-                <div className="">
-                    <div className="d-flex justify-content-center bg-white my-2 align-items-center">
-                        <img src={whatsapLogo} alt="" className='m-2 p-2' />
-                        <p className='text-capitalize pe-2'>subscribe to our whatsapp channel</p>
-                    </div>
-                    <div className="d-flex justify-content-center bg-white my-2 align-items-center">
+                    <div className="d-flex  bg-white my-2 align-items-center">
                         <div>
                             <img src={mailLogo} alt="" className='m-2 p-2' />
                         </div>
@@ -154,10 +132,17 @@ const Footer = () => {
                                 <p className='text-uppercase'>Submit</p>
                             </div>
                         </div>
-
                     </div>
+                </div>
+                <div className="">
+                    <div className="d-flex justify-content-center bg-white my-2 align-items-center">
+                        <img src={whatsapLogo} alt="" className='m-2 p-2' />
+                        <p className='text-capitalize pe-2'>subscribe to our whatsapp channel</p>
+                    </div>
+                    
                     <div><p className="text-white text-end">Terms of Use | Privacy Policy</p></div>
                 </div>
+            </div>
             </div>
         </footer>
     );
