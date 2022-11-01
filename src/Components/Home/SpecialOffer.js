@@ -5,7 +5,7 @@ import roomImg from '../../Assets/SpecialOffer/room.png';
 
 const SpecialOffer = () => {
     return (
-        <section className='container'>
+        <section className='container mt-4 pt-4'>
             <div className="text-center my-5">
                 <h3 className='text-uppercase' style={{ fontSize: '40px' }}>Special Offers</h3>
                 <p className="text-capitalize" style={{ color: '#777777', fontSize: '24px' }}>These popular destinations have a lot to offer</p>

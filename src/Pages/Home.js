@@ -1,13 +1,13 @@
 import React from 'react';
 import Hero from '../Components/Home/Hero';
-import OfferDiscount from '../Components/Home/OfferDiscount';
-import OffersDiscountsCards from '../Components/Home/OffersDiscountsCards';
+// import OfferDiscount from '../Components/Home/OfferDiscount';
+// import OffersDiscountsCards from '../Components/Home/OffersDiscountsCards';
 // import UmrahP from '../Components/Home/UmrahP';
-import LandPacks from '../Components/Home/LandPacks';
-import LandPacksCards from '../Components/Home/LandPacksCards';
+// import LandPacks from '../Components/Home/LandPacks';
+// import LandPacksCards from '../Components/Home/LandPacksCards';
 import ExploreSA from '../Components/Home/ExploreSA';
-import ExploreSACards from '../Components/Home/ExploreSACards';
-import PopularAirlines from '../Components/Home/PopularAirlines';
+// import ExploreSACards from '../Components/Home/ExploreSACards';
+// import PopularAirlines from '../Components/Home/PopularAirlines';
 import WhyBookUs from '../Components/Home/WhyBookUs';
 import UltimateCompanion from '../Components/Home/UltimateCompanion';
 import Footer from '../Components/Shared/Footer';
@@ -26,18 +26,18 @@ const Home = () => {
             <HeroSummerySection />
             <SpecialOffer/>
             <PopularUDeals />
+            <WhyBookUs />
             {/* <AdBanner /> */}
             {/* <UmrahP /> */}
-            <OfferDiscount />
-            <OffersDiscountsCards />
-            <ExploreSA />
-            <ExploreSACards />
+            {/* <OfferDiscount /> */}
+            {/* <OffersDiscountsCards /> */}
             <Reviews />
-            <LandPacks />
-            <LandPacksCards />
+            <ExploreSA />
+            {/* <ExploreSACards /> */}
+            {/* <LandPacks /> */}
+            {/* <LandPacksCards /> */}
             <UltimateCompanion />
-            <PopularAirlines />
-            <WhyBookUs />
+            {/* <PopularAirlines /> */}
             <Footer />
         </div>
     );

@@ -12,29 +12,33 @@ const WhyBookUs = () => {
         { id: 4, img: supportImg, title: '24/7 Support' }
     ]
     return (
-        <section className='mt-4 py-4' style={{background: '#B5E1E9'}}>
-            <div className="d-md-flex align-items-center justify-content-around">
+        <section className='mt-4 py-4'>
+            <div style={{ background: '#02A3C1' }}>
+                <div className=" container ">
+                    <p>{bookDatas.length}</p>
+                    {/* <div className="">
+                        <p className='align-items-center text-center font-uppercase font-semibold' style={{ fontSize: '48px' }}>Why Choose Us ?</p>
+                    </div>
+                    {
+                        bookDatas.map(bookData =>
+                        (<div key={bookData?.id} className="align-items-center">
+                            <div className='d-flex m-1 align-items-center'>
+                                <div className='p-2'>
+                                    <img src={bookData?.img} alt="" style={{ width: '40px'}} />
+                                </div>
+                                <div>
+                                    <h6 className='text-center mx-2' style={{ fontSize: '32px' }}>{bookData?.title}</h6>
+                                </div>
+                            </div>
+                        </div>)
+                        )
+                    } */}
 
-                <div className="">
-                    <p className='align-items-center text-center' style={{fontSize: '40px'}}>Why Book With Us ?</p>
+
+
                 </div>
-                {
-                    bookDatas.map(bookData =>
-                    (<div key={bookData?.id} className="align-items-center">
-                        <div className='d-flex m-1 align-items-center'>
-                            <div className='p-2' style={{background: '#0E93AC'}}>
-                                <img src={bookData?.img} alt="" style={{width:'40px'}}/>
-                            </div>
-                            <div>
-                                <h6 className='text-center mx-2' style={{fontSize: '32px'}}>{bookData?.title}</h6>
-                            </div>
-                        </div>
-                    </div>)
-                    )
-                }
-
-
             </div>
+
         </section>
     );
 };

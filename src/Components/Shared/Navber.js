@@ -1,21 +1,29 @@
 import React from 'react';
-import { Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import brandIcon from '../../Assets/Icons/alHaramIcon.png';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import fbLogo from '../../Assets/Footer/fbIcon.png';
+import twitLogo from '../../Assets/Footer/twitIcon.png';
+import insLogo from '../../Assets/Footer/instaIcon.png';
+import whatsapLogo from '../../Assets/Footer/whatsappIcon.png';
 
 const Navber = () => {
     return (
         <Navbar style={{ backgroundColor: '#02A3C1' }} expand="md" className='fixed-top'>
-                <Container fluid>
-                    <Navbar.Brand href="/"><img src={brandIcon} alt="" /></Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
-                    <Navbar.Collapse id="navbarScroll">
-                        <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll >
+            <Container fluid>
+                <Navbar.Brand href="/" className='d-flex'>
+                    <img src={fbLogo} alt="" className='me-2' />
+                    <img src={twitLogo} alt="" className='me-2' />
+                    <img src={insLogo} alt="" className='me-2' />
+                    <img src={whatsapLogo} alt="" />
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Collapse id="navbarScroll">
+                    <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll >
 
-                        </Nav>
-                        <Nav className="d-flex">
-                            <Nav.Link href="/" className="text-uppercase text-white">travel agent? join us</Nav.Link>
+                    </Nav>
+                    <Nav className="d-flex">
+                        <button className="text-uppercase details-btn me-2">travel agent? join us</button>
 
-                            <NavDropdown title="USD" id="navbarScrollingDropdown" className="">
+                        {/* <NavDropdown title="USD" id="navbarScrollingDropdown" className="">
                                 <NavDropdown.Item href="#action3" className="text-uppercase">USD</NavDropdown.Item>
                                 <NavDropdown.Item href="#action4">
                                     TAKA
@@ -32,13 +40,13 @@ const Navber = () => {
                                 <NavDropdown.Item href="#action5">
                                     Hin
                                 </NavDropdown.Item>
-                            </NavDropdown>
+                            </NavDropdown> */}
 
-                            <Button className="text-uppercase mx-2" variant="outline-light">Log in</Button>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar> 
+                        <button className="text-uppercase details-btn">Log in</button>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
 };
 
