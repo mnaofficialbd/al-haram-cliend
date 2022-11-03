@@ -1,10 +1,9 @@
 import React from 'react';
 import Hero from '../Components/Home/Hero';
-// import OfferDiscount from '../Components/Home/OfferDiscount';
-// import OffersDiscountsCards from '../Components/Home/OffersDiscountsCards';
+import DealsDiscount from '../Components/Home/DealsDiscount';
 // import UmrahP from '../Components/Home/UmrahP';
 // import LandPacks from '../Components/Home/LandPacks';
-// import LandPacksCards from '../Components/Home/LandPacksCards';
+import LandPacksCards from '../Components/Home/LandPacksCards';
 import ExploreSA from '../Components/Home/ExploreSA';
 // import PopularAirlines from '../Components/Home/PopularAirlines';
 import WhyChooseUs from '../Components/Home/WhyChooseUs';
@@ -28,12 +27,11 @@ const Home = () => {
             <WhyChooseUs />
             {/* <AdBanner /> */}
             {/* <UmrahP /> */}
-            {/* <OfferDiscount /> */}
-            {/* <OffersDiscountsCards /> */}
+            <DealsDiscount />
             <Reviews />
             <ExploreSA />
             {/* <LandPacks /> */}
-            {/* <LandPacksCards /> */}
+            <LandPacksCards />
             <UltimateCompanion />
             {/* <PopularAirlines /> */}
             <Footer />
