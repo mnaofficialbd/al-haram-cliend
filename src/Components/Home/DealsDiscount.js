@@ -3,7 +3,7 @@ import DealsDiscountCards from './DealsDiscountCards';
 
 const DealsDiscount = () => {
     return (
-        <section className='container mt-5 pt-5'>
+        <section className='container mt-5 py-5'>
             <div className="d-md-flex flex-column justify-content-center align-items-center">
                 <div className='text-center'>
                     <h3 className='text-uppercase font-semibold' style={{fontSize:'40px'}}>Deals & Diswcounts</h3>
