@@ -3,7 +3,9 @@ import Hero from '../Components/Home/Hero';
 import DealsDiscount from '../Components/Home/DealsDiscount';
 // import UmrahP from '../Components/Home/UmrahP';
 // import LandPacks from '../Components/Home/LandPacks';
-// import LandPacksCards from '../Components/Home/LandPacksCards';
+
+import LandPacksCards from '../Components/Home/LandPacksCards';
+
 import ExploreSA from '../Components/Home/ExploreSA';
 // import PopularAirlines from '../Components/Home/PopularAirlines';
 import WhyChooseUs from '../Components/Home/WhyChooseUs';
@@ -22,7 +24,12 @@ const Home = () => {
             <SubNavber />
             <Hero />
             <HeroSummerySection />
-            <SpecialOffer/>
+            
+            {/* =============== */}
+            <LandPacksCards />
+            {/* =============== */}
+
+            <SpecialOffer />
             <PopularUDeals />
             <WhyChooseUs />
             {/* <AdBanner /> */}
@@ -31,7 +38,6 @@ const Home = () => {
             <Reviews />
             <ExploreSA />
             {/* <LandPacks /> */}
-            {/* <LandPacksCards /> */}
             <UltimateCompanion />
             {/* <PopularAirlines /> */}
             <Footer />

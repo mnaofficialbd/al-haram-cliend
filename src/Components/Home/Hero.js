@@ -1,8 +1,6 @@
 import React from 'react';
 import bgImg from '../../Assets/Backgrounds/alHaramTopBennerBg.png';
 import FormSection from './FormSection';
-// import HeroSearchSection from './HeroSearchSection';
-// import HeroSummerySection from './HeroSummerySection';
 
 const Hero = () => {
     return (
@@ -15,11 +13,8 @@ const Hero = () => {
                     </div>
 
                     {/* -------select/search section------------ */}
-                    {/* <HeroSearchSection /> */}
                     <FormSection />
 
-                    {/* summery part */}
-                    {/* <HeroSummerySection /> */}
                 </div>
             </div>
         </section>
