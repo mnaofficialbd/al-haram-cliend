@@ -17,7 +17,7 @@ const UltimateCompanion = () => {
                             Receive instant confirmation. Access your booking info offline.</p>
                     </div>
                     <div className="d-md-flex mt-5 justify-content-around ">
-                        <div className="">
+                        <div className="mb-3">
                             <h6 className='font-bold' style={{ fontSize: '24px' }}>Send A Link To Your Mobile Phone</h6>
                             <div className="input-group">
                                 <select className="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
@@ -30,15 +30,15 @@ const UltimateCompanion = () => {
                                 <button className="details-btn text-uppercase" type="button">Send</button>
                             </div>
                         </div>
-                        <div className="px-2">
+                        <div className="px-3 mb-3 mx-auto text-center">
                             <div>
-                                <h6 className='font-bold text-center ' style={{ fontSize: '24px' }}>Scan QR Code</h6>
+                                <h6 className='font-bold ' style={{ fontSize: '24px' }}>Scan QR Code</h6>
                             </div>
                             <div>
                                 <img src={qrCode} alt="" className='' />
                             </div>
                         </div>
-                        <div className="">
+                        <div className="mb-3">
                             <h6 className='font-bold' style={{ fontSize: '24px' }}>Download The App</h6>
                             <div className="d-flex bg-dark justify-content-center text-white my-3 align-items-center p-2">
                                 <div className='p-2'>
@@ -61,7 +61,7 @@ const UltimateCompanion = () => {
                         </div>
                     </div>
                 </div>
-                <div className=" mx-auto">
+                <div className="mx-auto text-center">
                     <img src={mobileFrame} alt="" className=" px-2" style={{ width: '260px' }} />
                 </div>
             </div>

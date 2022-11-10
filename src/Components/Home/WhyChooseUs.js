@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
     return (
         <section className='mt-5 py-4 text-white'>
             <div style={{ background: '#02A3C1' }}>
-                <div className=" container d-flex justify-content-around align-items-center">
+                <div className=" container d-md-flex justify-content-around align-items-center">
                     <div className='my-4 py-2'>
                         <h4 className='font-semibold text-uppercase' style={{ fontSize: '48px' }}>Why Choose Us ?</h4>
                         <p className='font-bold my-3 text-capitalize' style={{ fontSize: '32px' }}>
@@ -44,29 +44,7 @@ const WhyChooseUs = () => {
                                 <p style={{ fontSize: '16px', color: '#034A57' }}>Lowest Price</p>
                             </div>
                         </div>
-
-                        {/* <img src={mobileFrame} alt="" className=" px-2" style={{ width: '260px' }} /> */}
                     </div>
-                    {/* <div className="">
-                        <p className='align-items-center text-center font-uppercase font-semibold' style={{ fontSize: '48px' }}>Why Choose Us ?</p>
-                    </div>
-                    {
-                        bookDatas.map(bookData =>
-                        (<div key={bookData?.id} className="align-items-center">
-                            <div className='d-flex m-1 align-items-center'>
-                                <div className='p-2'>
-                                    <img src={bookData?.img} alt="" style={{ width: '40px'}} />
-                                </div>
-                                <div>
-                                    <h6 className='text-center mx-2' style={{ fontSize: '32px' }}>{bookData?.title}</h6>
-                                </div>
-                            </div>
-                        </div>)
-                        )
-                    } */}
-
-
-
                 </div>
             </div>
 

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { FreeMode, Pagination } from "swiper";
 import makkahImg from '../../Assets/ClassicPackages/pack2.png';
 
 const PopularUmrahDCards = () => {
@@ -10,23 +12,26 @@ const PopularUmrahDCards = () => {
         { id: 5, title: 'Hotels' }
     ];
 
-    const datas = [ { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 } ]
+    const datas = [ { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }, { id: 8 },{ id: 9 } ]
 
     return (
         <section className='container mb-4 py-2'>
-            <div className="d-flex my-3 justify-content-center">
+            <div className="row row-cols-3 row-cols-md-5 g-2 my-3">
                 {
                     btnDatas.map(btnData => (
-                        <div key={btnData.id} className='mx-1'>
+                        <div key={btnData.id} className='col'>
                             <button className='details-btn'>{btnData.title}</button>
                         </div>
                     ))
                 }
             </div>
-            <div className="row row-cols-1 row-cols-md-4 g-4">
+            <Swiper spaceBetween={30} slidesPerView={4} freeMode={true}
+                pagination={{ clickable: true}} modules={[FreeMode, Pagination]} className="" >
+            {/* <div className="row row-cols-1 row-cols-md-4 g-4"> */}
+            <div className="">
                 {
                     datas.map(data => (
-                        <div key={data.id} className="col">
+                        <SwiperSlide key={data.id} className="">
                             <div className="card h-100 border-0">
                                 <img src={makkahImg} className="card-img-top" alt="..." />
                                 <div className="card-body mt-3 p-0">
@@ -59,10 +64,11 @@ const PopularUmrahDCards = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </SwiperSlide>
                     ))
                 }
             </div>
+            </Swiper>
         </section>
     );
 };

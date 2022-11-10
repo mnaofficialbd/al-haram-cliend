@@ -10,7 +10,7 @@ const HeroSummerySection = () => {
         { id: 1, title: 'VERIFIED AGENTS', subTitle: '1500+', img: verifyIcon },
         { id: 2, title: 'HAPPY GUESTS', subTitle: '1 LAKH+', img: guestIcon },
         { id: 3, title: 'BOOKINGS DONE', subTitle: '2 LAKH+', img: bookingIcon },
-        { id: 3, title: 'PACKAGES', subTitle: '1K +', img: packIcon }
+        { id: 4, title: 'PACKAGES', subTitle: '1K +', img: packIcon }
     ]
 
     return (
@@ -19,7 +19,7 @@ const HeroSummerySection = () => {
                 <div className="row g-4 text-white">
                     {
                         datas.map(data => (
-                            <div key={data.id} className="col-lg-3 col-12 col-md-6 ">
+                            <div key={data.id} className="col-lg-3 col-6 col-md-6 ">
                                 <div className=''>
                                     <img src={data.img} className="mx-auto d-block" alt="..." />
                                 </div>

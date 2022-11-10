@@ -1,19 +1,18 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { FreeMode, Pagination } from "swiper";
 import mokkahImg from '../../Assets/DealsDiscount/mokkah.png';
 import tripImg from '../../Assets/DealsDiscount/trip.png';
 
 const DealsDiscountCards = () => {
 
-    const datas = [
-        { id: 1 },
-        { id: 3 },
-        { id: 3 }
-    ]
+    const datas = [ { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 } ]
 
     return (
         <section className='container mt-4 py-2'>
-            <div className="row row-cols-1 row-cols-md-4 g-4">
-                <div className="col">
+            {/* <div className="row row-cols-1 row-cols-md-4 g-4"> */}
+            <div className="d-md-flex">
+                <div className="mx-3">
                     <div className="card ">
                         <img src={tripImg} className="card-img" alt="..." />
                         <div className="card-img-overlay">
@@ -23,11 +22,13 @@ const DealsDiscountCards = () => {
                         </div>
                     </div>
                 </div>
-
+                <Swiper spaceBetween={30} slidesPerView={3.5} freeMode={true}
+                pagination={{ clickable: true}} modules={[FreeMode, Pagination]} className="" >
                 {
                     datas.map(data => (
-                        <div key={data.id} className="col">
-                            <div className="card h-100 border-0">
+                        <SwiperSlide key={data.id} className="">
+                         {/* <div key={data.id} className="col"> */}
+                            <div className="card h-100 border-0 mx-2">
                                 <img src={mokkahImg} className="card-img-top" alt="..." />
                                 <div className="card-body mt-3 p-0">
                                     <div className="">
@@ -43,8 +44,11 @@ const DealsDiscountCards = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>)
+                        {/*  </div> */}
+                        </SwiperSlide>
+                        )
                     )}
+                    </Swiper>
             </div>
         </section>
     );

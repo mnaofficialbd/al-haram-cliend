@@ -25,38 +25,38 @@ const Footer = () => {
                         offering personalised services at every step, as not only 
                     </p>
                 </div>
-                <div class="text-white m-4">
+                <div className="text-white m-4">
                     <h5>COMPANY</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Home</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">About Us</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Career</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Press</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Travel Agent</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Blog</a></li>
+                    <ul className="nav flex-column">
+                        <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-white">Home</a></li>
+                        <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-white">About Us</a></li>
+                        <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-white">Career</a></li>
+                        <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-white">Press</a></li>
+                        <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-white">Travel Agent</a></li>
+                        <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-white">Blog</a></li>
                     </ul>
                 </div>
-                <div class="text-white m-4">
+                <div className="text-white m-4">
                     <h5>SERVICES</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Umrah Packages</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Hajj Packages</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Hotels</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Flights</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Umrah Guide</a></li>
-                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Hajj Guide</a></li>
+                    <ul className="nav flex-column">
+                        <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-white">Umrah Packages</a></li>
+                        <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-white">Hajj Packages</a></li>
+                        <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-white">Hotels</a></li>
+                        <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-white">Flights</a></li>
+                        <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-white">Umrah Guide</a></li>
+                        <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-white">Hajj Guide</a></li>
                     </ul>
                 </div>
-                <div class="text-white m-4">
+                <div className="text-white m-4">
                     <h5>GET IN TOUCH</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item ">
+                    <ul className="nav flex-column">
+                        <li className="nav-item ">
                             <div className="d-flex align-items-center">
                                 <div>
                                     <img src={locationLogo} alt="" />
                                 </div>
                                 <div>
-                                    <a href="/" class="nav-link p-0 text-white">
+                                    <a href="/" className="nav-link p-0 text-white">
                                         <p>
                                             Al Haram <br />
                                             Al-Aqsa Business Park 8711, Alrehab <br />
@@ -66,25 +66,25 @@ const Footer = () => {
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <div className="d-flex">
                                 <div>
                                     <img src={mailWLogo} alt="" />
                                 </div>
                                 <div>
-                                    <a href="/" class="nav-link p-0 text-white">
+                                    <a href="/" className="nav-link p-0 text-white">
                                         <p className='px-2'>support@alharam.com</p>
                                     </a>
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <div className="d-flex">
                                 <div>
                                     <img src={phoneLogo} alt="" />
                                 </div>
                                 <div>
-                                    <a href="/" class="nav-link p-0 text-white">
+                                    <a href="/" className="nav-link p-0 text-white">
                                         <p>+91 121345678910</p>
                                     </a>
                                 </div>

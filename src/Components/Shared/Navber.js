@@ -22,26 +22,6 @@ const Navber = () => {
                     </Nav>
                     <Nav className="d-flex">
                         <button className="text-uppercase details-btn me-2">travel agent? join us</button>
-
-                        {/* <NavDropdown title="USD" id="navbarScrollingDropdown" className="">
-                                <NavDropdown.Item href="#action3" className="text-uppercase">USD</NavDropdown.Item>
-                                <NavDropdown.Item href="#action4">
-                                    TAKA
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action5">
-                                    RUPEE
-                                </NavDropdown.Item>
-                            </NavDropdown>
-                            <NavDropdown title="ENG" id="navbarScrollingDropdown" className='text-white'>
-                                <NavDropdown.Item href="#action3" className="text-uppercase">ENG</NavDropdown.Item>
-                                <NavDropdown.Item href="#action4">
-                                    Ben
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action5">
-                                    Hin
-                                </NavDropdown.Item>
-                            </NavDropdown> */}
-
                         <button className="text-uppercase details-btn">Log in</button>
                     </Nav>
                 </Navbar.Collapse>
