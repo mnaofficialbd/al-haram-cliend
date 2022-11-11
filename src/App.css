@@ -53,13 +53,27 @@
 .primary-btn {
   border: 1px solid #02A3C1;
   color: #02A3C1;
-  padding: 0px 20px;
+  padding: 0px 15px;
   background-color: white;
-  width: 298px;
-  height: 55px;
+  width: 250px;
+  height: 50px;
 }
 
 .primary-btn:hover {
+  background-color: #02A3C1;
+  color:white;
+  border: 1px solid white;
+}
+.popular-card-btn {
+  border: 1px solid #02A3C1;
+  color: #02A3C1;
+  padding: 0px 15px;
+  background-color: white;
+  width: 295px;
+  height: 50px;
+}
+
+.popular-card-btn:hover {
   background-color: #02A3C1;
   color:white;
   border: 1px solid white;
@@ -80,9 +94,9 @@
 .details-btn {
   border: 1px solid #02A3C1;
   color: #02A3C1;
-  padding: 6px 25px;
-  font-size: 20px;
-  font-weight: 600;
+  padding: 6px 18px;
+  font-size: 14px;
+  font-weight: 400;
   background-color: white;
 }
 
@@ -93,14 +107,23 @@
 }
 .vactor-border{
   border: 1px solid #02A3C1;
-  padding: 5px 8px;
-  margin: 10px 8px 5px 0px;
+  padding: 3px 5px;
+  margin: 8px 6px 3px 0px;
 }
 
+.social-icon{
+  transition: 0.3s all ease;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 6px;
+  padding: 4px;
+}
+.social-icon:hover{
+  transform: translateY(-7px);
+}
 @media (max-width: 767px) { 
   .details-btn{
     padding: 4px 6px;
-    font-size: 17px;
-  font-weight: 500;
+    font-size: 10px;
   }
  }

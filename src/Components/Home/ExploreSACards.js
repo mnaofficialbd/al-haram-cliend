@@ -14,7 +14,7 @@ const ExploreSACards = () => {
     ]
     return (
         <section className='container mt-5 py-5'>
-            <div className="row row-cols-2 row-cols-md-4 g-4">
+            <div className="row row-cols-1 row-cols-md-4 g-4">
                 {
                     eSADatas.map(data =>
                         <div key={data.id} className="col">
@@ -23,8 +23,8 @@ const ExploreSACards = () => {
                                     <img src={exploreSAImg} alt="..." />
                                 </div>
                                 <div className="ms-4">
-                                    <h5 className='text-uppercase font-semibold' style={{fontSize: '22px'}}>{data.title}</h5>
-                                    <p style={{fontSize: '18px', color:'#757575'}}>4,000 Listings</p>
+                                    <h5 className='text-uppercase font-semibold' style={{fontSize: '16px'}}>{data.title}</h5>
+                                    <p style={{fontSize: '12px', color:'#757575'}}>4,000 Listings</p>
                                 </div>
                             </div>
                         </div>

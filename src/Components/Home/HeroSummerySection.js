@@ -24,8 +24,8 @@ const HeroSummerySection = () => {
                                     <img src={data.img} className="mx-auto d-block" alt="..." />
                                 </div>
                                 <div className='text-center'>
-                                    <h3>{data.subTitle}</h3>
-                                    <h3>{data.title}</h3>
+                                    <h4>{data.subTitle}</h4>
+                                    <h4>{data.title}</h4>
                                 </div>
                             </div>
                         ))

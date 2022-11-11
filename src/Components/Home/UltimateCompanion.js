@@ -12,13 +12,13 @@ const UltimateCompanion = () => {
                 <div className="">
                     <div><img src={alHaramLogo} alt="" /></div>
                     <div className='my-4 py-2'>
-                        <h4 className='font-bold' style={{ fontSize: '40px' }}>Your ultimate spiritual travel companion</h4>
-                        <p className='font-semibold text-capitalize' style={{ fontSize: '24px', color: '#757575' }}>Book in advance or last-minute with al-haram. <br />
+                        <h4 className='font-bold' style={{ fontSize: '20px' }}>Your ultimate spiritual travel companion</h4>
+                        <p className='font-semibold text-capitalize' style={{ fontSize: '16px', color: '#757575' }}>Book in advance or last-minute with al-haram. <br />
                             Receive instant confirmation. Access your booking info offline.</p>
                     </div>
                     <div className="d-md-flex mt-5 justify-content-around ">
                         <div className="mb-3">
-                            <h6 className='font-bold' style={{ fontSize: '24px' }}>Send A Link To Your Mobile Phone</h6>
+                            <h6 className='font-bold' style={{ fontSize: '16px' }}>Send A Link To Your Mobile Phone</h6>
                             <div className="input-group">
                                 <select className="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
                                     <option selected>+91</option>
@@ -32,21 +32,21 @@ const UltimateCompanion = () => {
                         </div>
                         <div className="px-3 mb-3 mx-auto text-center">
                             <div>
-                                <h6 className='font-bold ' style={{ fontSize: '24px' }}>Scan QR Code</h6>
+                                <h6 className='font-bold ' style={{ fontSize: '16px' }}>Scan QR Code</h6>
                             </div>
                             <div>
                                 <img src={qrCode} alt="" className='' />
                             </div>
                         </div>
                         <div className="mb-3">
-                            <h6 className='font-bold' style={{ fontSize: '24px' }}>Download The App</h6>
+                            <h6 className='font-bold' style={{ fontSize: '16px' }}>Download The App</h6>
                             <div className="d-flex bg-dark justify-content-center text-white my-3 align-items-center p-2">
                                 <div className='p-2'>
                                     <img src={pStore} alt="" style={{ width: '36px' }} />
                                 </div>
                                 <div className='text-center'>
                                     <p className='m-0' style={{ fontSize: '10px' }}>Android App Available On</p>
-                                    <p className='m-0' style={{ fontSize: '14px' }}>Google Play Store</p>
+                                    <p className='m-0' style={{ fontSize: '12px' }}>Google Play Store</p>
                                 </div>
                             </div>
                             <div className="d-flex bg-dark text-white justify-content-center my-3 align-items-center p-2">
@@ -55,7 +55,7 @@ const UltimateCompanion = () => {
                                 </div>
                                 <div className='text-center'>
                                     <p className='m-0' style={{ fontSize: '10px' }}>Ios App Available On</p>
-                                    <p className='m-0' style={{ fontSize: '14px' }}>App Store</p>
+                                    <p className='m-0' style={{ fontSize: '12px' }}>App Store</p>
                                 </div>
                             </div>
                         </div>
