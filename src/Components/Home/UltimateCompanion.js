@@ -61,7 +61,7 @@ const UltimateCompanion = () => {
                         </div>
                     </div>
                 </div>
-                <div className="mx-auto text-center">
+                <div className="mx-auto summery-card text-center">
                     <img src={mobileFrame} alt="" className=" px-2" style={{ width: '260px' }} />
                 </div>
             </div>

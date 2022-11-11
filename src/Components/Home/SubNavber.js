@@ -1,12 +1,12 @@
 import React from 'react';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, NavDropdown } from 'react-bootstrap';
 import brandIcon from '../../Assets/Icons/al-haram-final-logo.png'
 const SubNavber = () => {
     return (
-        <div className='d-md-flex justify-content-between align-items-center mt-5 py-3'>
+        <div className='d-flex justify-content-between align-items-center mt-5 py-3'>
             <div>
                 <Nav className="d-flex align-items-center">
-                    <Navbar.Brand href="/"><img src={brandIcon} alt="" /></Navbar.Brand>
+                    <Nav href="/"><img src={brandIcon} alt="" className='w-75 navBrand' /></Nav>
                     <NavDropdown title="Packages" id="navbarScrollingDropdown" className="text-black" style={{ fontSize: "17px" }} >
                         <NavDropdown.Item href="#action4">
                             Umrah Packages

@@ -19,7 +19,8 @@ const DealsDiscountCards = () => {
                         background: `url(${tripImg})`,
                         backgroundRepeat: 'no-repeat',
                         height: '395px',
-                        width: '375px'}}>
+                        width: '375px'
+                        }}>
                         <h4 className='text-uppercase text-white font-bold' style={{ fontSize: '12px' }}>Enjoy Umrah Deals</h4>
                         <h2 className='text-uppercase text-white font-bold' style={{ fontSize: '22px' }}>Book Now to enjoy</h2>
                         <button type='button' className='details-btn text-uppercase px-4 rounded-0 mt-2'>Book now</button>
@@ -27,13 +28,14 @@ const DealsDiscountCards = () => {
 
                 </div>
                 <Swiper spaceBetween={30} slidesPerView={3} freeMode={true} grabCursor={true}
-                    pagination={{ clickable: true }} modules={[FreeMode, Pagination]} className="" >
+                    pagination={{ clickable: true }} modules={[FreeMode, Pagination]} className="pb-5" >
                     {
                         datas.map(data => (
                             <SwiperSlide key={data.id} className="">
-                                {/* <div key={data.id} className="col"> */}
-                                <div className="card h-100 border-0 mx-2">
+                                <div className="card box h-100 border-0 mx-2">
+                                    <div className="card_img">
                                     <img src={mokkahImg} className="card-img-top" alt="..." />
+                                    </div>
                                     <div className="card-body mt-3 p-0">
                                         <div className="">
                                             <h4 className="card-title" style={{ fontSize: '20px', color: '#575757' }}>Classic Umrah Package</h4>
@@ -47,7 +49,6 @@ const DealsDiscountCards = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/*  </div> */}
                             </SwiperSlide>
                         )
                         )}

@@ -121,9 +121,45 @@
 .social-icon:hover{
   transform: translateY(-7px);
 }
+
+.box{
+  position: relative;
+}
+.box:hover{
+  transform: translateY(-0);
+}
+.card_img{
+  overflow: hidden;
+  transition: 0.5s;
+}
+.box .card_img:hover img {
+  transform: scale(1.2);
+}
+.effects_card{
+  transition: 0.3s all ease;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.effects_card:hover{
+  transform: translateY(-35px);
+}
+.summery-card{
+  color: white;
+  transition: 0.3s all ease;
+  transition: 0.5s;
+}
+.summery-card:hover{
+  color: black;
+  transform: translateY(-10px);
+}
+
+
 @media (max-width: 767px) { 
   .details-btn{
     padding: 4px 6px;
     font-size: 10px;
+  }
+  .navBrand{
+    display: none;
   }
  }

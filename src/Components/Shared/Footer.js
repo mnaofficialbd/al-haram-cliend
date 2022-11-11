@@ -26,7 +26,7 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className="text-white m-4">
-                    <h5>COMPANY</h5>
+                    <h6>COMPANY</h6>
                     <ul className="nav flex-column">
                         <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-white">Home</a></li>
                         <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-white">About Us</a></li>
@@ -37,7 +37,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="text-white m-4">
-                    <h5>SERVICES</h5>
+                    <h6>SERVICES</h6>
                     <ul className="nav flex-column">
                         <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-white">Umrah Packages</a></li>
                         <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-white">Hajj Packages</a></li>
@@ -48,7 +48,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="text-white m-4">
-                    <h5>GET IN TOUCH</h5>
+                    <h6>GET IN TOUCH</h6>
                     <ul className="nav flex-column">
                         <li className="nav-item ">
                             <div className="d-flex align-items-center">
@@ -93,14 +93,14 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="text-white m-4">
-                    <h6 className='font-bold' style={{ fontSize: '24px' }}>Download The App</h6>
+                    <h6 className='font-bold' style={{ fontSize: '18px' }}>Download The App</h6>
                     <div className="d-flex border border-light text-white my-3 align-items-center p-2">
                         <div className='p-2'>
                             <img src={pStore} alt="" style={{ width: '36px' }} />
                         </div>
                         <div className='text-center'>
                             <p className='m-0' style={{ fontSize: '10px' }}>Android App Available On</p>
-                            <p className='m-0' style={{ fontSize: '14px' }}>Google Play Store</p>
+                            <p className='m-0' style={{ fontSize: '12px' }}>Google Play Store</p>
                         </div>
                     </div>
                     <div className="d-flex border border-light text-white my-3 align-items-center p-2">
@@ -109,7 +109,7 @@ const Footer = () => {
                         </div>
                         <div className='text-center'>
                             <p className='m-0' style={{ fontSize: '10px' }}>Ios App Available On</p>
-                            <p className='m-0' style={{ fontSize: '14px' }}>App Store</p>
+                            <p className='m-0' style={{ fontSize: '12px' }}>App Store</p>
                         </div>
                     </div>
                 </div>

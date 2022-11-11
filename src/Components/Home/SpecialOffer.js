@@ -20,7 +20,7 @@ const SpecialOffer = () => {
             <div className="row row-cols-1 row-cols-md-3 g-5">
                 {
                     datas.map(data => (
-                        <div key={data.id} className="col">
+                        <div key={data.id} className="effects_card col">
                             <div className="card h-100 ">
                                 <img src={data.img} className="card-img" alt="..." />
                                 <div className="card-img-overlay p-5">

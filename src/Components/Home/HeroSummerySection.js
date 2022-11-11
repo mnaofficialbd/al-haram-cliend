@@ -16,10 +16,10 @@ const HeroSummerySection = () => {
     return (
         <section style={{ backgroundColor: '#02A3C1' }}>
             <div className="container">
-                <div className="row g-4 text-white">
+                <div className="row g-4">
                     {
                         datas.map(data => (
-                            <div key={data.id} className="col-lg-3 col-6 col-md-6 ">
+                            <div key={data.id} className="col-lg-3 col-6 col-md-6 summery-card">
                                 <div className=''>
                                     <img src={data.img} className="mx-auto d-block" alt="..." />
                                 </div>

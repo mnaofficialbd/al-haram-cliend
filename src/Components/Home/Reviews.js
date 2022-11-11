@@ -20,7 +20,7 @@ const Reviews = () => {
                     pagination={{
                         clickable: true,
                     }}
-                    navigation={true} modules={[Pagination, Navigation]} >
+                    navigation={true} modules={[Pagination, Navigation]} className='pb-5'>
                     <div className="d-md-flex">
                         {
                             datas.map(data => (
