@@ -20,16 +20,20 @@ const Reviews = () => {
                     pagination={{
                         clickable: true,
                     }}
-                    navigation={true} modules={[Pagination, Navigation]} className='pb-5'>
+                    navigation={true} modules={[Pagination, Navigation]} className='pb-5 px-5 mx-2'>
                     <div className="d-md-flex">
                         {
                             datas.map(data => (
                                 <SwiperSlide key={data.id} className='bg-white m-2 p-5 border border-secondary d-flex flex-column '>
                                     <div className="d-flex">
-                                        <img src={star} alt="" style={{ width: '26px' }} /> <img src={star} alt="" style={{ width: '26px' }} /> <img src={star} alt="" style={{ width: '26px' }} />  <img src={star} alt="" style={{ width: '26px' }} /> <img src={star} alt="" style={{ width: '26px' }} />
+                                        <img src={star} alt="" style={{ width: '20px' }} /> 
+                                        <img src={star} alt="" style={{ width: '20px' }} /> 
+                                        <img src={star} alt="" style={{ width: '20px' }} />  
+                                        <img src={star} alt="" style={{ width: '20px' }} /> 
+                                        <img src={star} alt="" style={{ width: '20px' }} />
                                     </div>
                                     <div className='my-4'>
-                                        <p className='text-capitilize font-semibold' style={{ fontSize: '16px', color: '#757575' }}>
+                                        <p className='text-capitilize font-semibold' style={{ fontSize: '12px', color: '#757575' }}>
                                             It was entertaining from the
                                             beginning till the end. The
                                             singing and acting was great.
@@ -37,7 +41,7 @@ const Reviews = () => {
                                     </div>
                                     <div className="d-flex align-items-center justify-content-center">
                                         <div><img src={avatar} alt="" style={{ width: '40px' }} /></div>
-                                        <div><p className="font-bold mx-2" style={{ fontSize: '16px' }}>John Smith</p></div>
+                                        <div><p className="font-bold mx-2" style={{ fontSize: '12px' }}>John Smith</p></div>
                                         <div><p style={{ fontSize: '10px' }}>11 Aug 2020</p></div>
                                     </div>
                                 </SwiperSlide>

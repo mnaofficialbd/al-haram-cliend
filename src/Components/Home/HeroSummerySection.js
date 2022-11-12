@@ -21,11 +21,11 @@ const HeroSummerySection = () => {
                         datas.map(data => (
                             <div key={data.id} className="col-lg-3 col-6 col-md-6 summery-card">
                                 <div className=''>
-                                    <img src={data.img} className="mx-auto d-block" alt="..." />
+                                    <img src={data.img} className="mx-auto d-block" alt="" style={{ width: '40px', height: '45px' }} />
                                 </div>
-                                <div className='text-center'>
-                                    <h4>{data.subTitle}</h4>
-                                    <h4>{data.title}</h4>
+                                <div className='text-center my-3'>
+                                    <h6>{data.subTitle}</h6>
+                                    <h6>{data.title}</h6>
                                 </div>
                             </div>
                         ))
