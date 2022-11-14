@@ -14,16 +14,18 @@ const HeroSummerySection = () => {
     ]
 
     return (
-        <section style={{ backgroundColor: '#02A3C1' }}>
+        <section>
             <div className="container">
-                <div className="row g-4">
+                {/* <div className="row g-4"> */}
+                <div className="d-flex justify-content-center">
                     {
                         datas.map(data => (
-                            <div key={data.id} className="col-lg-3 col-6 col-md-6 summery-card">
-                                <div className=''>
-                                    <img src={data.img} className="mx-auto d-block" alt="" style={{ width: '40px', height: '45px' }} />
+                            // <div key={data.id} className="col-lg-3 col-6 col-md-6 summery-card ">
+                            <div key={data.id} className="d-flex px-2 my-3 me-5 justify-content-between align-items-center summery-card ">
+                                <div className='mx-2'>
+                                    <img src={data.img} className="" alt="" style={{ width: '40px', height: '45px' }} />
                                 </div>
-                                <div className='text-center my-3'>
+                                <div className='mx-2 text-center my-3'>
                                     <h6>{data.subTitle}</h6>
                                     <h6>{data.title}</h6>
                                 </div>

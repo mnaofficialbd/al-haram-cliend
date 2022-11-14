@@ -1,20 +1,22 @@
 import React from 'react';
 import bgImg from '../../Assets/Backgrounds/alHaramTopBennerBg.png';
 import FormSection from './FormSection';
+import HeroSummerySection from './HeroSummerySection';
 
 const Hero = () => {
     return (
         <section className=''>
-            <div style={{ background: `url(${bgImg})`, backgroundSize: 'cover', height: "100vh", backgroundRepeat: 'no-repeat' }} >
+            <div style={{ background: `url(${bgImg})`, backgroundSize: 'cover', height: "70vh", backgroundRepeat: 'no-repeat' }} >
                 <div className="container py-5">
                     {/* top title part */}
                     <div className='text-center my-5 pb-5 text-white'>
-                        <h4 className='text-bold text-uppercase' style={{fontSize: '20px'}}>budget-friendly & luxury package for a convenient hajj & umrah journey to the holly makkah & madina for muslim brothers & sisters</h4>
+                        <h4 className='text-bold text-uppercase' style={{ fontSize: '50px' }}>Your One Stop Shop For Hajj & Umrah Rituals</h4>
                     </div>
 
                     {/* -------select/search section------------ */}
                     <FormSection />
 
+                    <HeroSummerySection />
                 </div>
             </div>
         </section>

@@ -79,6 +79,7 @@
   border: 1px solid white;
 }
 .search-btn{
+  font-family: 'Play', sans-serif;
   border: 1px solid #02A3C1;
   color: #02A3C1;
   padding: 0px 20px;
@@ -95,8 +96,8 @@
   border: 1px solid #02A3C1;
   color: #02A3C1;
   padding: 6px 18px;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 700;
   background-color: white;
 }
 
@@ -145,6 +146,8 @@
 }
 .summery-card{
   color: white;
+  border: 2px solid white;
+  border-radius: 10px;
   transition: 0.3s all ease;
   transition: 0.5s;
 }

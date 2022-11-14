@@ -15,11 +15,11 @@ const DealsDiscountCards = () => {
                 <div className="mx-3">
 
                     <div className='p-5 mb-3'
-                    style={{
-                        background: `url(${tripImg})`,
-                        backgroundRepeat: 'no-repeat',
-                        height: '395px',
-                        width: '375px'
+                        style={{
+                            background: `url(${tripImg})`,
+                            backgroundRepeat: 'no-repeat',
+                            height: '395px',
+                            width: '375px'
                         }}>
                         <h4 className='text-uppercase text-white font-bold' style={{ fontSize: '12px' }}>Enjoy Umrah Deals</h4>
                         <h2 className='text-uppercase text-white font-bold' style={{ fontSize: '22px' }}>Book Now to enjoy</h2>
@@ -34,7 +34,7 @@ const DealsDiscountCards = () => {
                             <SwiperSlide key={data.id} className="">
                                 <div className="card box h-100 border-0 mx-2">
                                     <div className="card_img">
-                                    <img src={mokkahImg} className="card-img-top" alt="..." />
+                                        <img src={mokkahImg} className="card-img-top" alt="..." />
                                     </div>
                                     <div className="card-body mt-3 p-0">
                                         <div className="">

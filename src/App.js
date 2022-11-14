@@ -1,13 +1,16 @@
 import './App.css';
 import Navber from './Components/Shared/Navber';
 import Home from './Pages/Home';
+import Footer from './Components/Shared/Footer';
 
 function App() {
   return (
-    <div>
+    <>
       <Navber />
       <Home />
-    </div>
+      <Footer />
+
+    </>
   );
 }
 
