@@ -1,9 +1,10 @@
 import React from 'react';
+import UmrahPackagesHeader from '../Components/Umrah/UmrahPackagesHeader';
 
 const Umrah = () => {
     return (
         <>
-            <h2>Umrah</h2>
+            <UmrahPackagesHeader />
         </>
     );
 };
