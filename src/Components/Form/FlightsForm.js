@@ -57,37 +57,40 @@ const FlightsForm = () => {
                     </div>
                 </div>
                 <div className="d-flex gap-2 align-items-center justify-content-end">
-                    <div className='px-1 w-25'>
+                    <div className='px-1' style={{MinWidth: '160px'}}>
                         <label htmlFor="exampleInputDeparture" className="form-label font-semibold">ADULT</label>
                         <div className="input-group">
                             <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
                                 <span className="font-bold">+</span>
                             </button>
-                            <input type="number" className="form-control text-center" placeholder='1' />
+                            <span className="num form-control">01</span>
+                            {/* <input type="number" className="form-control text-center" placeholder='1' /> */}
                             <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
                                 <span className="font-bold">-</span>
                             </button>
                         </div>
                     </div>
-                    <div className='px-1 w-25'>
+                    <div className='px-1' style={{MinWidth: '160px'}}>
                         <label htmlFor="exampleInputDeparture" className="form-label font-semibold">CHILD(REN)</label>
                         <div className="input-group">
                             <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
                                 <span className="font-bold">+</span>
                             </button>
-                            <input type="number" className="form-control text-center" placeholder='1' />
+                            <span className="num form-control">01</span>
+                            {/* <input type="number" className="form-control text-center" placeholder='1' /> */}
                             <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
                                 <span className="font-bold">-</span>
                             </button>
                         </div>
                     </div>
-                    <div className='px-1 w-25'>
+                    <div className='px-1' style={{MinWidth: '160px'}}>
                         <label htmlFor="exampleInputDeparture" className="form-label font-semibold">INFANT(S)</label>
                         <div className="input-group">
                             <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
                                 <span className="font-bold">+</span>
                             </button>
-                            <input type="number" className="form-control text-center" placeholder='1' />
+                            <span className="num form-control">01</span>
+                            {/* <input type="number" className="form-control text-center" placeholder='1' /> */}
                             <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
                                 <span className="font-bold">-</span>
                             </button>
