@@ -18,10 +18,23 @@ const UmrahPackages = () => {
         { id: 8, title: 'Azerbaijan', num: 37 },
         { id: 9, title: 'Afghanistan', num: 25 },
     ]
+    const cityDatas = [
+        { id: 1, title: 'Mumbai', num: 58 },
+        { id: 2, title: 'Delhi', num: 69 },
+        { id: 3, title: 'Lahore', num: 95 },
+        { id: 4, title: 'Kuala Lampur', num: 65 },
+        { id: 5, title: 'Bombay', num: 35 },
+        { id: 6, title: 'Kolkuta', num: 48 },
+        { id: 7, title: 'Cairo', num: 56 },
+        { id: 8, title: 'Baku', num: 37 },
+        { id: 9, title: 'Kabul', num: 25 },
+    ]
     return (
         <section className='mt-5 pt-5 d-flex'>
             <div class="d-flex flex-column flex-shrink-0 px-4 bg-light w-25" >
                 <div className='rounded px-2 h-100'>
+
+                    {/* =============Budget Range section=============== */}
                     <div className='bg-light border border-secondary rounded mb-5 mx-5'>
                         <div className='py-3 ps-3' style={{ background: '#02A3C1' }}>
                             <h6 className='font-bold text-white' style={{ fontSize: '20px' }}>Budget Range</h6>
@@ -39,6 +52,8 @@ const UmrahPackages = () => {
                             </div> */}
                         </div>
                     </div>
+
+                    {/* =============Departure country section=============== */}
                     <div className='bg-light border border-secondary mx-5'>
                         <div className='p-3 d-flex justify-content-between' style={{ background: '#02A3C1' }}>
                             <div>
@@ -59,6 +74,34 @@ const UmrahPackages = () => {
                                         </div>
                                         <div>
                                             <p>({countryData.num})</p>
+                                        </div>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+
+                    {/* =============Departure City section=============== */}
+                    <div className='bg-light border border-secondary mx-5'>
+                        <div className='p-3 d-flex justify-content-between' style={{ background: '#02A3C1' }}>
+                            <div>
+                                <h6 className='font-bold text-white' style={{ fontSize: '20px' }}>Departure City</h6>
+                            </div>
+                            <div>
+                                <FontAwesomeIcon icon="fa-regular fa-chevron-down" />
+                                {/* <FontAwesomeIcon icon={faChevronDown} /> */}
+                            </div>
+                        </div>
+                        <div className='mt-3'>
+                            {
+                                cityDatas.map(cityData => (
+                                    <div key={cityData.id} className="d-flex justify-content-between px-4 font-semibold">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                            <label class="form-check-label" for="inlineCheckbox1">{cityData.title}</label>
+                                        </div>
+                                        <div>
+                                            <p>({cityData.num})</p>
                                         </div>
                                     </div>
                                 ))
