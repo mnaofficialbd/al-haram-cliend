@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import brandIcon from '../../Assets/Icons/al-haram-final-logo.png'
 const SubNavber = () => {
     return (
@@ -11,12 +12,12 @@ const SubNavber = () => {
                             <img src={brandIcon} alt="" className=' navBrand' />
                         </a>
                     </li>
-                    <button className="text-uppercase details-btn me-2">Plan My Umrah</button>
+                    <li><NavLink to='/umrah' className='text-uppercase details-btn me-2'>Plan My Umrah</NavLink></li>
 
                     <div class="">
                         <button class="btn border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" style={{ fontSize: "14px" }} aria-expanded="false">Packages</button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/">Umrah Packages</a></li>
+                            <li><a class="dropdown-item" href="/umrah">Umrah Packages</a></li>
                             <li><a class="dropdown-item" href="/">Hajj Packages</a></li>
                             <li><a class="dropdown-item" href="/">Land Packages</a></li>
                             <li><a class="dropdown-item" href="/">Top Selling Package</a></li>

@@ -5,7 +5,7 @@ import kaba from '../../Assets/umrahPackages/kaba.png';
 
 const UmrahPackages = () => {
     const classicCardDatas = [
-        { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }
+        { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }
     ]
     const countryDatas = [
         { id: 1, title: 'Egypt', num: 58 },
@@ -46,19 +46,19 @@ const UmrahPackages = () => {
         { id: 6, title: '1 To 10 Days', num: 48 }
     ]
     return (
-        <section className='mt-5 pt-5 d-flex'>
-            <div class="d-flex flex-column flex-shrink-0 px-4 bg-light w-25" >
+        <section className='mt-5 pt-5 d-md-flex'>
+            <div class="d-flex flex-column flex-shrink-0 px-2 bg-light umrahSideBar" >
                 <div className='rounded px-2 h-100'>
 
                     {/* =============Budget Range section=============== */}
-                    <div className='bg-light border border-secondary rounded mb-5 mx-5'>
+                    <div className='bg-light border border-secondary rounded mb-5 mx-2'>
                         <div className='py-3 ps-3' style={{ background: '#02A3C1' }}>
                             <h6 className='font-bold text-white' style={{ fontSize: '20px' }}>Budget Range</h6>
                         </div>
                         <div className='text-center my-3'>
                             <p className='font-semibold' style={{ fontSize: '18px' }}>Rs 10,000 To 100,000</p>
                             <div>
-                                <input type="range" value='20' min="0" max="100" />
+                                <input type="range" min="0" max="100" />
                             </div>
                             {/* <div className="range-section">
                                 <div className='slider-track'>
@@ -70,7 +70,7 @@ const UmrahPackages = () => {
                     </div>
 
                     {/* =============Departure country section=============== */}
-                    <div className='bg-light border border-secondary mx-5'>
+                    <div className='bg-light border border-secondary mb-5 mx-2'>
                         <div className='p-3 d-flex justify-content-between' style={{ background: '#02A3C1' }}>
                             <div>
                                 <h6 className='font-bold text-white' style={{ fontSize: '20px' }}>Departure Country</h6>
@@ -98,7 +98,7 @@ const UmrahPackages = () => {
                     </div>
 
                     {/* =============Departure City section=============== */}
-                    <div className='bg-light border border-secondary mx-5'>
+                    <div className='bg-light border border-secondary mb-5 mx-2'>
                         <div className='p-3 d-flex justify-content-between' style={{ background: '#02A3C1' }}>
                             <div>
                                 <h6 className='font-bold text-white' style={{ fontSize: '20px' }}>Departure City</h6>
@@ -125,7 +125,7 @@ const UmrahPackages = () => {
                         </div>
                     </div>
                     {/* =============Month of Travel section=============== */}
-                    <div className='bg-light border border-secondary mx-5'>
+                    <div className='bg-light border border-secondary mb-5 mx-2'>
                         <div className='p-3 d-flex justify-content-between' style={{ background: '#02A3C1' }}>
                             <div>
                                 <h6 className='font-bold text-white' style={{ fontSize: '20px' }}>Month of Travel</h6>
@@ -152,7 +152,7 @@ const UmrahPackages = () => {
                         </div>
                     </div>
                     {/* =============No Of Days section=============== */}
-                    <div className='bg-light border border-secondary mx-5'>
+                    <div className='bg-light border border-secondary mb-5 mx-2'>
                         <div className='p-3 d-flex justify-content-between' style={{ background: '#02A3C1' }}>
                             <div>
                                 <h6 className='font-bold text-white' style={{ fontSize: '20px' }}>No Of Days</h6>
@@ -181,67 +181,70 @@ const UmrahPackages = () => {
 
                 </div>
             </div>
-            <div className="w-75">
+            <div className="umrahCardSection">
 
                 {
                     classicCardDatas.map(classicData => (
                         <div key={classicData.id} className='mx-3 mb-5 bg-light shadow'>
-                            <div className='d-flex align-items-center'>
+                            <div className='d-md-flex align-items-center'>
                                 <div>
                                     <img src={kaba} alt="" />
                                 </div>
-                                <div className='mx-5 w-100'>
-                                    <div className='d-flex justify-content-between align-items-center'>
+                                <div className='mx-3 w-100'>
+                                    <div className='card_text_section'>
                                         <div className='d-flex'>
                                             <div>
-                                                <h5 className="mb-2 font-bold" style={{ color: '#575757', fontSize: '30px' }}>Classic Umrah Package</h5>
+                                                <h4 className="mb-2 classic_umrah_title" >Classic Umrah Package</h4>
                                             </div>
-                                            <div className="d-flex align-items-center mx-3">
-                                                <FontAwesomeIcon style={{ color: 'yellow', width: "18px", height: "18px" }} icon={faStar}></FontAwesomeIcon>
-                                                <FontAwesomeIcon style={{ color: 'yellow', width: "18px", height: "18px" }} icon={faStar}></FontAwesomeIcon>
-                                                <FontAwesomeIcon style={{ color: 'yellow', width: "18px", height: "18px" }} icon={faStar}></FontAwesomeIcon>
-                                                <FontAwesomeIcon style={{ color: 'yellow', width: "18px", height: "18px" }} icon={faStar}></FontAwesomeIcon>
+                                            <div className="d-flex align-items-center ms-3">
+                                                <FontAwesomeIcon className='me-2' style={{ color: 'rgb(230, 255, 5)', width: "18px", height: "18px" }} icon={faStar}></FontAwesomeIcon>
+                                                <FontAwesomeIcon className='me-2' style={{ color: 'rgb(230, 255, 5)', width: "18px", height: "18px" }} icon={faStar}></FontAwesomeIcon>
+                                                <FontAwesomeIcon className='me-2' style={{ color: 'rgb(230, 255, 5)', width: "18px", height: "18px" }} icon={faStar}></FontAwesomeIcon>
+                                                <FontAwesomeIcon className='me-2' style={{ color: 'rgb(230, 255, 5)', width: "18px", height: "18px" }} icon={faStar}></FontAwesomeIcon>
                                             </div>
                                         </div>
                                         <div className=''>
-                                            <p>Per Person</p>
+                                            <p className='font-semibold pt-3'>Per Person</p>
                                         </div>
                                     </div>
 
-                                    <div className='d-flex justify-content-between my-4'>
-                                        <div className="d-flex justify-content-between ">
-                                            <div className="me-5">
-                                                <div className="d-flex mb-2">
-                                                    <FontAwesomeIcon className='me-3' style={{ color: '#575757', width: "24px", height: "24px" }} icon={faCalendarDays}></FontAwesomeIcon>
-                                                    <p className='font-semibold' style={{ fontSize: '18px' }}>10 Days</p>
+                                    <div className='card_text_section my-4'>
+                                        <div>
+                                            <div className="d-flex ">
+                                                <div className="me-3">
+                                                    <div className="d-flex mb-2">
+                                                        <FontAwesomeIcon className='me-3' style={{ color: '#575757', width: "24px", height: "24px" }} icon={faCalendarDays}></FontAwesomeIcon>
+                                                        <p className='font-semibold' style={{ fontSize: '18px' }}>10 Days</p>
+                                                    </div>
+                                                    <div className="d-flex mb-2">
+                                                        <FontAwesomeIcon className='me-3' style={{ color: '#575757', width: "24px", height: "24px" }} icon={faCalendarDay}></FontAwesomeIcon>
+                                                        <p className='font-semibold' style={{ fontSize: '18px' }}>13 Sep 2022</p>
+                                                    </div>
                                                 </div>
-                                                <div className="d-flex mb-2">
-                                                    <FontAwesomeIcon className='me-3' style={{ color: '#575757', width: "24px", height: "24px" }} icon={faCalendarDay}></FontAwesomeIcon>
-                                                    <p className='font-semibold' style={{ fontSize: '18px' }}>13 Sep 2022</p>
-                                                </div>
-                                            </div>
-                                            <div className="">
-                                                <div className="d-flex">
-                                                    <FontAwesomeIcon className='me-3' style={{ color: '#575757', width: "24px", height: "24px" }} icon={faUsers}></FontAwesomeIcon>
-                                                    <p className='font-semibold' style={{ fontSize: '18px' }}>50 Members</p>
-                                                </div>
-                                                <div className="d-flex">
-                                                    <FontAwesomeIcon className='me-3' style={{ color: '#575757', width: "24px", height: "24px" }} icon={faLocationDot}></FontAwesomeIcon>
-                                                    <p className='font-semibold' style={{ fontSize: '18px' }}>Delhi - INDIA</p>
-                                                </div>
+                                                <div className="mx-3">
+                                                    <div className="d-flex">
+                                                        <FontAwesomeIcon className='me-3' style={{ color: '#575757', width: "24px", height: "24px" }} icon={faUsers}></FontAwesomeIcon>
+                                                        <p className='font-semibold' style={{ fontSize: '18px' }}>50 Members</p>
+                                                    </div>
+                                                    <div className="d-flex">
+                                                        <FontAwesomeIcon className='me-3' style={{ color: '#575757', width: "24px", height: "24px" }} icon={faLocationDot}></FontAwesomeIcon>
+                                                        <p className='font-semibold' style={{ fontSize: '18px' }}>Delhi - INDIA</p>
+                                                    </div>
 
+                                                </div>
                                             </div>
                                             <hr />
                                         </div>
-                                        <div>
-                                            <h4 className='font-bold mb-3' style={{ color: '#02A3C1' }}>₹ 120,000</h4>
+
+                                        <div className=''>
+                                            <h4 className='font-semibold mb-3 text-end' style={{ fontSize: '30px', color: '#02A3C1' }}>₹ 120,000</h4>
                                             <button className='details-btn text-uppercase font-bold'>
                                                 View details
                                             </button>
                                         </div>
                                     </div>
                                     <p className='font-semibold' style={{ fontSize: '20px' }}>INCLUSION</p>
-                                    <div className='d-flex mt-3 justify-content-between'>
+                                    <div className='card_text_section mt-3'>
                                         <div className="d-flex mb-3">
                                             <span className='me-4 border border-secondary p-1'>
                                                 <FontAwesomeIcon style={{ width: "26px", height: "26px" }} icon={faPlaneDeparture}></FontAwesomeIcon>
@@ -260,7 +263,7 @@ const UmrahPackages = () => {
                                             <span className='me-4 border border-secondary p-1'>
                                                 <FontAwesomeIcon style={{ width: "26px", height: "26px" }} icon={faMugHot}></FontAwesomeIcon>
                                             </span>
-                                            <span className='mx-3 border border-secondary p-1'>
+                                            <span className='border border-secondary p-1'>
                                                 <FontAwesomeIcon style={{ width: "26px", height: "26px" }} icon={faKaaba}></FontAwesomeIcon>
                                             </span>
                                         </div>

@@ -81,7 +81,7 @@
 .pax-btn {
   border: 1px solid #02A3C1;
   color: #02A3C1;
-  padding: 0px 20px;
+  padding: 5px 30px;
   background-color: white;
 }
 
@@ -111,6 +111,7 @@
   font-size: 16px;
   font-weight: 700;
   background-color: white;
+  text-decoration: none;
 }
 
 .details-btn:hover {
@@ -187,6 +188,22 @@
 .navBrand{
   width: 110px;
 }
+.classic_umrah_title{
+  color: #575757;
+  font-size: 30px;
+  font-weight: 700;
+}
+.umrahSideBar{
+  width: 25%;
+}
+.umrahCardSection{
+  width: 75%;
+}
+.card_text_section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /* .range-section{
   border: 1px solid red;
 }
@@ -244,5 +261,20 @@ input[type='range']::-moz-range-thumb{
   .navBrand{
     width: 60px;
     margin-left: 10px;
+  }
+  .umrahSideBar{
+    width: 100%;
+  }
+  .umrahCardSection{
+    width: 100%;
+  }
+  .classic_umrah_title{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .card_text_section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
  }
