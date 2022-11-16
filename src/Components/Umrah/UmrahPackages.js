@@ -29,6 +29,22 @@ const UmrahPackages = () => {
         { id: 8, title: 'Baku', num: 37 },
         { id: 9, title: 'Kabul', num: 25 },
     ]
+    const monthDatas = [
+        { id: 1, title: 'Oct 2022', num: 58 },
+        { id: 2, title: 'Nov 2022', num: 69 },
+        { id: 3, title: 'Dec 2022', num: 95 },
+        { id: 4, title: 'Jan 2023', num: 65 },
+        { id: 5, title: 'Feb 2023', num: 35 },
+        { id: 6, title: 'March 2023', num: 48 }
+    ]
+    const daysDatas = [
+        { id: 1, title: '7 To 10 Days', num: 58 },
+        { id: 2, title: '10 To 15 Days', num: 69 },
+        { id: 3, title: '15 To 18 Days', num: 95 },
+        { id: 4, title: '12 To 23 Days', num: 65 },
+        { id: 5, title: '12 To 56 Days', num: 35 },
+        { id: 6, title: '1 To 10 Days', num: 48 }
+    ]
     return (
         <section className='mt-5 pt-5 d-flex'>
             <div class="d-flex flex-column flex-shrink-0 px-4 bg-light w-25" >
@@ -102,6 +118,60 @@ const UmrahPackages = () => {
                                         </div>
                                         <div>
                                             <p>({cityData.num})</p>
+                                        </div>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+                    {/* =============Month of Travel section=============== */}
+                    <div className='bg-light border border-secondary mx-5'>
+                        <div className='p-3 d-flex justify-content-between' style={{ background: '#02A3C1' }}>
+                            <div>
+                                <h6 className='font-bold text-white' style={{ fontSize: '20px' }}>Month of Travel</h6>
+                            </div>
+                            <div>
+                                <FontAwesomeIcon icon="fa-regular fa-chevron-down" />
+                                {/* <FontAwesomeIcon icon={faChevronDown} /> */}
+                            </div>
+                        </div>
+                        <div className='mt-3'>
+                            {
+                                monthDatas.map(monthData => (
+                                    <div key={monthData.id} className="d-flex justify-content-between px-4 font-semibold">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                            <label class="form-check-label" for="inlineCheckbox1">{monthData.title}</label>
+                                        </div>
+                                        <div>
+                                            <p>({monthData.num})</p>
+                                        </div>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+                    {/* =============No Of Days section=============== */}
+                    <div className='bg-light border border-secondary mx-5'>
+                        <div className='p-3 d-flex justify-content-between' style={{ background: '#02A3C1' }}>
+                            <div>
+                                <h6 className='font-bold text-white' style={{ fontSize: '20px' }}>No Of Days</h6>
+                            </div>
+                            <div>
+                                <FontAwesomeIcon icon="fa-regular fa-chevron-down" />
+                                {/* <FontAwesomeIcon icon={faChevronDown} /> */}
+                            </div>
+                        </div>
+                        <div className='mt-3'>
+                            {
+                                daysDatas.map(daysData => (
+                                    <div key={daysData.id} className="d-flex justify-content-between px-4 font-semibold">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                            <label class="form-check-label" for="inlineCheckbox1">{daysData.title}</label>
+                                        </div>
+                                        <div>
+                                            <p>({daysData.num})</p>
                                         </div>
                                     </div>
                                 ))
