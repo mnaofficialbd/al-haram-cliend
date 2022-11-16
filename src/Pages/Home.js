@@ -10,13 +10,14 @@ import SpecialOffer from '../Components/Home/SpecialOffer';
 import PopularUDeals from '../Components/Home/PopularUDeals';
 
 const Home = () => {
+    
     return (
         <>
             <SubNavber />
             <Hero />
             <SpecialOffer />
             <PopularUDeals />
-            <WhyChooseUs />
+            <WhyChooseUs  />
             <DealsDiscount />
             <Reviews />
             <ExploreSA />

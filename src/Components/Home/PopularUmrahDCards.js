@@ -37,8 +37,8 @@ const PopularUmrahDCards = () => {
                             {
                                 datas.map(data => (
                                     <SwiperSlide key={data.id} className="">
-                                        <div className="card box h-100 border-0">
-                                            <div className="card_img">
+                                        <div className="card h-100 border-0">
+                                            <div className="inner">
                                                 <img src={makkahImg} className="card-img-top" alt="..." />
                                             </div>
                                             <div className="card-body mt-3 p-0">

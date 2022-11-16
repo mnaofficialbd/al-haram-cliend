@@ -156,19 +156,14 @@
 .social-icon:hover{
   transform: translateY(-7px);
 }
-
-.box{
-  position: relative;
-}
-.box:hover{
-  transform: translateY(-0);
-}
-.card_img{
+.inner{
   overflow: hidden;
-  transition: 0.5s;
 }
-.box .card_img:hover img {
-  transform: scale(1.2);
+.inner img{
+  transition: all 1.2s ease;
+}
+.inner:hover img{
+  transform: scale(1.5);
 }
 .effects_card{
   transition: 0.3s all ease;
@@ -192,7 +187,55 @@
 .navBrand{
   width: 110px;
 }
-
+/* .range-section{
+  border: 1px solid red;
+}
+.slider-track{
+  width: 20%;
+  height: 5px;
+  background-color: #D1E7F4;
+  position: absolute;
+  margin: auto;
+}
+input[type='range']{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 10%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  
+  border-radius: 5px;
+}
+input[type='range']::-webkit-slider-runnable-track{
+  -webkit-appearance: none;
+  height: 5px;
+}
+input[type='range']::-moz-range-track{
+  -webkit-appearance: none;
+  height: 5px
+}
+input[type='range']::-ms-track{
+  -webkit-appearance: none;
+  height: 5px
+}
+input[type='range']::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  background-color: #3264fe;
+  cursor: pointer;
+  margin-top: -9px;
+}
+input[type='range']::-moz-range-thumb{
+  -webkit-appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  background-color: #3264fe;
+  cursor: pointer;
+}
+ */
 @media (max-width: 767px) { 
   .details-btn{
     padding: 4px 6px;

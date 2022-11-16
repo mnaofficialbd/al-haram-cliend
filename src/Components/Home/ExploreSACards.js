@@ -18,8 +18,8 @@ const ExploreSACards = () => {
                 {
                     eSADatas.map(data =>
                         <div key={data.id} className="col ">
-                            <div className="d-flex box align-items-center my-2">
-                                <div className='card_img'>
+                            <div className="d-flex align-items-center my-2">
+                                <div className='inner'>
                                     <img src={exploreSAImg} alt="..." />
                                 </div>
                                 <div className="ms-4">
