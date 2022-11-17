@@ -200,6 +200,7 @@
 .umrahCardSection{
   width: 75%;
 }
+.card_text_div,
 .card_text_section{
   display: flex;
   justify-content: space-between;
@@ -277,6 +278,9 @@ input[type='range']::-moz-range-thumb{
     font-size: 20px;
     font-weight: 600;
   }
+  .card_text_div{
+    display: block;
+  }
   .card_text_section{
     display: flex;
     justify-content: space-between;
@@ -286,5 +290,10 @@ input[type='range']::-moz-range-thumb{
   .card_img{
     display: flex;
     justify-content: center;
+  }
+  .block_to_flex{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
   }
  }

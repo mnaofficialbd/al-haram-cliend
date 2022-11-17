@@ -11,7 +11,7 @@ function App() {
       <Navber />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="umrah" element={<Umrah />} />
+        <Route path="/umrah" element={<Umrah />} />
       </Routes>
       <Footer />
 

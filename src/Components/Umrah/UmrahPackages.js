@@ -209,7 +209,7 @@ const UmrahPackages = () => {
                                         </div>
                                     </div>
 
-                                    <div className='card_text_section mt-2'>
+                                    <div className='card_text_div mt-2'>
                                         <div>
                                             <div className="d-flex ">
                                                 <div className="me-3">
@@ -237,13 +237,13 @@ const UmrahPackages = () => {
                                             <hr />
                                         </div>
 
-                                        <div className=''>
+                                        <div className='block_to_flex'>
                                             <h4 className='font-semibold mb-3 text-end' style={{ fontSize: '30px', color: '#02A3C1' }}>₹ 120,000</h4>
                                             <NavLink to='/packageDetails' className='text-uppercase font-bold umrah_details_btn me-2'>View details</NavLink>
                                         </div>
                                     </div>
                                     <p className='font-semibold' style={{ fontSize: '20px' }}>INCLUSION</p>
-                                    <div className='card_text_section mt-3'>
+                                    <div className='card_text_div mt-3'>
                                         <div className="d-flex pb-3">
                                             <span className='me-4 border border-secondary p-1'>
                                                 <FontAwesomeIcon style={{ width: "26px", height: "26px" }} icon={faPlaneDeparture}></FontAwesomeIcon>
