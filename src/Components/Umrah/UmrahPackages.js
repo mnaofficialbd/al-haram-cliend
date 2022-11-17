@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faBus, faCouch, faKaaba, faMugHot, faPlaneDeparture, faCalendarDays, faLocationDot, faUsers, faCalendarDay, faVcard } from '@fortawesome/free-solid-svg-icons';
 import kaba from '../../Assets/umrahPackages/kaba.png';
+import { NavLink } from 'react-router-dom';
 
 const UmrahPackages = () => {
     const classicCardDatas = [
@@ -187,7 +188,7 @@ const UmrahPackages = () => {
                     classicCardDatas.map(classicData => (
                         <div key={classicData.id} className='mx-3 mb-5 bg-light shadow'>
                             <div className='d-md-flex align-items-center'>
-                                <div>
+                                <div className='card_img'>
                                     <img src={kaba} alt="" />
                                 </div>
                                 <div className='mx-3 w-100'>
@@ -208,7 +209,7 @@ const UmrahPackages = () => {
                                         </div>
                                     </div>
 
-                                    <div className='card_text_section my-2'>
+                                    <div className='card_text_section mt-2'>
                                         <div>
                                             <div className="d-flex ">
                                                 <div className="me-3">
@@ -238,14 +239,12 @@ const UmrahPackages = () => {
 
                                         <div className=''>
                                             <h4 className='font-semibold mb-3 text-end' style={{ fontSize: '30px', color: '#02A3C1' }}>₹ 120,000</h4>
-                                            <button className='details-btn text-uppercase font-bold'>
-                                                View details
-                                            </button>
+                                            <NavLink to='/packageDetails' className='text-uppercase font-bold umrah_details_btn me-2'>View details</NavLink>
                                         </div>
                                     </div>
                                     <p className='font-semibold' style={{ fontSize: '20px' }}>INCLUSION</p>
                                     <div className='card_text_section mt-3'>
-                                        <div className="d-flex mb-3">
+                                        <div className="d-flex pb-3">
                                             <span className='me-4 border border-secondary p-1'>
                                                 <FontAwesomeIcon style={{ width: "26px", height: "26px" }} icon={faPlaneDeparture}></FontAwesomeIcon>
                                             </span>
@@ -267,7 +266,7 @@ const UmrahPackages = () => {
                                                 <FontAwesomeIcon style={{ width: "26px", height: "26px" }} icon={faKaaba}></FontAwesomeIcon>
                                             </span>
                                         </div>
-                                        <div className=''>
+                                        <div className='pb-3'>
                                             <button className='pax-btn font-capitalize font-bold'>
                                                 40 Remaining Pax
                                             </button>
