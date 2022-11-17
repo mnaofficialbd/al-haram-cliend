@@ -5,6 +5,11 @@ import kaba from '../../Assets/umrahPackages/kaba.png';
 import { NavLink } from 'react-router-dom';
 
 const UmrahPackages = () => {
+    /* const navigate = useNavigate();
+    const handlePackageDetails = (id) => {
+        navigate(`/umrah/packageDetails/${id}`);
+    }; */
+
     const classicCardDatas = [
         { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }
     ]
@@ -239,7 +244,15 @@ const UmrahPackages = () => {
 
                                         <div className='block_to_flex'>
                                             <h4 className='font-semibold mb-3 text-end' style={{ fontSize: '30px', color: '#02A3C1' }}>₹ 120,000</h4>
-                                            <NavLink to='/packageDetails' className='text-uppercase font-bold umrah_details_btn me-2'>View details</NavLink>
+
+
+                                            {/* <button
+                                                onClick={() => handlePackageDetails(id)}
+                                                className="text-uppercase font-bold umrah_details_btn me-2">
+                                                View details
+                                            </button> */}
+
+                                            <NavLink to='/umrah/packageDetails' className='text-uppercase font-bold umrah_details_btn me-2'>View details</NavLink>
                                         </div>
                                     </div>
                                     <p className='font-semibold' style={{ fontSize: '20px' }}>INCLUSION</p>
