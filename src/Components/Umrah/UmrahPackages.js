@@ -208,7 +208,7 @@ const UmrahPackages = () => {
                                         </div>
                                     </div>
 
-                                    <div className='card_text_section my-4'>
+                                    <div className='card_text_section my-2'>
                                         <div>
                                             <div className="d-flex ">
                                                 <div className="me-3">
@@ -216,7 +216,7 @@ const UmrahPackages = () => {
                                                         <FontAwesomeIcon className='me-3' style={{ color: '#575757', width: "24px", height: "24px" }} icon={faCalendarDays}></FontAwesomeIcon>
                                                         <p className='font-semibold' style={{ fontSize: '18px' }}>10 Days</p>
                                                     </div>
-                                                    <div className="d-flex mb-2">
+                                                    <div className="d-flex">
                                                         <FontAwesomeIcon className='me-3' style={{ color: '#575757', width: "24px", height: "24px" }} icon={faCalendarDay}></FontAwesomeIcon>
                                                         <p className='font-semibold' style={{ fontSize: '18px' }}>13 Sep 2022</p>
                                                     </div>

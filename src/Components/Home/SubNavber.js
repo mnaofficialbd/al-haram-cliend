@@ -17,7 +17,9 @@ const SubNavber = () => {
                     <div class="">
                         <button class="btn border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" style={{ fontSize: "14px" }} aria-expanded="false">Packages</button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/umrah">Umrah Packages</a></li>
+                            <li>
+                                <NavLink to='/umrah' className='dropdown-item'>Umrah Packages</NavLink>
+                            </li>
                             <li><a class="dropdown-item" href="/">Hajj Packages</a></li>
                             <li><a class="dropdown-item" href="/">Land Packages</a></li>
                             <li><a class="dropdown-item" href="/">Top Selling Package</a></li>
