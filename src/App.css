@@ -58,7 +58,17 @@
   width: 250px;
   height: 50px;
 }
-
+.package_details_btn {
+  border: 1px solid #02A3C1;
+  color: #02A3C1;
+  padding: 0px 15px;
+  background-color: white;
+  border-radius: 8px;
+  width: 520px;
+  height: 60px;
+  font-size: 22px;
+}
+.package_details_btn:hover,
 .primary-btn:hover {
   background-color: #02A3C1;
   color:white;
