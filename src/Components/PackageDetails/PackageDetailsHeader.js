@@ -6,7 +6,7 @@ const PackageDetailsHeader = () => {
     return (
         <section className='px-4'>
             <div className='d-md-flex'>
-                <div>
+                <div className='me-4'>
                     <h4 className="mb-2 classic_umrah_title" >Classic Umrah Package</h4>
                 </div>
                 <div className="d-flex">
@@ -23,9 +23,9 @@ const PackageDetailsHeader = () => {
             </div>
             <div className='card_text_div'>
                 <div className="d-flex">
-                    <p>Package By <a href="/" className=''>Al Bushra Tours & Travels</a> |</p>
-                    <p>Package ID : 2489576 |</p>
-                    <p>Published Date: 11 Aug 22</p>
+                    <p className='me-2'>Package By <a href="/" className=''>Al Bushra Tours & Travels</a> |</p>
+                    <p className='me-2'>Package ID : 2489576 |</p>
+                    <p className=''>Published Date: 11 Aug 22</p>
                 </div>
                 <div className="d-flex">
                     <button className='details-btn'>
