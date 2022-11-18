@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutUmrahPackage from '../Components/PackageDetails/AboutUmrahPackage';
 import PackageDetailsHeader from '../Components/PackageDetails/PackageDetailsHeader';
 import PackageSnapshot from '../Components/PackageDetails/PackageSnapshot';
 import SlideSidebar from '../Components/PackageDetails/SlideSidebar';
@@ -11,6 +12,7 @@ const PackageDetails = () => {
             <PackageDetailsHeader />
             <SlideSidebar />
             <PackageSnapshot />
+            <AboutUmrahPackage />
 
         </>
     );

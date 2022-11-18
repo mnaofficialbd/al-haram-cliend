@@ -2,8 +2,8 @@ import React from 'react';
 
 const PackageSnapshot = () => {
     return (
-        <section className='mt-5 px-4 pt-5 shadow'>
-            <div className='bg-light border border-secondary rounded mb-5 mx-2'>
+        <section className='mt-5 px-4  pt-5 '>
+            <div className='bg-light shadow rounded mb-5 mx-2'>
                 <div className='py-3 ps-3' style={{ background: '#02A3C1' }}>
                     <h3 className='font-bold text-center text-white' style={{ fontSize: '24px' }}>Package Snapshot</h3>
                 </div>
