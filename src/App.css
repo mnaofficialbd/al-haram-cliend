@@ -200,11 +200,21 @@
 .umrahCardSection{
   width: 75%;
 }
+.details_slide{
+  width: 60%;
+}
+.details_sidebar{
+  width: 35%;
+}
 .card_text_div,
 .card_text_section{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.details_slide_section{
+  display: flex;
+  justify-content: space-between;
 }
 .card_img{
   display: flex;
@@ -268,9 +278,9 @@ input[type='range']::-moz-range-thumb{
     width: 60px;
     margin-left: 10px;
   }
-  .umrahSideBar{
-    width: 100%;
-  }
+  .umrahSideBar,
+  .details_slide,
+  .details_sidebar,
   .umrahCardSection{
     width: 100%;
   }
@@ -278,7 +288,8 @@ input[type='range']::-moz-range-thumb{
     font-size: 20px;
     font-weight: 600;
   }
-  .card_text_div{
+  .card_text_div,
+  .details_slide_section{
     display: block;
   }
   .card_text_section{
