@@ -64,9 +64,11 @@
   padding: 0px 15px;
   background-color: white;
   border-radius: 8px;
-  width: 520px;
-  height: 60px;
   font-size: 22px;
+}
+.sidebar_select_btn{
+  width: 100%;
+  height: 60px;
 }
 .package_details_btn:hover,
 .primary-btn:hover {
@@ -230,6 +232,16 @@
   display: flex;
   justify-content: left;
 }
+.border_right{
+  border: 2px solid black;
+  height: 45px;
+  width: 0px;
+}
+.border_right_white{
+  border: 2px solid white;
+  height: 45px;
+  width: 0px;
+}
 /* .range-section{
   border: 1px solid red;
 }
@@ -316,5 +328,15 @@ input[type='range']::-moz-range-thumb{
     display: flex;
     justify-content: space-between;
     padding-right: 30px;
+  }
+  .border_right{
+    border: 1px solid black;
+    height: 0px;
+    width: 100%;
+  }
+  .border_right_white{
+    border: 1px solid white;
+    height: 0px;
+    width: 100%;
   }
  }

@@ -9,22 +9,22 @@ const PackageSnapshot = () => {
                 </div>
                 <div className=' text-center py-4'>
                     <div className="d-md-flex justify-content-around align-items-center">
-                        <div className=''>
+                        <div className='my-3'>
                             <h6>Departure City</h6>
                             <h6 className='font-bold'>Multiple Cities</h6>
                         </div>
-                        <div className="border border-dark" style={{ height: '45px' }}></div>
-                        <div className=''>
+                        <div className="border_right"></div>
+                        <div className='my-3'>
                             <h6>Departure Date</h6>
                             <h6 className='font-bold'>21 Oct 2022</h6>
                         </div>
-                        <div className="border border-dark" style={{ height: '45px' }}></div>
-                        <div className=''>
+                        <div className="border_right"></div>
+                        <div className='my-3'>
                             <h6>Arrival Date</h6>
                             <h6 className='font-bold'>21 Oct 2022</h6>
                         </div>
-                        <div className="border border-dark" style={{ height: '45px' }}></div>
-                        <div className=''>
+                        <div className="border_right"></div>
+                        <div className='my-3'>
                             <h6>Remaining Pax</h6>
                             <h6 className='font-bold'>40 Members</h6>
                         </div>

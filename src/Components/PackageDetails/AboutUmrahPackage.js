@@ -5,27 +5,27 @@ const AboutUmrahPackage = () => {
         <section className='shadow '>
             <div style={{ background: '#02A3C1' }} className="text-white py-4 d-md-flex justify-content-around align-items-center">
                 <div className=''>
-                    <h4 className='font-semibold'>Overview</h4>
+                    <h4 className='font-semibold text-center'>Overview</h4>
                 </div>
-                <div className="border border-white" style={{ height: '45px' }}></div>
-                <div className=''>
-                    <h4 className='font-semibold'>Important Information</h4>
+                <div className="border_right_white" ></div>
+                <div className='my-3'>
+                    <h4 className='font-semibold text-center'>Important Information</h4>
                 </div>
-                <div className="border border-white" style={{ height: '45px' }}></div>
-                <div className=''>
-                    <h4 className='font-semibold'>Room Sharing</h4>
+                <div className="border_right_white"></div>
+                <div className='my-3'>
+                    <h4 className='font-semibold text-center'>Room Sharing</h4>
                 </div>
-                <div className="border border-white" style={{ height: '45px' }}></div>
-                <div className=''>
-                    <h4 className='font-semibold'>Itinerary</h4>
+                <div className="border_right_white" ></div>
+                <div className='my-3'>
+                    <h4 className='font-semibold text-center'>Itinerary</h4>
                 </div>
-                <div className="border border-white" style={{ height: '45px' }}></div>
-                <div className=''>
-                    <h4 className='font-semibold'>User Reviews</h4>
+                <div className="border_right_white"></div>
+                <div className='my-3'>
+                    <h4 className='font-semibold text-center'>User Reviews</h4>
                 </div>
-                <div className="border border-white" style={{ height: '45px' }}></div>
-                <div className=''>
-                    <h4 className='font-semibold'>Terms & Conditions</h4>
+                <div className="border_right_white" ></div>
+                <div className='my-3'>
+                    <h4 className='font-semibold text-center'>Terms & Conditions</h4>
                 </div>
             </div>
             <div className='p-4 mx-5' style={{color: '#757575'}}>
