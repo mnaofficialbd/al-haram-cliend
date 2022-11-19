@@ -5,6 +5,7 @@ import Footer from './Components/Shared/Footer';
 import { Route, Routes } from 'react-router-dom';
 import Umrah from './Pages/Umrah';
 import PackageDetails from './Pages/PackageDetails';
+import Flights from './Pages/Flights';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/umrah" element={<Umrah />} />
+        <Route path="/flights" element={<Flights />} />
         {/* <Route path="/umrah/packageDetails/:id" element={<PackageDetails />} /> */}
         <Route path="/umrah/packageDetails" element={<PackageDetails />} />
       </Routes>
