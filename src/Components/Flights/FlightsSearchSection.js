@@ -1,4 +1,4 @@
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarDays, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
@@ -31,7 +31,10 @@ const FlightsSearchSection = () => {
                     </div>
 
                     <div className='col bg-white me-3 me-lg-1 py-3'>
-                        <p className="text-uppercase mb-2">Departure</p>
+                        <div className="d-flex justify-content-between">
+                            <p className="text-uppercase mb-2">Departure</p>
+                            <FontAwesomeIcon style={{ width: "18px", height: "18px" }} icon={faCalendarDays}></FontAwesomeIcon>
+                        </div>
                         <div className='ps-2'>
                             <p className='text-uppercase font-semibold m-0' style={{ fontSize: '18px' }}>11 aug 22</p>
                             <p className='m-0'>Thursday</p>
