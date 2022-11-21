@@ -21,9 +21,7 @@ const FlightsSelection = () => {
                     </div>
                 </div>
             </div>
-            <div className='py-4'>
-
-            </div>
+            <FlightsSelection />
         </div>
     );
 };
