@@ -1,4 +1,5 @@
 import React from 'react';
+import FlightsSearchSection from './FlightsSearchSection';
 
 const FlightsSelection = () => {
     return (
@@ -21,7 +22,7 @@ const FlightsSelection = () => {
                     </div>
                 </div>
             </div>
-            <FlightsSelection />
+            <FlightsSearchSection />
         </div>
     );
 };
