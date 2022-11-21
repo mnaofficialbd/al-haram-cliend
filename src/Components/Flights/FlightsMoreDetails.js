@@ -13,18 +13,18 @@ const FlightsMoreDetails = () => {
     const classicCardDatas = [
         { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }
     ]
-    const countryDatas = [
+    const stopsDatas = [
         { id: 1, title: 'Direct (5)', num: 13999 },
         { id: 2, title: '1 Stop (34)', num: 12999 },
         { id: 3, title: '2 Stop (65)', num: 19499 }
     ]
-    const cityDatas = [
+    const airlinesDatas = [
         { id: 1, title: 'Vistara(76)', num: 13456 },
         { id: 2, title: 'Indigo(33)', num: 17236 },
         { id: 3, title: 'Spaacejet(67)', num: 18447 },
         { id: 4, title: 'Gofirst(1)', num: 19499 }
     ]
-    const monthDatas = [
+    const travelDatas = [
         { id: 1, title: 'Seat Choice Included', num: 12999 },
         { id: 2, title: 'Hand Baggage Included', num: 19499 }
     ]
@@ -57,14 +57,14 @@ const FlightsMoreDetails = () => {
                                 </div>
                             </div>
                             {
-                                countryDatas.map(countryData => (
-                                    <div key={countryData.id} className="d-flex justify-content-between px-4 font-semibold">
+                                stopsDatas.map(stopsData => (
+                                    <div key={stopsData.id} className="d-flex justify-content-between px-4 font-semibold">
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                                            <label class="form-check-label" for="inlineCheckbox1">{countryData.title}</label>
+                                            <label class="form-check-label" for="inlineCheckbox1">{stopsData.title}</label>
                                         </div>
                                         <div>
-                                            <p>Rs {countryData.num}</p>
+                                            <p>Rs {stopsData.num}</p>
                                         </div>
                                     </div>
                                 ))
@@ -82,14 +82,14 @@ const FlightsMoreDetails = () => {
                                 </div>
                             </div>
                             {
-                                cityDatas.map(cityData => (
-                                    <div key={cityData.id} className="d-flex justify-content-between px-4 font-semibold">
+                                airlinesDatas.map(airlinesData => (
+                                    <div key={airlinesData.id} className="d-flex justify-content-between px-4 font-semibold">
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                                            <label class="form-check-label" for="inlineCheckbox1">{cityData.title}</label>
+                                            <label class="form-check-label" for="inlineCheckbox1">{airlinesData.title}</label>
                                         </div>
                                         <div>
-                                            <p>Rs {cityData.num}</p>
+                                            <p>Rs {airlinesData.num}</p>
                                         </div>
                                     </div>
                                 ))
@@ -107,14 +107,14 @@ const FlightsMoreDetails = () => {
                                 </div>
                             </div>
                             {
-                                monthDatas.map(monthData => (
-                                    <div key={monthData.id} className="d-flex justify-content-between px-4 font-semibold">
+                                travelDatas.map(travelData => (
+                                    <div key={travelData.id} className="d-flex justify-content-between px-4 font-semibold">
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                                            <label class="form-check-label" for="inlineCheckbox1">{monthData.title}</label>
+                                            <label class="form-check-label" for="inlineCheckbox1">{travelData.title}</label>
                                         </div>
                                         <div>
-                                            <p>Rs {monthData.num}</p>
+                                            <p>Rs {travelData.num}</p>
                                         </div>
                                     </div>
                                 ))
