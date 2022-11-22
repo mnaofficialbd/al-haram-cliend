@@ -1,12 +1,16 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBriefcase, faChair } from '@fortawesome/free-solid-svg-icons';
 import morningSunset from '../../Assets/Flights/Sunset.png';
 import morningSun from '../../Assets/Flights/Sun.png';
 import afternoonSunset from '../../Assets/Flights/afternoonSunset.png';
 import eveningMoon from '../../Assets/Flights/moon.png';
+import indigoLogo from '../../Assets/Flights/indiGoLogo.png';
+import FlightsDetails from './FlightsDetails';
 
 const FlightsMoreDetails = () => {
 
-    const classicCardDatas = [
+    const cardDatas = [
         { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }
     ]
     const stopsDatas = [
@@ -182,7 +186,7 @@ const FlightsMoreDetails = () => {
             {/* details part */}
             <div className="umrahCardSection border border-dark">
 
-                <div className='mx-3 text-white pt-2 mt-3 shadow' style={{background: '#02A3C1'}}>
+                <div className='mx-3 text-white pt-2 mt-3 shadow' style={{ background: '#02A3C1' }}>
                     <div className='d-md-flex justify-content-between align-items-center'>
                         <div className="d-flex width_40 align-items-center justify-content-around">
                             <div>
@@ -206,12 +210,13 @@ const FlightsMoreDetails = () => {
                     </div>
                 </div>
                 {
-                    classicCardDatas.map(classicData => (
-                        <div key={classicData.id} className='mx-3 rounded border border-dark px-4 py-4 my-3 bg-light shadow'>
-                            <div className='d-md-flex justify-content-between align-items-center'>
+                    cardDatas.map(cardData => (
+                        <div key={cardData.id} className='mx-3 rounded border border-dark py-4 my-3 bg-light shadow'>
+
+                            <div className='d-md-flex border-bottom pb-2 border-dark justify-content-between align-items-center'>
                                 <div className="d-flex width_40 justify-content-around align-items-center">
                                     <div>
-                                        <img src="" alt="" />
+                                        <img src={indigoLogo} alt="" />
                                         <h6>INDIGO</h6>
                                         <p className="m-0">(IN-855)</p>
                                     </div>
@@ -241,6 +246,26 @@ const FlightsMoreDetails = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div className='border-bottom pt-2 border-dark'>
+                                <div className='px-5 d-md-flex justify-content-between align-items-center'>
+                                    <div className="d-flex width_40 justify-content-between">
+                                        <div className='d-flex'>
+                                            <FontAwesomeIcon className='me-2 pt-1' style={{ width: "18px", height: "18px" }} icon={faBriefcase}></FontAwesomeIcon>
+                                            <p className='font-semibold'>15 KG (ONE PIECE ONLY) / 7 KG</p>
+                                        </div>
+                                        <div className='d-flex'>
+                                            <FontAwesomeIcon className='me-2 pt-1' style={{ width: "18px", height: "18px" }} icon={faChair}></FontAwesomeIcon>
+                                            <p  className='font-semibold'>8 SEAT(S)</p>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex">
+                                        <p className='font-semibold me-2'>FLIGHTS DETAILS</p>
+                                        <p className='font-bold'> ˅ </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <FlightsDetails />
                         </div>
                     ))
                 }
