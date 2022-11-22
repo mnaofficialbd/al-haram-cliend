@@ -1,4 +1,5 @@
 import React from 'react';
+import indigoLogo from '../../Assets/Flights/indiGoLogo.png';
 
 const FlightsDetails = () => {
     return (
@@ -35,6 +36,19 @@ const FlightsDetails = () => {
                         </div>
                         <div className=''>
                             <p className='font-semibold'>23:55 - MECCA - TERMINAL: T2D</p>
+                        </div>
+                    </div>
+                    <div className="d-flex w-25 justify-content-between">
+                        <div className="d-flex">
+                            <img src={indigoLogo} alt="" />
+                            <p className="font-semibold ms-2">INDIGO</p>
+                            <p>(IN-855)</p>
+                        </div>
+                        <div>
+                            <p>ECONOMY</p>
+                        </div>
+                        <div>
+                            <p>454</p>
                         </div>
                     </div>
                 </div>
