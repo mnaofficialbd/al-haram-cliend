@@ -242,6 +242,12 @@
   height: 45px;
   width: 0px;
 }
+.width_40{
+  width: 40%;
+}
+.width_20{
+  width: 20%;
+}
 /* .range-section{
   border: 1px solid red;
 }
