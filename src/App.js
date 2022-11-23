@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import Umrah from './Pages/Umrah';
 import PackageDetails from './Pages/PackageDetails';
 import Flights from './Pages/Flights';
-import Hotel from './Pages/hotel';
+import Hotel from './Pages/Hotel';
 
 function App() {
   return (
