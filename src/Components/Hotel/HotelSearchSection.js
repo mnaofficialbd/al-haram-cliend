@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const HotelSearchSection = () => {
     return (
         <section className='mt-5 p-5' style={{ background: '#02A3C1' }}>
-            <div className='text-center py-4'>
-                <h6>Book Domestic And International Hotel Online</h6>
+            <div className='text-center py-3'>
+                <h6 className='text-white' style={{fontSize: '32px'}}>Book Domestic And International Hotel Online</h6>
             </div>
-            <div className='py-4'>
+            <div className='py-3'>
                 <form>
                     <div className='d-md-flex justify-content-center'>
 
