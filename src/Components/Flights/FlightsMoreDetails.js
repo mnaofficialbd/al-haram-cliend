@@ -229,13 +229,13 @@ const FlightsMoreDetails = () => {
                                 </div>
                                 <div className="width_20 d-flex flex-column justify-content-center align-items-center">
                                     <p>3H 20M (DIRECT)</p>
-                                    <div className='d-flex'>
-                                    <FontAwesomeIcon className='' style={{ width: "12px", height: "12px" }} icon={faCircle}></FontAwesomeIcon>
-                                    <p className="m-0">.......</p>
-                                    <FontAwesomeIcon className='' style={{ width: "12px", height: "12px" }} icon={faPlane}></FontAwesomeIcon>
-                                    <p className="m-0">.......</p>
-                                    <FontAwesomeIcon className='' style={{ width: "12px", height: "12px" }} icon={faCircle}></FontAwesomeIcon>
-                                           
+                                    <div className='d-flex align-items-center'>
+                                        <FontAwesomeIcon className='' style={{ width: "12px", height: "12px" }} icon={faCircle}></FontAwesomeIcon>
+                                        <p className="m-0" style={{ fontSize: '20px' }}>.....</p>
+                                        <FontAwesomeIcon className='' style={{ width: "20px", height: "20px" }} icon={faPlane}></FontAwesomeIcon>
+                                        <p className="m-0">.......</p>
+                                        <FontAwesomeIcon className='' style={{ width: "12px", height: "12px" }} icon={faCircle}></FontAwesomeIcon>
+
                                     </div>
                                     <p>NON-STOP</p>
                                 </div>
@@ -261,7 +261,7 @@ const FlightsMoreDetails = () => {
                                         </div>
                                         <div className='d-flex'>
                                             <FontAwesomeIcon className='me-2 pt-1' style={{ width: "18px", height: "18px" }} icon={faChair}></FontAwesomeIcon>
-                                            <p  className='font-semibold'>8 SEAT(S)</p>
+                                            <p className='font-semibold'>8 SEAT(S)</p>
                                         </div>
                                     </div>
                                     <div className="d-flex">
