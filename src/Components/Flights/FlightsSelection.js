@@ -5,7 +5,7 @@ const FlightsSelection = () => {
     return (
         <div className='mt-5 p-5' style={{ background: '#02A3C1' }}>
             <div className='d-flex justify-content-center align-items-center text-center py-4'>
-                <div className="w-50 d-flex justify-content-around align-items-center bg-white">
+                <div className="width_40 d-md-flex justify-content-around align-items-center bg-white">
                     <div class="form-check me-3">
                         <input class="form-check-input" type="checkbox" id="flexCheckChecked" />
                         <label class="form-check-label" htmlFor="flexCheckChecked">One-Way</label>

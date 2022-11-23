@@ -1,12 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase, faChair } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faChair, faPlane } from '@fortawesome/free-solid-svg-icons';
 import morningSunset from '../../Assets/Flights/Sunset.png';
 import morningSun from '../../Assets/Flights/Sun.png';
 import afternoonSunset from '../../Assets/Flights/afternoonSunset.png';
 import eveningMoon from '../../Assets/Flights/moon.png';
 import indigoLogo from '../../Assets/Flights/indiGoLogo.png';
 import FlightsDetails from './FlightsDetails';
+import { faCircle } from '@fortawesome/free-regular-svg-icons';
 
 const FlightsMoreDetails = () => {
 
@@ -36,8 +37,8 @@ const FlightsMoreDetails = () => {
     ]
 
     return (
-        <section className='mt-5 pt-5 d-md-flex'>
-            <div class="d-flex flex-column flex-shrink-0 px-2 bg-light umrahSideBar" >
+        <section className='mt-5 pt-5 d-md-flex justify-content-center'>
+            <div class="d-flex flex-column flex-shrink-0 px-2 bg-light flights_SideBar" >
                 <div className='rounded px-2 h-100'>
 
                     {/* =============Departure country section=============== */}
@@ -184,9 +185,9 @@ const FlightsMoreDetails = () => {
 
 
             {/* details part */}
-            <div className="umrahCardSection border border-dark">
+            <div className="flights_CardSection">
 
-                <div className='mx-3 text-white pt-2 mt-3 shadow' style={{ background: '#02A3C1' }}>
+                <div className='mx-3 text-white pt-2 shadow' style={{ background: '#02A3C1' }}>
                     <div className='d-md-flex justify-content-between align-items-center'>
                         <div className="d-flex width_40 align-items-center justify-content-around">
                             <div>
@@ -229,7 +230,12 @@ const FlightsMoreDetails = () => {
                                 <div className="width_20 d-flex flex-column justify-content-center align-items-center">
                                     <p>3H 20M (DIRECT)</p>
                                     <div className='d-flex'>
-
+                                    <FontAwesomeIcon className='' style={{ width: "12px", height: "12px" }} icon={faCircle}></FontAwesomeIcon>
+                                    <p className="m-0">.......</p>
+                                    <FontAwesomeIcon className='' style={{ width: "12px", height: "12px" }} icon={faPlane}></FontAwesomeIcon>
+                                    <p className="m-0">.......</p>
+                                    <FontAwesomeIcon className='' style={{ width: "12px", height: "12px" }} icon={faCircle}></FontAwesomeIcon>
+                                           
                                     </div>
                                     <p>NON-STOP</p>
                                 </div>

@@ -27,6 +27,7 @@ const SubNavber = () => {
                         </ul>
                     </div>
 
+                    <Nav.Link href="/flights" className="text-black" style={{ fontSize: "14px" }}>Flights</Nav.Link>
                     <Nav.Link href="/" className="text-black" style={{ fontSize: "14px" }}>Explore</Nav.Link>
                     <Nav.Link href="/" className="text-black" style={{ fontSize: "14px" }}>Cabs</Nav.Link>
                     <Nav.Link href="/" className="text-black" style={{ fontSize: "14px" }}>Catering</Nav.Link>

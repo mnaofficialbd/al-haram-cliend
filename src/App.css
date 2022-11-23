@@ -66,6 +66,7 @@
   border-radius: 8px;
   font-size: 22px;
 }
+
 .sidebar_select_btn{
   width: 100%;
   height: 60px;
@@ -97,11 +98,6 @@
   background-color: white;
 }
 
-.pax-btn:hover {
-  background-color: #02A3C1;
-  color:white;
-  border: 1px solid white;
-}
 .search-btn{
   font-family: 'Play', sans-serif;
   border: 1px solid #02A3C1;
@@ -111,11 +107,7 @@
   width: 230px;
   height: 40px;
 }
-.search-btn:hover {
-  background-color: #02A3C1;
-  color:white;
-  border: 1px solid white;
-}
+
 .details-btn,
 .umrah_details_btn {
   border: 1px solid #02A3C1;
@@ -126,6 +118,16 @@
   background-color: white;
   text-decoration: none;
 }
+.custom_btn {
+  border: 1px solid #02A3C1;
+  color: #02A3C1;
+  font-weight: 700;
+  background-color: white;
+  text-decoration: none;
+}
+.search-btn:hover,
+.custom_btn:hover,
+.pax-btn:hover,
 .umrah_details_btn:hover,
 .details-btn:hover {
   background-color: #02A3C1;
@@ -212,6 +214,12 @@
 .umrahCardSection{
   width: 75%;
 }
+.flights_SideBar{
+  width: 25%;
+}
+.flights_CardSection{
+  width: 70%;
+}
 .details_slide{
   width: 60%;
 }
@@ -248,6 +256,13 @@
 .width_20{
   width: 20%;
 }
+.width_17{
+  width: 17%;
+}
+.width_10{
+  width: 10%;
+}
+
 /* .range-section{
   border: 1px solid red;
 }
@@ -309,6 +324,12 @@ input[type='range']::-moz-range-thumb{
   .umrahSideBar,
   .details_slide,
   .details_sidebar,
+  .width_40,
+  .width_20,
+  .width_10,
+  .width_17,
+  .flights_CardSection,
+  .flights_SideBar,
   .umrahCardSection{
     width: 100%;
   }
