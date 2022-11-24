@@ -52,7 +52,7 @@ const UmrahPackages = () => {
         { id: 6, title: '1 To 10 Days', num: 48 }
     ]
     return (
-        <section className='mt-5 pt-5 d-md-flex'>
+        <section className='mt-5 pt-5 d-md-flex justify-content-center'>
             <div class="d-flex flex-column flex-shrink-0 px-2 bg-light umrahSideBar" >
                 <div className='rounded px-2 h-100'>
 

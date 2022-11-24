@@ -209,22 +209,22 @@
   font-weight: 700;
 }
 .umrahSideBar{
-  width: 25%;
+  width: 20%;
 }
 .umrahCardSection{
-  width: 75%;
+  width: 65%;
 }
 .flights_SideBar{
-  width: 25%;
+  width: 20%;
 }
 .flights_CardSection{
-  width: 70%;
+  width: 65%;
 }
 .details_slide{
   width: 60%;
 }
 .details_sidebar{
-  width: 35%;
+  width: 20%;
 }
 .card_text_div,
 .card_text_section{
@@ -234,7 +234,7 @@
 }
 .details_slide_section{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .card_img{
   display: flex;

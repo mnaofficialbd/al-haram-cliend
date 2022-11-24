@@ -233,7 +233,7 @@ const FlightsMoreDetails = () => {
                                         <FontAwesomeIcon className='' style={{ width: "12px", height: "12px" }} icon={faCircle}></FontAwesomeIcon>
                                         <p className="m-0" style={{ fontSize: '20px' }}>.....</p>
                                         <FontAwesomeIcon className='' style={{ width: "20px", height: "20px" }} icon={faPlane}></FontAwesomeIcon>
-                                        <p className="m-0">.......</p>
+                                        <p className="m-0">......</p>
                                         <FontAwesomeIcon className='' style={{ width: "12px", height: "12px" }} icon={faCircle}></FontAwesomeIcon>
 
                                     </div>
