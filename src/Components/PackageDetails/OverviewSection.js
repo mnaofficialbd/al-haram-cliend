@@ -3,7 +3,7 @@ import React from 'react';
 const OverviewSection = () => {
     return (
         <section className='shadow '>
-            <div className='px-4 mx-5' style={{color: '#757575'}}>
+            <div className='p-4 pt-0 mx-5' style={{color: '#757575'}}>
                 <div className='pb-2'>
                     <h3 className='font-bold' style={{
                         fontSize: '24px', color: '#757575'
