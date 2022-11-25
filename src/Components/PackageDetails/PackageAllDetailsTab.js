@@ -5,6 +5,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import OverviewSection from './OverviewSection'
+import InformationSection from './InformationSection';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -47,8 +48,8 @@ export default function PackageAllDetailsTab() {
     };
 
     return (
-        <Box sx={{ width: '100%' ,marginTop: '50px'}}>
-            <Box sx={{ borderBottom: 1, borderColor: 'divider',paddingBottom: '0px',marginBottom: '0px' }}>
+        <Box sx={{ width: '100%', marginTop: '50px' }}>
+            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                 <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
                     <Tab label="Overview" {...a11yProps(0)} />
                     <Tab label="Important Information" {...a11yProps(1)} />
@@ -62,19 +63,19 @@ export default function PackageAllDetailsTab() {
                 <OverviewSection />
             </TabPanel>
             <TabPanel value={value} index={1}>
-            Important Information section
+                <InformationSection />
             </TabPanel>
             <TabPanel value={value} index={2}>
-            Room Sharing section
+                Room Sharing section
             </TabPanel>
             <TabPanel value={value} index={3}>
-            Itinerary section
+                Itinerary section
             </TabPanel>
             <TabPanel value={value} index={4}>
-            User Reviews section
+                User Reviews section
             </TabPanel>
             <TabPanel value={value} index={5}>
-            Terms & Conditions section
+                Terms & Conditions section
             </TabPanel>
         </Box>
     );
