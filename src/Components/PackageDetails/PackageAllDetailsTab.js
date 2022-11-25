@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import OverviewSection from './OverviewSection'
 import InformationSection from './InformationSection';
+import TermsConditions from './TermsConditions';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -75,7 +76,7 @@ export default function PackageAllDetailsTab() {
                 User Reviews section
             </TabPanel>
             <TabPanel value={value} index={5}>
-                Terms & Conditions section
+                <TermsConditions />
             </TabPanel>
         </Box>
     );
