@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import OverviewSection from './OverviewSection'
 import InformationSection from './InformationSection';
 import TermsConditions from './TermsConditions';
+import RoomSharing from './RoomSharing';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -67,7 +68,7 @@ export default function PackageAllDetailsTab() {
                 <InformationSection />
             </TabPanel>
             <TabPanel value={value} index={2}>
-                Room Sharing section
+                <RoomSharing />
             </TabPanel>
             <TabPanel value={value} index={3}>
                 Itinerary section
