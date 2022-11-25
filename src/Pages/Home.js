@@ -5,7 +5,6 @@ import ExploreSA from '../Components/Home/ExploreSA';
 import WhyChooseUs from '../Components/Home/WhyChooseUs';
 import UltimateCompanion from '../Components/Home/UltimateCompanion';
 import Reviews from '../Components/Home/Reviews';
-import SubNavber from '../Components/Home/SubNavber';
 import SpecialOffer from '../Components/Home/SpecialOffer';
 import PopularUDeals from '../Components/Home/PopularUDeals';
 
@@ -13,7 +12,6 @@ const Home = () => {
     
     return (
         <>
-            <SubNavber />
             <Hero />
             <SpecialOffer />
             <PopularUDeals />

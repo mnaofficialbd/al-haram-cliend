@@ -24,7 +24,7 @@ const PackageDetailsHeader = () => {
             <div className='card_text_div'>
                 <div className="d-md-flex font-semibold" style={{ fontSize: "18px", color: '#757575' }}>
                     <p className='me-2'>Package By <a href="/" className=''>Al Bushra Tours & Travels</a> |</p>
-                    <div className='d-flex'>
+                    <div className='d-md-flex'>
                         <p className='me-2'>Package ID : 2489576 |</p>
                         <p className=''>Published Date: 11 Aug 22</p>
                     </div>

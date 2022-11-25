@@ -21,7 +21,7 @@ const HeroSummerySection = () => {
                     {
                         datas.map(data => (
                             // <div key={data.id} className="col-lg-3 col-6 col-md-6 summery-card ">
-                            <div key={data.id} className="d-flex px-2 my-3 me-5 justify-content-between align-items-center summery-card ">
+                            <div key={data.id} className="d-flex px-2 my-2 me-5 justify-content-between align-items-center summery-card ">
                                 <div className='mx-2'>
                                     <img src={data.img} className="" alt="" style={{ width: '40px', height: '45px' }} />
                                 </div>

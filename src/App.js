@@ -1,5 +1,6 @@
 import './App.css';
 import Navber from './Components/Shared/Navber';
+import SubNavber from './Components/Home/SubNavber';
 import Home from './Pages/Home';
 import Footer from './Components/Shared/Footer';
 import { Route, Routes } from 'react-router-dom';
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <Navber />
+    <SubNavber />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/umrah" element={<Umrah />} />
