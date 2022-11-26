@@ -1,67 +1,88 @@
-import React from 'react';
+import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell, { tableCellClasses } from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
 
-const RoomSharing = () => {
+const StyledTableCell = styled(TableCell)(({ theme }) => ({
+    [`&.${tableCellClasses.head}`]: {
+        backgroundColor: theme.palette.common.black,
+        color: theme.palette.common.white,
+    },
+    [`&.${tableCellClasses.body}`]: {
+        fontSize: 14,
+    },
+}));
+
+const StyledTableRow = styled(TableRow)(({ theme }) => ({
+    '&:nth-of-type(odd)': {
+        backgroundColor: theme.palette.action.hover,
+    },
+    // hide last border
+    '&:last-child td, &:last-child th': {
+        border: 0,
+    },
+}));
+
+function createData(name, calories, fat, carbs, protein) {
+    return { name, calories, fat, carbs, protein };
+}
+
+const rows = [
+    createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
+];
+
+export default function RoomSharing() {
     return (
-        <section className='shadow '>
-            <div className=' p-4 pt-0 mx-5'>
-                <div className=''>
-                    <div className='py-2'>
-                        <p className='m-0 font-bold'>Room Sharing</p>
-                    </div>
-
-
-
-                    <div style={{ background: '#02A3C1' }} className="text-white py-4 d-md-flex justify-content-around align-items-center">
-                        <div className=''>
-                            <p className='font-semibold text-center'>Single Room</p>
-                            <p className='font-semibold text-center'>Rs 5,000/-</p>
-                        </div>
-                        <div className="border_right_white" ></div>
-                        <div className=''>
-                            <p className='font-semibold text-center'>Twin Sharing</p>
-                        </div>
-                        <div className="border_right_white" ></div>
-                        <div className=''>
-                            <p className='font-semibold text-center'>Triple Sharing</p>
-                            <p className='font-semibold text-center'>Rs 5,000/-</p>
-                        </div>
-                        <div className="border_right_white" ></div>
-                        <div className=''>
-                            <p className='font-semibold text-center'>Quad Sharing</p>
-                            <p className='font-semibold text-center'>Rs 5,000/-</p>
-                        </div>
-                        <div className="border_right_white" ></div>
-                        <div className=''>
-                            <p className='font-semibold text-center'>Quint Sharing</p>
-                            <p className='font-semibold text-center'>Rs 5,000/-</p>
-                        </div>
-                        <div className="border_right_white" ></div>
-                        <div className=''>
-                            <p className='font-semibold text-center'>Hexa Sharing</p>
-                            <p className='font-semibold text-center'>Rs 5,000/-</p>
-                        </div>
-                        <div className="border_right_white" ></div>
-                        <div className=''>
-                            <p className='font-semibold text-center'>Child With Bed</p>
-                            <p className='font-semibold text-center'>Rs 5,000/-</p>
-                        </div>
-                        <div className="border_right_white" ></div>
-                        <div className=''>
-                            <p className='font-semibold text-center'>Child With Bed</p>
-                            <p className='font-semibold text-center'>Rs 5,000/-</p>
-                        </div>
+        <TableContainer component={Paper}>
+            <Table sx={{ minWidth: 700 }} aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                        <StyledTableCell>Room Type</StyledTableCell>
+                        <StyledTableCell align="right">Price</StyledTableCell>
                         
-                        
-                    </div>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <>
+                            <StyledTableRow key={row.name}>
+                                <StyledTableCell align="right">Single Sharing</StyledTableCell>
+                            </StyledTableRow>
+                            <StyledTableRow>
+                                <StyledTableCell align="right">Twin Sharing</StyledTableCell>
+                            </StyledTableRow>
+                            <StyledTableRow>
+                                <StyledTableCell align="right">Triple Sharing</StyledTableCell>
+                            </StyledTableRow>
+                            <StyledTableRow>
+                                <StyledTableCell align="right">Quad Sharing</StyledTableCell>
+                            </StyledTableRow>
+                            <StyledTableRow>
+                                <StyledTableCell align="right">Quint Sharing</StyledTableCell>
+                            </StyledTableRow>
+                            <StyledTableRow>
+                                <StyledTableCell align="right">Hexa Sharing</StyledTableCell>
+                            </StyledTableRow>
+                            <StyledTableRow>
+                                <StyledTableCell align="right">Child With Bed</StyledTableCell>
+                            </StyledTableRow>
+                            <StyledTableRow>
+                                <StyledTableCell align="right">Child Without Bed</StyledTableCell>
+                            </StyledTableRow>
+                            <StyledTableRow>
+                                <StyledTableCell align="right">RS 5,000/-</StyledTableCell>
+                            </StyledTableRow>
+                            
+                        </>
 
-
-
-
-                </div>
-
-            </div>
-        </section>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
     );
-};
-
-export default RoomSharing;
+}
