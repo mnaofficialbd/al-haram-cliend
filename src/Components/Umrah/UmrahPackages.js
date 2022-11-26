@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faBus, faCouch, faKaaba, faMugHot, faPlaneDeparture, faCalendarDays, faLocationDot, faUsers, faCalendarDay, faVcard, faArrowUpLong, faArrowDownLong } from '@fortawesome/free-solid-svg-icons';
 import kaba from '../../Assets/umrahPackages/kaba.png';
 import { NavLink } from 'react-router-dom';
+import UmrahPackagesTitle from '../Shared/UmrahPackagesTitle';
 // import Box from '@mui/material/Box';
 // import Slider from '@mui/material/Slider';
 
@@ -65,6 +66,7 @@ const UmrahPackages = () => {
     ]
     return (
         <section className='mt-5 pt-5'>
+            <UmrahPackagesTitle />
             <div className='mt-4 pt-4 d-md-flex justify-content-center'>
                 <div class="d-flex flex-column flex-shrink-0 px-2 bg-light umrahSideBar" >
                     <div className='rounded px-2 h-100'>
