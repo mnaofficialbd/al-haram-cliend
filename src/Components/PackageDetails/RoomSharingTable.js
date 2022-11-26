@@ -3,7 +3,7 @@ import React from 'react';
 const RoomSharingTable = () => {
     return (
         <section>
-            <table class="table" style={{background: '#02A3C1'}}>
+            <table class="table text-white w-50 mx-auto shadow text-center" style={{background: '#02A3C1'}}>
                 <thead>
                     <tr>
                         <th scope="col">Room Type</th>

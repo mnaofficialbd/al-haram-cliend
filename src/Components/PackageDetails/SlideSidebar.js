@@ -9,7 +9,7 @@ const SlideSidebar = () => {
         { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }
     ]
     return (
-        <section className='mt-5 pt-5 mx-4'>
+        <section className='mx-4'>
             <div className="mt-5 details_slide_section">
                 <div className="details_slide px-5">
                     <div className="mb-3">
