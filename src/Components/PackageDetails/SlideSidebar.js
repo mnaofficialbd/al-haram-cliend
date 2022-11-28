@@ -19,7 +19,7 @@ const SlideSidebar = () => {
                                 slidersData.map(sliderData => (
                                     <SwiperSlide key={sliderData.id}>
                                         <div>
-                                            <img src={slideImg} alt="" className='w-100 ' />
+                                            <img src={slideImg} alt="" className='' />
                                         </div>
                                     </SwiperSlide>
                                 ))

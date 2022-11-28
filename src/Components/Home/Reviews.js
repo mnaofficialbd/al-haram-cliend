@@ -41,10 +41,13 @@ const Reviews = () => {
                                         </p>
                                     </div>
                                     <div className="d-flex align-items-center">
-                                        <div className='me-2'><img src={avatar} alt="" style={{ width: '40px' }} /></div>
+                                        <div className='me-2'>
+                                            <img src={avatar} alt="" style={{ width: '40px' }} />
+                                        </div>
                                         <div>
                                             <h6 className="font-bold m-0" style={{ fontSize: '12px' }}>John Smith</h6>
-                                            <p className='m-0' style={{ fontSize: '10px' }}>11 Aug 2020</p></div>
+                                            <p className='m-0' style={{ fontSize: '10px' }}>11 Aug 2020</p>
+                                        </div>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -52,7 +55,7 @@ const Reviews = () => {
                         )}
                 </Swiper>
             </div>
-            
+
         </div>
     );
 };
