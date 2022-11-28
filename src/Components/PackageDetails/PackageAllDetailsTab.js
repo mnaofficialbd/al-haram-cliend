@@ -10,6 +10,7 @@ import TermsConditions from './TermsConditions';
 // import RoomSharing from './RoomSharing';
 import RoomSharingTable from './RoomSharingTable';
 import Itinerary from './Itinerary';
+import UserReviews from './UserReviews';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -77,7 +78,7 @@ export default function PackageAllDetailsTab() {
                 <Itinerary />
             </TabPanel>
             <TabPanel value={value} index={4}>
-                User Reviews section
+                <UserReviews />
             </TabPanel>
             <TabPanel value={value} index={5}>
                 <TermsConditions />
