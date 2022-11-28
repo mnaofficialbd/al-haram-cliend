@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faBus, faCouch, faKaaba, faMugHot, faPlaneDeparture, faCalendarDays, faLocationDot, faUsers, faCalendarDay, faVcard, faArrowUpLong, faArrowDownLong } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faBus, faCouch, faKaaba, faMugHot,faFilter, faPlaneDeparture, faCalendarDays, faLocationDot, faUsers, faCalendarDay, faVcard, faSort} from '@fortawesome/free-solid-svg-icons';
 import kaba from '../../Assets/umrahPackages/kaba.png';
 import { NavLink } from 'react-router-dom';
 import UmrahPackagesTitle from '../Shared/UmrahPackagesTitle';
@@ -71,8 +71,13 @@ const UmrahPackages = () => {
                 <div class="d-flex flex-column flex-shrink-0 px-2 bg-light umrahSideBar" >
                     <div className='rounded px-2 h-100'>
 
+                        {/* =============Filter section=============== */}
+                        <div className='d-flex align-items-center justify-content-center text-white rounded py-2 text-center mb-4 mx-2' style={{ background: '#02A3C1' }}>
+                            <h6 className='font-semibold me-3 m-0' style={{ fontSize: '18px' }}>Filter By</h6>
+                            <FontAwesomeIcon className='m-0' icon={faFilter}></FontAwesomeIcon>
+                        </div>
                         {/* =============Budget Range section=============== */}
-                        <div className='bg-light border border-secondary rounded mb-5 mx-2'>
+                        <div className='bg-light border border-secondary rounded mb-4 mx-2'>
                             <div className='py-1 ps-3' style={{ background: '#02A3C1' }}>
                                 <h6 className='font-semibold text-white' style={{ fontSize: '18px' }}>Budget Range</h6>
                             </div>
@@ -104,7 +109,7 @@ const UmrahPackages = () => {
                         </div>
 
                         {/* =============Departure country section=============== */}
-                        <div className='bg-light border border-secondary mb-5 mx-2'>
+                        <div className='bg-light border border-secondary mb-4 mx-2'>
                             <div className='p-1 d-flex justify-content-between' style={{ background: '#02A3C1' }}>
                                 <div>
                                     <h6 className='font-semibold text-white' style={{ fontSize: '18px' }}>Departure Country</h6>
@@ -132,7 +137,7 @@ const UmrahPackages = () => {
                         </div>
 
                         {/* =============Departure City section=============== */}
-                        <div className='bg-light border border-secondary mb-5 mx-2'>
+                        <div className='bg-light border border-secondary mb-4 mx-2'>
                             <div className='p-1 d-flex justify-content-between' style={{ background: '#02A3C1' }}>
                                 <div>
                                     <h6 className='font-semibold text-white' style={{ fontSize: '18px' }}>Departure City</h6>
@@ -159,7 +164,7 @@ const UmrahPackages = () => {
                             </div>
                         </div>
                         {/* =============Month of Travel section=============== */}
-                        <div className='bg-light border border-secondary mb-5 mx-2'>
+                        <div className='bg-light border border-secondary mb-4 mx-2'>
                             <div className='p-1 d-flex justify-content-between' style={{ background: '#02A3C1' }}>
                                 <div>
                                     <h6 className='font-semibold text-white' style={{ fontSize: '18px' }}>Month of Travel</h6>
@@ -186,7 +191,7 @@ const UmrahPackages = () => {
                             </div>
                         </div>
                         {/* =============No Of Days section=============== */}
-                        <div className='bg-light border border-secondary mb-5 mx-2'>
+                        <div className='bg-light border border-secondary mb-4 mx-2'>
                             <div className='p-1 d-flex justify-content-between' style={{ background: '#02A3C1' }}>
                                 <div>
                                     <h6 className='font-semibold text-white' style={{ fontSize: '18px' }}>No Of Days</h6>
@@ -216,18 +221,26 @@ const UmrahPackages = () => {
                     </div>
                 </div>
                 <div className="umrahCardSection">
-                    <div className="package_found px-2 mx-3 mb-4">
-                        <div>
-                            <p className='m-0' style={{fontSize: '18px'}}>7 Package Found</p>
-                        </div>
-                        <div className="top_picks_btn">
-                            <div className="d-flex">
-                                <FontAwesomeIcon className='' style={{ width: "12px" }} icon={faArrowUpLong}></FontAwesomeIcon>
-                                <FontAwesomeIcon className='me-2' style={{ width: "12px" }} icon={faArrowDownLong}></FontAwesomeIcon>
+                    {/* ============================== */}
+
+                    <div className="px-3 py-1 rounded mx-3 mb-3" style={{background: '#E9E9E9'}}>
+                        <div className="d-flex justify-content-between">
+                            <div className="d-flex align-items-center">
+                               <div className='d-flex align-items-center'>
+                                   <p className='m-0 font-semibold me-4'>Sort By</p>
+                                   <FontAwesomeIcon className='m-0 me-4' icon={faSort}></FontAwesomeIcon>
+                               </div>
+                               <div><p className='m-0 me-4'>Departure</p></div>
+                               <div><p className='m-0 me-4'>Price</p></div>
+                               <div><p className='m-0'>Duration</p></div>
                             </div>
-                            <p className='m-0' style={{ fontSize: '14px' }}>Top picks for your search</p>
+                            <div>
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            </div>
                         </div>
                     </div>
+
+                    {/* ============================= */}
 
                     {
                         classicCardDatas.map(classicData => (

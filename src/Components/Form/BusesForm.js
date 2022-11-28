@@ -50,12 +50,12 @@ const BusesForm = () => {
                         <label htmlFor="exampleInputDeparture" className="form-label font-semibold">ADULT</label>
                         <div className="input-group">
                             <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
-                                <span className="font-bold">+</span>
+                                <span className="font-bold">-</span>
                             </button>
                             <span className="num form-control">01</span>
                             {/* <input type="number" className="form-control text-center" placeholder='1' /> */}
                             <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
-                                <span className="font-bold">-</span>
+                                <span className="font-bold">+</span>
                             </button>
                         </div>
                     </div>
@@ -63,12 +63,12 @@ const BusesForm = () => {
                         <label htmlFor="exampleInputDeparture" className="form-label font-semibold">CHILD(REN)</label>
                         <div className="input-group">
                             <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
-                                <span className="font-bold">+</span>
+                                <span className="font-bold">-</span>
                             </button>
                             <span className="num form-control">01</span>
                             {/* <input type="number" className="form-control text-center" placeholder='02' /> */}
                             <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
-                                <span className="font-bold">-</span>
+                                <span className="font-bold">+</span>
                             </button>
                         </div>
                     </div>
@@ -76,12 +76,12 @@ const BusesForm = () => {
                         <label htmlFor="exampleInputDeparture" className="form-label font-semibold">INFANT(S)</label>
                         <div className="input-group">
                             <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
-                                <span className="font-bold">+</span>
+                                <span className="font-bold">-</span>
                             </button>
                             <span className="num form-control">01</span>
                             {/* <input type="number" className="form-control text-center" placeholder='02' /> */}
                             <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
-                                <span className="font-bold">-</span>
+                                <span className="font-bold">+</span>
                             </button>
                         </div>
                     </div>

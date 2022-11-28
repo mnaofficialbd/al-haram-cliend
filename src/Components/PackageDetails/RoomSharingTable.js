@@ -3,9 +3,9 @@ import React from 'react';
 const RoomSharingTable = () => {
     return (
         <section>
-            <table class="table text-white w-50 mx-auto shadow text-center" style={{background: '#02A3C1'}}>
-                <thead>
-                    <tr>
+            <table class="table w-50 mx-auto shadow text-center">
+                <thead  style={{background: '#02A3C1'}}>
+                    <tr className='text-white'>
                         <th scope="col">Room Type</th>
                         <th scope="col">Price</th>
                     </tr>

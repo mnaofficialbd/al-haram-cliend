@@ -2,34 +2,49 @@ import React from 'react';
 
 const InformationSection = () => {
     return (
-        <section className='shadow '>
-            <div className='d-md-flex p-4 pt-0 mx-5' style={{ color: '#757575' }}>
-                <div className=''>
-                    <div className='py-2' style={{ background: '#02A3C1' }}>
-                        <p className='text-white text-center m-0'>Inclusions</p>
-                    </div>
-                    <div className='py-4 mx-lg-5' style={{ fontSize: '16px' }}>
-                        <li className='text-capitalize'>Air fare</li>
-                        <li className='text-capitalize'>Accommodation</li>
-                        <li className='text-capitalize'>Breakfast, Lunch & Dinner</li>
-                        <li className='text-capitalize'>Umrah Visa</li>
-                        <li className='text-capitalize'>Transportation</li>
-                        <li className='text-capitalize'>Ziyarat & Umrah</li>
-                        <li className='text-capitalize'>Support of Own Akbar Executive</li>
-                        <li className='text-capitalize'>GST & TCS</li>
-                    </div>
-                </div>
-                <div className=''>
-                    <div className='py-2' style={{ background: '#02A3C1' }}>
-                        <p className='text-white text-center m-0'>Exclusions</p>
-                    </div>
-                    <div className='py-4 mx-lg-5' style={{ fontSize: '16px' }}>
-                        <li className='text-capitalize'>RT PCR</li>
-                        <li className='text-capitalize'>Any Expenses of Personel in nature</li>
-                    </div>
-                </div>
-                
-            </div>
+        <section className=''>
+            <table class="table w-50 mx-auto shadow ">
+                <thead  style={{background: '#02A3C1'}}>
+                    <tr className='text-white text-center'>
+                        <th scope="col">Inclusions</th>
+                        <th scope="col">Exclusions</th>
+                    </tr>
+                </thead>
+                <tbody className=''>
+                    <tr>
+                        <td>Air Fare</td>
+                        <td>RT PCR</td>
+                    </tr>
+                    <tr>
+                        <td>Accommodation</td>
+                        <td>Any Expenses Of Personel In Nature</td>
+                    </tr>
+                    <tr>
+                        <td>Breakfast, Lunch & Dinner</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Umrah Visa</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Transportation</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Ziyarat & Umrah</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Support Of Own Akbar Executive</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>GST & TCS</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     );
 };
