@@ -9,10 +9,10 @@ const DealsDiscountCards = () => {
     const datas = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }]
 
     return (
-        <section className='container mt-4 py-2'>
+        <section className='container mt-3 py-2'>
             {/* <div className="row row-cols-1 row-cols-md-4 g-4"> */}
             <div className="d-md-flex">
-                <div className="mx-3">
+                <div className="">
 
                     <div className='p-5 mb-3'
                         style={{

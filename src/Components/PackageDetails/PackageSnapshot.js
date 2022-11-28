@@ -12,22 +12,22 @@ const PackageSnapshot = () => {
                     <div className="d-md-flex justify-content-around align-items-center">
                         <div className='my-3'>
                             <h6>Departure City</h6>
-                            <input type="text" className='border-0 text-center' placeholder='Multiple Cities' />
+                            <p className='text-center'>Hyderabad</p>
                         </div>
                         <div className="border_right"></div>
                         <div className='my-3'>
                             <h6>Departure Date</h6>
-                            <input type="date" className='border-0 text-center' placeholder='Departure Date' />
+                            <p className='text-center'>28-11-2022</p>
                         </div>
                         <div className="border_right"></div>
                         <div className='my-3'>
                             <h6>Arrival Date</h6>
-                            <input type="date" className='border-0 text-center' placeholder='21 Oct 2022' />
+                            <p className='text-center'>29-11-2022</p>
                         </div>
                         <div className="border_right"></div>
                         <div className='my-3'>
                             <h6>Remaining Pax</h6>
-                            <input type="text" className='border-0 text-center' placeholder='40 Members' />
+                            <p className='text-center'>40 Members</p>
                         </div>
                     </div>
                 </div>

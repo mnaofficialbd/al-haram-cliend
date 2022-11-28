@@ -2,15 +2,16 @@ import React from 'react';
 
 const InformationSection = () => {
     return (
-        <section className=''>
-            <table class="table w-50 mx-auto shadow ">
+        <section className='container ps-5 '>
+            <div className="ps-4">
+            <table class="ms-5 ps-5 table table-bordered w-50 shadow ">
                 <thead  style={{background: '#02A3C1'}}>
                     <tr className='text-white text-center'>
                         <th scope="col">Inclusions</th>
                         <th scope="col">Exclusions</th>
                     </tr>
                 </thead>
-                <tbody className=''>
+                <tbody className='text-center'>
                     <tr>
                         <td>Air Fare</td>
                         <td>RT PCR</td>
@@ -35,16 +36,15 @@ const InformationSection = () => {
                         <td>Ziyarat & Umrah</td>
                         <td></td>
                     </tr>
-                    <tr>
-                        <td>Support Of Own Akbar Executive</td>
-                        <td></td>
-                    </tr>
+                    
                     <tr>
                         <td>GST & TCS</td>
                         <td></td>
                     </tr>
                 </tbody>
             </table>
+            </div>
+            
         </section>
     );
 };

@@ -217,6 +217,12 @@
   transition: 0.3s all ease;
   transition: 0.5s;
 }
+.ultimate_img{
+  border-radius: 10px;
+  transition: 0.3s all ease;
+  transition: 0.5s;
+}
+.ultimate_img:hover,
 .summery-card:hover{
   color: black;
   transform: translateY(-10px);
@@ -285,6 +291,7 @@
 .width_10{
   width: 10%;
 }
+
 .width_90{
   width:97%;
 }

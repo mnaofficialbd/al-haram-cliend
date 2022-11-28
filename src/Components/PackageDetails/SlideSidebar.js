@@ -13,17 +13,19 @@ const SlideSidebar = () => {
             <div className="mt-5 details_slide_section">
                 <div className="details_slide px-5">
                     <div className="mb-3">
+
                         <Swiper spaceBetween={30} navigation={{ clickable: true }} slidesPerView={1} grabCursor={true} modules={[Navigation]} className="px-5">
                             {
                                 slidersData.map(sliderData => (
                                     <SwiperSlide key={sliderData.id}>
                                         <div>
-                                            <img src={slideImg} alt="" />
+                                            <img src={slideImg} alt="" className='w-100 ' />
                                         </div>
                                     </SwiperSlide>
                                 ))
                             }
                         </Swiper>
+
                     </div>
                 </div>
 

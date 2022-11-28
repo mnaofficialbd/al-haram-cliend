@@ -13,7 +13,7 @@ const SpecialOffer = () => {
 
     return (
         <section className='container mt-4 pt-4'>
-            <div className="text-center my-5">
+            <div className="my-5">
                 <h3 className='text-uppercase font-bold' style={{ fontSize: '2rem' }}>Special Offers</h3>
                 <p className="text-capitalize" style={{ color: '#777777', fontSize: '16px' }}>These popular destinations have a lot to offer</p>
             </div>

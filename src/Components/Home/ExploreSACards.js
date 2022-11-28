@@ -13,7 +13,7 @@ const ExploreSACards = () => {
         { id: 8, title: 'Taif' },
     ]
     return (
-        <section className='container mt-5 py-5'>
+        <section className='container mt-5 '>
             <div className="row row-cols-1 row-cols-md-4 g-4">
                 {
                     eSADatas.map(data =>

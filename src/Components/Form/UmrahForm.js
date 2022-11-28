@@ -1,8 +1,22 @@
 import { faCalendarDays, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useState } from 'react';
 
 const UmrahForm = () => {
+
+    const [adultNum, setAdultNum] = useState(0)
+
+    const adultInc = () => {
+        setAdultNum(adultNum + 1)
+    }
+    const adultDec = () => {
+        if(adultNum>0){
+            setAdultNum(adultNum - 1)
+        }
+        else{
+            setAdultNum(0)
+        }
+    }
 
     return (
         <form action="" className='bg-white p-4 mb-4'>
@@ -47,19 +61,21 @@ const UmrahForm = () => {
             </div>
             <div className="d-md-flex justify-content-between align-items-end mt-4">
                 <div className="d-flex gap-2 align-items-center">
-                    <div className='px-1' style={{MinWidth: '160px'}}>
+                    <div className='px-1' style={{ MinWidth: '160px' }}>
                         <label htmlFor="exampleInputDeparture" className="form-label font-semibold">ADULT</label>
                         <div className="input-group">
-                        <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
+                            <button onClick={adultDec}
+                                className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
                                 <span className="font-bold">-</span>
                             </button>
-                            <span className="num form-control">01</span>
-                            <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
+                            <span className="num form-control">{adultNum}</span>
+                            <button onClick={adultInc}
+                                className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
                                 <span className="font-bold">+</span>
                             </button>
                         </div>
                     </div>
-                    <div className='px-1' style={{MinWidth: '160px'}}>
+                    <div className='px-1' style={{ MinWidth: '160px' }}>
                         <label htmlFor="exampleInputDeparture" className="form-label font-semibold">CHILD(REN)</label>
                         <div className="input-group">
                             <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
@@ -71,10 +87,10 @@ const UmrahForm = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='px-1' style={{MinWidth: '160px'}}>
+                    <div className='px-1' style={{ MinWidth: '160px' }}>
                         <label htmlFor="exampleInputDeparture" className="form-label font-semibold">INFANT(S)</label>
                         <div className="input-group">
-                        <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
+                            <button className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
                                 <span className="font-bold">-</span>
                             </button>
                             <span className="num form-control">01</span>
