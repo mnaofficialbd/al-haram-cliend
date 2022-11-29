@@ -4,8 +4,6 @@ import { faStar, faBus, faCouch, faKaaba, faMugHot, faFilter, faPlaneDeparture, 
 import kaba from '../../Assets/umrahPackages/kaba.png';
 import { NavLink } from 'react-router-dom';
 import UmrahPackagesTitle from '../Shared/UmrahPackagesTitle';
-// import Box from '@mui/material/Box';
-// import Slider from '@mui/material/Slider';
 
 const UmrahPackages = () => {
     /* const navigate = useNavigate();
@@ -13,15 +11,6 @@ const UmrahPackages = () => {
         navigate(`/umrah/packageDetails/${id}`);
     }; */
 
-    /* =======================
-    function valuetext(value: number) {
-        return `${value}°C`
-      }
-    const [value, setValue] = React.useState<number[]>([20, 37]);
-
-    const handleChange = (event: Event, newValue: number | number[]) => {
-      setValue(newValue as number[]);
- =============================== */
 
     const classicCardDatas = [
         { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }

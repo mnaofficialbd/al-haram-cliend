@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import Footer from './Components/Shared/Footer';
 import { Route, Routes } from 'react-router-dom';
 import Umrah from './Pages/Umrah';
+import Hajj from './Pages/Hajj';
 import PackageDetails from './Pages/PackageDetails';
 import Flights from './Pages/Flights';
 import Hotel from './Pages/Hotel';
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/umrah" element={<Umrah />} />
+        <Route path="/hajj" element={<Hajj />} />
         <Route path="/flights" element={<Flights />} />
         <Route path="/hotel" element={<Hotel />} />
         {/* <Route path="/umrah/packageDetails/:id" element={<PackageDetails />} /> */}
