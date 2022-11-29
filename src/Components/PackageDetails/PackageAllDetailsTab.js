@@ -53,7 +53,7 @@ export default function PackageAllDetailsTab() {
     };
 
     return (
-        <Box sx={{ width: '100%' ,marginTop: '50px' }}>
+        <Box sx={{ width: '92%' ,marginTop: '50px' }}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider'}} >
                 <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" centered>
                     <Tab label="Overview" {...a11yProps(0)} />

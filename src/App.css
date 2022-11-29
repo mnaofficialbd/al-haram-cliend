@@ -279,6 +279,11 @@
   height: 45px;
   width: 0px;
 }
+.border_right_snapshot{
+  border: 2px solid #02A3C1;
+  height: 45px;
+  width: 0px;
+}
 .width_40{
   width: 40%;
 }

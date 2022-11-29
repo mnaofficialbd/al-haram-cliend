@@ -10,7 +10,7 @@ const SlideSidebar = () => {
     ]
     return (
         <section className='mx-4'>
-            <div className="mt-5 d-flex">
+            <div className="mt-5 d-flex justify-content-center">
                 <div className="details_slide px-5">
                     <div className="mb-3">
                         <Swiper 
@@ -21,7 +21,7 @@ const SlideSidebar = () => {
                                 slidersData.map(sliderData => (
                                     <SwiperSlide key={sliderData.id}>
                                         <div>
-                                            <img src={slideImg} alt="" className='' />
+                                            <img src={slideImg} alt="" style={{height: '497px'}} className='' />
                                         </div>
                                     </SwiperSlide>
                                 ))

@@ -83,7 +83,7 @@ const UmrahPackages = () => {
                             </div>
                             {/* =============Budget Range section=============== */}
                             <div className='bg-light border border-secondary rounded mb-4 mx-2'>
-                                <div className='py-1 ps-3' style={{ background: '#02A3C1' }}>
+                                <div className='py-1 text-center' style={{ background: '#02A3C1' }}>
                                     <h6 className='font-semibold text-white' style={{ fontSize: '18px' }}>Budget Range</h6>
                                 </div>
                                 <div className='text-center bg-white py-2'>
@@ -91,37 +91,15 @@ const UmrahPackages = () => {
                                     <div>
                                         <input type="range" min="0" max="100" />
 
-                                        {/* ============================
-                                    <Box sx={{ width: 300 }}>
-                                        <Slider
-                                            getAriaLabel={() => 'Temperature range'}
-                                            value={value}
-                                            onChange={handleChange}
-                                            valueLabelDisplay="auto"
-                                            getAriaValueText={valuetext}
-                                        />
-                                    </Box>
-                                    ================================= */}
-
                                     </div>
-                                    {/* <div className="range-section">
-                                <div className='slider-track'>
-                                    <input type="range" min='0' max='100' value='20' id='slider-1' />
-                                    <input type="range" min='0' max='100' value='80' id='slider-2' />
-                                </div>
-                            </div> */}
                                 </div>
                             </div>
 
                             {/* =============Departure country section=============== */}
                             <div className='bg-light border border-secondary mb-4 mx-2'>
-                                <div className='p-1 d-flex justify-content-between' style={{ background: '#02A3C1' }}>
-                                    <div>
-                                        <h6 className='font-semibold text-white' style={{ fontSize: '18px' }}>Departure Country</h6>
-                                    </div>
-                                    <div>
-                                        <FontAwesomeIcon icon="fa-regular fa-chevron-down" />
-                                        {/* <FontAwesomeIcon icon={faChevronDown} /> */}
+                                <div className='p-1' style={{ background: '#02A3C1' }}>
+                                    <div className='text-center'>
+                                        <h6 className='font-semibold  text-white' style={{ fontSize: '18px' }}>Departure Country</h6>
                                     </div>
                                 </div>
                                 <div className='mt-2'>
@@ -143,13 +121,9 @@ const UmrahPackages = () => {
 
                             {/* =============Departure City section=============== */}
                             <div className='bg-light border border-secondary mb-4 mx-2'>
-                                <div className='p-1 d-flex justify-content-between' style={{ background: '#02A3C1' }}>
+                                <div className='p-1 text-center' style={{ background: '#02A3C1' }}>
                                     <div>
                                         <h6 className='font-semibold text-white' style={{ fontSize: '18px' }}>Departure City</h6>
-                                    </div>
-                                    <div>
-                                        <FontAwesomeIcon icon="fa-regular fa-chevron-down" />
-                                        {/* <FontAwesomeIcon icon={faChevronDown} /> */}
                                     </div>
                                 </div>
                                 <div className='mt-3'>
@@ -170,13 +144,9 @@ const UmrahPackages = () => {
                             </div>
                             {/* =============Month of Travel section=============== */}
                             <div className='bg-light border border-secondary mb-4 mx-2'>
-                                <div className='p-1 d-flex justify-content-between' style={{ background: '#02A3C1' }}>
+                                <div className='p-1 text-center' style={{ background: '#02A3C1' }}>
                                     <div>
                                         <h6 className='font-semibold text-white' style={{ fontSize: '18px' }}>Month of Travel</h6>
-                                    </div>
-                                    <div>
-                                        <FontAwesomeIcon icon="fa-regular fa-chevron-down" />
-                                        {/* <FontAwesomeIcon icon={faChevronDown} /> */}
                                     </div>
                                 </div>
                                 <div className='mt-3'>
@@ -197,13 +167,9 @@ const UmrahPackages = () => {
                             </div>
                             {/* =============No Of Days section=============== */}
                             <div className='bg-light border border-secondary mb-4 mx-2'>
-                                <div className='p-1 d-flex justify-content-between' style={{ background: '#02A3C1' }}>
+                                <div className='p-1 text-center' style={{ background: '#02A3C1' }}>
                                     <div>
                                         <h6 className='font-semibold text-white' style={{ fontSize: '18px' }}>No Of Days</h6>
-                                    </div>
-                                    <div>
-                                        <FontAwesomeIcon icon="fa-regular fa-chevron-down" />
-                                        {/* <FontAwesomeIcon icon={faChevronDown} /> */}
                                     </div>
                                 </div>
                                 <div className='mt-3'>
@@ -278,21 +244,21 @@ const UmrahPackages = () => {
                                                     <div className="d-flex ">
                                                         <div className="me-3">
                                                             <div className="d-flex mb-1">
-                                                                <FontAwesomeIcon className='me-3' style={{ color: '#575757', width: "20px", height: "20px" }} icon={faCalendarDays}></FontAwesomeIcon>
+                                                                <FontAwesomeIcon className='me-3' style={{ color: '#02A3C1', width: "20px", height: "20px" }} icon={faCalendarDays}></FontAwesomeIcon>
                                                                 <p className='font-semibold' style={{ fontSize: '14px' }}>10 Days</p>
                                                             </div>
                                                             <div className="d-flex">
-                                                                <FontAwesomeIcon className='me-3' style={{ color: '#575757', width: "20px", height: "20px" }} icon={faCalendarDay}></FontAwesomeIcon>
+                                                                <FontAwesomeIcon className='me-3' style={{ color: '#02A3C1', width: "20px", height: "20px" }} icon={faCalendarDay}></FontAwesomeIcon>
                                                                 <p className='font-semibold' style={{ fontSize: '14px' }}>13 Sep 2022</p>
                                                             </div>
                                                         </div>
                                                         <div className="mx-3">
                                                             <div className="d-flex">
-                                                                <FontAwesomeIcon className='me-3' style={{ color: '#575757', width: "20px", height: "20px" }} icon={faUsers}></FontAwesomeIcon>
+                                                                <FontAwesomeIcon className='me-3' style={{ color: '#02A3C1', width: "20px", height: "20px" }} icon={faUsers}></FontAwesomeIcon>
                                                                 <p className='font-semibold' style={{ fontSize: '14px' }}>50 Members</p>
                                                             </div>
                                                             <div className="d-flex">
-                                                                <FontAwesomeIcon className='me-3' style={{ color: '#575757', width: "20px", height: "20px" }} icon={faLocationDot}></FontAwesomeIcon>
+                                                                <FontAwesomeIcon className='me-3' style={{ color: '#02A3C1', width: "20px", height: "20px" }} icon={faLocationDot}></FontAwesomeIcon>
                                                                 <p className='font-semibold' style={{ fontSize: '14px' }}>Delhi - INDIA</p>
                                                             </div>
 
@@ -317,24 +283,24 @@ const UmrahPackages = () => {
                                             <p className='font-semibold' style={{ fontSize: '16px' }}>INCLUSION</p>
                                             <div className='card_text_div mt-3'>
                                                 <div className="d-flex pb-3">
-                                                    <span className='me-4 border border-secondary p-1'>
+                                                    <span className='me-4 details-btn p-1'>
                                                         <FontAwesomeIcon style={{ width: "22px", height: "22px" }} icon={faPlaneDeparture}></FontAwesomeIcon>
                                                     </span>
-                                                    <span className='border border-secondary me-4 p-1'>
+                                                    <span className='details-btn me-4 p-1'>
                                                         <FontAwesomeIcon style={{ width: "22px", height: "22px" }} icon={faBus}></FontAwesomeIcon>
                                                     </span>
 
-                                                    <span className='me-4 border border-secondary p-1'>
+                                                    <span className='me-4 details-btn p-1'>
                                                         <FontAwesomeIcon style={{ width: "22px", height: "22px" }} icon={faVcard} />
 
                                                     </span>
-                                                    <span className='me-4 border border-secondary p-1'>
+                                                    <span className='me-4 details-btn p-1'>
                                                         <FontAwesomeIcon style={{ width: "22px", height: "22px" }} icon={faCouch}></FontAwesomeIcon>
                                                     </span>
-                                                    <span className='me-4 border border-secondary p-1'>
+                                                    <span className='me-4 details-btn p-1'>
                                                         <FontAwesomeIcon style={{ width: "22px", height: "22px" }} icon={faMugHot}></FontAwesomeIcon>
                                                     </span>
-                                                    <span className='border border-secondary p-1'>
+                                                    <span className='details-btn  p-1'>
                                                         <FontAwesomeIcon style={{ width: "22px", height: "22px" }} icon={faKaaba}></FontAwesomeIcon>
                                                     </span>
                                                 </div>
