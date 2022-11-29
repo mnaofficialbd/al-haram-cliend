@@ -1,20 +1,22 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import slideImg from '../../Assets/packageDetails/slideImg.png'
 
 const SlideSidebar = () => {
 
     const slidersData = [
-        { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }
+        { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 },{id:8}
     ]
     return (
         <section className='mx-4'>
-            <div className="mt-5 details_slide_section">
+            <div className="mt-5 d-flex">
                 <div className="details_slide px-5">
                     <div className="mb-3">
-
-                        <Swiper spaceBetween={30} navigation={{ clickable: true }} slidesPerView={1} grabCursor={true} modules={[Navigation]} className="px-5">
+                        <Swiper 
+                        cssMode={true} navigation={true} pagination={true}
+                        mousewheel={true} keyboard={true}
+                        modules={[Navigation, Pagination, Mousewheel, Keyboard]} className="">
                             {
                                 slidersData.map(sliderData => (
                                     <SwiperSlide key={sliderData.id}>
