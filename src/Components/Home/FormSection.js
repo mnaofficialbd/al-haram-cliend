@@ -7,7 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBusSimple, faCouch, faKaaba, faPlaneDeparture } from '@fortawesome/free-solid-svg-icons';
 
 const FormSection = () => {
+
     const [active, setActive] = useState('UmrahForm')
+    
     return (
         <section className='container font-bold'>
             <div className="d-flex">

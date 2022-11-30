@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import morningSunset from '../../Assets/Flights/Sunset.png';
 import morningSun from '../../Assets/Flights/Sun.png';
@@ -9,6 +9,8 @@ import FlightsDetails from './FlightsDetails';
 import { faCircle } from '@fortawesome/free-regular-svg-icons';
 
 const FlightsMoreDetails = () => {
+
+    const [show, setShow] = useState(true)
 
     const cardDatas = [
         { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }
@@ -211,7 +213,7 @@ const FlightsMoreDetails = () => {
 
                                 <div className="width_20 d-flex align-items-center justify-content-center">
                                     <div>
-                                    <img src={indigoLogo} alt="" style={{ width: "60px" }} />
+                                        <img src={indigoLogo} alt="" style={{ width: "60px" }} />
                                     </div>
                                     <div>
                                         <h6 className='m-0'>INDIGO</h6>
@@ -241,18 +243,18 @@ const FlightsMoreDetails = () => {
                                 <div className="width_20 pt-4 d-flex flex-column align-items-center ">
                                     <h5 className="font-bold m-0">₹ 80,000</h5>
                                     <p className="m-0">Per Person</p>
-                                    <button className="flight_view_details_btn">View Details</button>
+                                    <button type='button' onClick={()=>setShow(!show)}
+                                    className="flight_view_details_btn">
+                                        View Details
+                                        </button>
                                 </div>
                             </div>
-
-                            <FlightsDetails />
+                            {
+                                show && <FlightsDetails />
+                            }
                         </div>
                     ))
                 }
-
-
-
-
             </div>
         </section>
     );
