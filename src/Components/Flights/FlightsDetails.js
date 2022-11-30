@@ -5,19 +5,19 @@ const FlightsDetails = () => {
     return (
         <div>
             <div className='border-bottom pt-2 border-dark'>
-                <div className='px-5 w-75'>
-                    <div className='d-md-flex justify-content-between align-items-center'>
-                        <div className=''>
-                            <p className='font-semibold'>FLIGHTS DETAILS</p>
+                <div className='px-4'>
+                    <div className='d-md-flex mb-2 align-items-center'>
+                        <div className='me-2'>
+                            <button className="details-btn">FLIGHTS DETAILS</button>
+                        </div>
+                        <div className='me-2'>
+                            <button className="details-btn">FARE BREAKUP</button>
+                        </div>
+                        <div className='me-2'>
+                            <button className="details-btn">BAGGAGE</button>
                         </div>
                         <div className=''>
-                            <p className='font-semibold'>FARE BREAKUP</p>
-                        </div>
-                        <div className=''>
-                            <p className='font-semibold'>BAGGAGE</p>
-                        </div>
-                        <div className=''>
-                            <p className='font-semibold'>FARE POLICY</p>
+                            <button className="details-btn">FARE POLICY</button>
                         </div>
                     </div>
                 </div>
@@ -45,10 +45,10 @@ const FlightsDetails = () => {
                             <p className='mb-0'>(IN-855)</p>
                         </div>
                         <div>
-                            <p  className='mb-0'>ECONOMY</p>
+                            <p className='mb-0'>ECONOMY</p>
                         </div>
                         <div>
-                            <p  className='mb-0'>454</p>
+                            <p className='mb-0'>454</p>
                         </div>
                     </div>
                 </div>

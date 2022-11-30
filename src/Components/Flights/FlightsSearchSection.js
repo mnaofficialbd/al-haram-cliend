@@ -8,9 +8,9 @@ const FlightsSearchSection = () => {
             <form>
                 <div className='d-md-flex justify-content-center'>
 
-                    <div className='width_17 bg-white mb-2 me-3 me-lg-1 p-1'>
-                        <div className="d-flex justify-content-between">
-                            <p className="text-uppercase mb-2">From</p>
+                    <div className='width_17 bg-white mb-2 me-3 me-lg-0 p-1'>
+                        <div className="d-flex justify-content-between pe-3">
+                            <p className="text-uppercase m-0">From</p>
                             <FontAwesomeIcon style={{ width: "18px", height: "18px" }} icon={faLocationDot}></FontAwesomeIcon>
                         </div>
                         <div className='ps-2'>
@@ -19,9 +19,9 @@ const FlightsSearchSection = () => {
                         </div>
                     </div>
 
-                    <div className='width_17 mb-2 bg-white me-3 me-lg-1 p-1'>
-                        <div className="d-flex justify-content-between">
-                            <p className="text-uppercase mb-2">To</p>
+                    <div className='width_17 mb-2 bg-white me-3 me-lg-0 p-1'>
+                        <div className="d-flex justify-content-between pe-3">
+                            <p className="text-uppercase m-0">To</p>
                             <FontAwesomeIcon style={{ width: "18px", height: "18px" }} icon={faLocationDot}></FontAwesomeIcon>
                         </div>
                         <div className='ps-2'>
@@ -30,9 +30,9 @@ const FlightsSearchSection = () => {
                         </div>
                     </div>
 
-                    <div className='width_17 mb-2 bg-white me-3 me-lg-1 p-1'>
-                        <div className="d-flex justify-content-between">
-                            <p className="text-uppercase mb-2">Departure</p>
+                    <div className='width_17 mb-2 bg-white me-3 me-lg-0 p-1'>
+                        <div className="d-flex justify-content-between pe-3">
+                            <p className="text-uppercase m-0">Departure</p>
                             <FontAwesomeIcon style={{ width: "18px", height: "18px" }} icon={faCalendarDays}></FontAwesomeIcon>
                         </div>
                         <div className='ps-2'>
@@ -41,23 +41,23 @@ const FlightsSearchSection = () => {
                         </div>
                     </div>
 
-                    <div className='width_10 bg-white mb-2 me-3 me-lg-1 p-1'>
-                        <p className="text-uppercase mb-2">Travler</p>
+                    <div className='width_10 bg-white mb-2 me-3 me-lg-0 p-1'>
+                        <p className="text-uppercase m-0">Travler</p>
                         <div className='ps-2'>
                             <p className='text-uppercase font-semibold m-0' style={{ fontSize: '18px' }}>02</p>
                             <p className='m-0'>Passenger</p>
                         </div>
                     </div>
 
-                    <div className='width_17 bg-white me-3 mb-2 me-lg-1 p-1'>
-                        <p className="text-uppercase mb-2">Class</p>
+                    <div className='width_17 bg-white me-3 mb-2 me-lg-0 p-1'>
+                        <p className="text-uppercase m-0">Class</p>
                         <div className='ps-2'>
                             <p className='text-uppercase font-semibold m-0' style={{ fontSize: '18px' }}>Economy</p>
                             <p className='m-0'>PREMIUM ECONOMY</p>
                         </div>
                     </div>
 
-                    <button className="width_17 custom_btn mb-2 px-4 p-1" type="button">SEARCH</button>
+                    <button className="width_17 custom_btn mb-2 px-4" type="button">SEARCH</button>
                     {/* <div className='col bg-white px-4 py-3'>
                     </div> */}
                 </div>

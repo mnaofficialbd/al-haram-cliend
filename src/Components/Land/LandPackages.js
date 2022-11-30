@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faBus, faCouch, faKaaba, faMugHot, faFilter, faPlaneDeparture, faCalendarDays, faLocationDot, faUsers, faCalendarDay, faVcard, faSort } from '@fortawesome/free-solid-svg-icons';
 import kaba from '../../Assets/umrahPackages/kaba.png';
 import { NavLink } from 'react-router-dom';
-import HajjPackagesTitle from './HajjPackagesTitle';
+import LandPackagesTitle from './LandPackagesTitle';
 
-const HajjPackages = () => {
+const LandPackages = () => {
     /* const navigate = useNavigate();
     const handlePackageDetails = (id) => {
         navigate(`/umrah/packageDetails/${id}`);
@@ -54,7 +54,7 @@ const HajjPackages = () => {
     ]
     return (
         <section className='mt-5 pt-5'>
-            <HajjPackagesTitle />
+            <LandPackagesTitle />
 
             <div className='mt-4 pt-4'>
                 <div className='container pe-5 me-5'>
@@ -265,7 +265,7 @@ const HajjPackages = () => {
                                                 View details
                                             </button> */}
 
-                                                    <NavLink to='/hajj/hajjDetails' className='text-uppercase font-semibold umrah_details_btn'>View details</NavLink>
+                                                    <NavLink to='/land/landDetails' className='text-uppercase font-semibold umrah_details_btn'>View details</NavLink>
                                                 </div>
                                             </div>
                                             <p className='font-semibold' style={{ fontSize: '16px' }}>INCLUSION</p>
@@ -311,4 +311,4 @@ const HajjPackages = () => {
     );
 };
 
-export default HajjPackages;
+export default LandPackages;

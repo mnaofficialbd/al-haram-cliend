@@ -21,7 +21,7 @@ const SubNavber = () => {
                                 <NavLink to='/umrah' className='dropdown-item'>Umrah Packages</NavLink>
                             </li>
                             <li><a class="dropdown-item" href="/hajj">Hajj Packages</a></li>
-                            <li><a class="dropdown-item" href="/">Land Packages</a></li>
+                            <li><a class="dropdown-item" href="/land">Land Packages</a></li>
                             <li><a class="dropdown-item" href="/">Top Selling Package</a></li>
                             <li><a class="dropdown-item" href="/">New Package</a></li>
                         </ul>

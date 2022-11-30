@@ -3,8 +3,9 @@ import FlightsSearchSection from './FlightsSearchSection';
 
 const FlightsSelection = () => {
     return (
-        <div className='mt-5 p-5' style={{ background: '#02A3C1' }}>
-            <div className='d-flex justify-content-center align-items-center text-center py-4'>
+        <section className='mt-5 p-5' style={{ background: '#02A3C1' }}>
+            <div className='mt-5'>
+            <div className='d-flex justify-content-center align-items-center text-center py-2'>
                 <div className="width_40 d-md-flex justify-content-around align-items-center bg-white">
                     <div class="form-check me-3">
                         <input class="form-check-input" type="checkbox" id="flexCheckChecked" />
@@ -22,8 +23,9 @@ const FlightsSelection = () => {
                     </div>
                 </div>
             </div>
-            <FlightsSearchSection />
-        </div>
+            <FlightsSearchSection />  
+            </div>
+        </section>
     );
 };
 

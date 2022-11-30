@@ -1,6 +1,5 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase, faChair, faPlane } from '@fortawesome/free-solid-svg-icons';
 import morningSunset from '../../Assets/Flights/Sunset.png';
 import morningSun from '../../Assets/Flights/Sun.png';
 import afternoonSunset from '../../Assets/Flights/afternoonSunset.png';
@@ -42,9 +41,9 @@ const FlightsMoreDetails = () => {
                 <div className='rounded px-2 h-100'>
 
                     {/* =============Departure country section=============== */}
-                    <div className='bg-light border border-secondary mb-5 mx-2'>
+                    <div className='border border-secondary mb-5 mx-2'>
                         <div className='px-4'>
-                            <h6 className='font-bold py-3' style={{ fontSize: '22px' }}>FILTER BY</h6>
+                            <h6 className='font-bold text-center py-3' style={{ fontSize: '22px' }}>FILTER BY</h6>
                         </div>
 
                         {/* stops part */}
@@ -186,91 +185,66 @@ const FlightsMoreDetails = () => {
 
             {/* details part */}
             <div className="flights_CardSection">
-
                 <div className='mx-3 text-white pt-2 shadow' style={{ background: '#02A3C1' }}>
-                    <div className='d-md-flex justify-content-between align-items-center'>
-                        <div className="d-flex width_40 align-items-center justify-content-around">
-                            <div>
-                                <p className="font-bold">AIRLINE</p>
-                            </div>
-                            <div>
-                                <p className="font-bold">DEPARTURE</p>
-                            </div>
+                    <div className='d-md-flex justify-content-center align-items-center'>
+                        <div className="width_20 text-center">
+                            <p className="font-bold">AIRLINE</p>
+                        </div>
+                        <div className="width_20 text-center">
+                            <p className="font-bold">DEPARTURE</p>
                         </div>
                         <div className="width_20 text-center">
                             <p className="font-bold">DURATION</p>
                         </div>
-                        <div className="d-flex width_40 align-items-center justify-content-around">
-                            <div>
-                                <p className="font-bold">ARRIVAL</p>
-                            </div>
-                            <div>
-                                <p className="font-bold">PRICE</p>
-                            </div>
+                        <div className="width_20 text-center">
+                            <p className="font-bold">ARRIVAL</p>
+                        </div>
+                        <div className="width_20 text-center">
+                            <p className="font-bold">PRICE</p>
                         </div>
                     </div>
                 </div>
                 {
                     cardDatas.map(cardData => (
-                        <div key={cardData.id} className='mx-3 rounded border border-dark py-4 my-3 bg-light shadow'>
+                        <div key={cardData.id} className='mx-3 rounded border border-dark  my-3 bg-light shadow'>
+                            <div className='d-md-flex border-bottom pb-2 border-dark align-items-center'>
 
-                            <div className='d-md-flex border-bottom pb-2 border-dark justify-content-between align-items-center'>
-                                <div className="d-flex width_40 justify-content-around align-items-center">
+                                <div className="width_20 d-flex align-items-center justify-content-center">
                                     <div>
-                                        <img src={indigoLogo} alt="" />
-                                        <h6>INDIGO</h6>
-                                        <p className="m-0">(IN-855)</p>
+                                    <img src={indigoLogo} alt="" style={{ width: "60px" }} />
                                     </div>
                                     <div>
-                                        <h5 className="font-bold">21:40</h5>
-                                        <h6>DELHI(T: 1D)</h6>
-                                        <p className="m-0">TUE, 30 AUG 2022</p>
+                                        <h6 className='m-0'>INDIGO</h6>
+                                        <p className="m-0" style={{ fontSize: '12px' }}>(IN-855)</p>
                                     </div>
                                 </div>
+                                <div className="width_20 d-flex flex-column align-items-center">
+                                    <h5 className="m-0 font-bold">21:40</h5>
+                                    <h6 className='m-0'>DELHI</h6>
+                                </div>
+
                                 <div className="width_20 d-flex flex-column justify-content-center align-items-center">
-                                    <p>3H 20M (DIRECT)</p>
+                                    <p className='m-0' style={{ fontSize: '10px' }}>3H 20M (DIRECT)</p>
                                     <div className='d-flex align-items-center'>
                                         <FontAwesomeIcon className='' style={{ width: "12px", height: "12px" }} icon={faCircle}></FontAwesomeIcon>
-                                        <p className="m-0" style={{ fontSize: '20px' }}>.....</p>
-                                        <FontAwesomeIcon className='' style={{ width: "20px", height: "20px" }} icon={faPlane}></FontAwesomeIcon>
-                                        <p className="m-0">......</p>
+                                        <p className="m-0">--------------</p>
                                         <FontAwesomeIcon className='' style={{ width: "12px", height: "12px" }} icon={faCircle}></FontAwesomeIcon>
 
                                     </div>
-                                    <p>NON-STOP</p>
-                                </div>
-                                <div className="d-flex width_40 justify-content-around align-items-center">
-                                    <div>
-                                        <h5 className="font-bold">23:55</h5>
-                                        <h6>MECCA(T: 2D)</h6>
-                                        <p className="m-0">TUE, 30 AUG 2022</p>
-                                    </div>
-                                    <div>
-                                        <h5 className="font-bold">RS 17,995/-</h5>
-                                        <p className="">Return Per Traveller</p>
-                                        <button className="details-btn">BOOK</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='border-bottom pt-2 border-dark'>
-                                <div className='px-5 d-md-flex justify-content-between align-items-center'>
-                                    <div className="d-flex width_40 justify-content-between">
-                                        <div className='d-flex'>
-                                            <FontAwesomeIcon className='me-2 pt-1' style={{ width: "18px", height: "18px" }} icon={faBriefcase}></FontAwesomeIcon>
-                                            <p className='font-semibold'>15 KG (ONE PIECE ONLY) / 7 KG</p>
-                                        </div>
-                                        <div className='d-flex'>
-                                            <FontAwesomeIcon className='me-2 pt-1' style={{ width: "18px", height: "18px" }} icon={faChair}></FontAwesomeIcon>
-                                            <p className='font-semibold'>8 SEAT(S)</p>
-                                        </div>
-                                    </div>
-                                    <div className="d-flex">
-                                        <p className='font-semibold me-2'>FLIGHTS DETAILS</p>
-                                        <p className='font-bold'> ˅ </p>
-                                    </div>
+                                    <p className='m-0' style={{ fontSize: '10px' }}>NON-STOP</p>
                                 </div>
 
+                                <div className="width_20 d-flex flex-column align-items-center">
+                                    <h5 className="m-0 font-bold">23:55</h5>
+                                    <h6 className='m-0'>MECCA</h6>
+                                </div>
+                                <div className="width_20 pt-4 d-flex flex-column align-items-center ">
+                                    <h5 className="font-bold m-0">₹ 80,000</h5>
+                                    <p className="m-0">Per Person</p>
+                                    <button className="flight_view_details_btn">View Details</button>
+                                </div>
                             </div>
+
                             <FlightsDetails />
                         </div>
                     ))

@@ -6,7 +6,10 @@ import Footer from './Components/Shared/Footer';
 import { Route, Routes } from 'react-router-dom';
 import Umrah from './Pages/Umrah';
 import Hajj from './Pages/Hajj';
+import Land from './Pages/Land';
 import PackageDetails from './Pages/PackageDetails';
+import HajjDetails from './Pages/HajjDetails';
+import LandDetails from './Pages/LandDetails';
 import Flights from './Pages/Flights';
 import Hotel from './Pages/Hotel';
 
@@ -19,10 +22,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/umrah" element={<Umrah />} />
         <Route path="/hajj" element={<Hajj />} />
+        <Route path="/land" element={<Land />} />
         <Route path="/flights" element={<Flights />} />
         <Route path="/hotel" element={<Hotel />} />
         {/* <Route path="/umrah/packageDetails/:id" element={<PackageDetails />} /> */}
         <Route path="/umrah/packageDetails" element={<PackageDetails />} />
+        <Route path="/hajj/hajjDetails" element={<HajjDetails />} />
+        <Route path="/land/landDetails" element={<LandDetails />} />
       </Routes>
       <Footer />
 
