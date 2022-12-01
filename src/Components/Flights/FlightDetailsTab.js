@@ -42,13 +42,7 @@ const FlightDetailsTab = () => {
                             </tbody>
                         </table>
                     </div>
-
-
-
-
                 </div>
-
-
             </div>
         </section>
     );
