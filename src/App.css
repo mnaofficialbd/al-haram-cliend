@@ -303,8 +303,14 @@
 .width_17{
   width: 17%;
 }
+.width_15{
+  width: 15%;
+}
 .width_10{
   width: 10%;
+}
+.width_13_75{
+  width: 13.75%;
 }
 .width_87{
   width: 87%;
@@ -312,6 +318,9 @@
 
 .width_90{
   width:97%;
+}
+.width_99{
+  width:99%;
 }
 /* .range-section{
   border: 1px solid red;
