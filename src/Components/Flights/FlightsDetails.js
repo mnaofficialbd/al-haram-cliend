@@ -15,18 +15,18 @@ const FlightsDetails = () => {
                     <div className='d-md-flex mb-2 align-items-center'>
                         <div className='me-2'>
                             <button className="details-btn" onClick={() => setActive('FlightDetailsTab')}>
-                            FLIGHTS DETAILS
+                                FLIGHTS DETAILS
                             </button>
                         </div>
                         <div className='me-2'>
                             <button className="details-btn" onClick={() => setActive('FareBreakupTab')}>
                                 FARE BREAKUP
-                                </button>
+                            </button>
                         </div>
                         <div className='me-2'>
                             <button className="details-btn" onClick={() => setActive('BaggageTab')}>
                                 BAGGAGE
-                                </button>
+                            </button>
                         </div>
                         <div className=''>
                             <button className="details-btn" onClick={() => setActive('FarePolicyTab')}>
@@ -44,7 +44,6 @@ const FlightsDetails = () => {
             {active === 'BaggageTab' && <BaggageTab />}
             {/* ===========Fare Policy Tab component=========== */}
             {active === 'FarePolicyTab' && <FarePolicyTab />}
-            <FlightDetailsTab />
         </div>
 
     );

@@ -252,10 +252,10 @@
   width: 60%;
 }
 .flights_SideBar{
-  width: 23%;
+  width: 27%;
 }
 .flights_CardSection{
-  width: 65%;
+  width: 63%;
 }
 .details_slide{
   width: 60%;
@@ -305,6 +305,9 @@
 }
 .width_10{
   width: 10%;
+}
+.width_87{
+  width: 87%;
 }
 
 .width_90{

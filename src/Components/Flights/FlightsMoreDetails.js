@@ -7,6 +7,7 @@ import eveningMoon from '../../Assets/Flights/moon.png';
 import indigoLogo from '../../Assets/Flights/indiGoLogo.png';
 import FlightsDetails from './FlightsDetails';
 import { faCircle } from '@fortawesome/free-regular-svg-icons';
+import { faFilter } from '@fortawesome/free-solid-svg-icons';
 
 const FlightsMoreDetails = () => {
 
@@ -14,6 +15,11 @@ const FlightsMoreDetails = () => {
 
     const cardDatas = [
         { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }
+    ]
+    const popularFilters = [
+        { id: 1, title: 'Direct (5)', num: 13999 },
+        { id: 2, title: 'Morning Departure', num: 12999 },
+        { id: 3, title: 'Indigo', num: 19499 }
     ]
     const stopsDatas = [
         { id: 1, title: 'Direct (5)', num: 13999 },
@@ -24,11 +30,11 @@ const FlightsMoreDetails = () => {
         { id: 1, title: 'Vistara(76)', num: 13456 },
         { id: 2, title: 'Indigo(33)', num: 17236 },
         { id: 3, title: 'Spaacejet(67)', num: 18447 },
-        { id: 4, title: 'Gofirst(1)', num: 19499 }
-    ]
-    const travelDatas = [
-        { id: 1, title: 'Seat Choice Included', num: 12999 },
-        { id: 2, title: 'Hand Baggage Included', num: 19499 }
+        { id: 4, title: 'Gofirst(1)', num: 19499 },
+        { id: 5, title: 'Vistara(76)', num: 13456 },
+        { id: 6, title: 'Indigo(33)', num: 17236 },
+        { id: 7, title: 'Spaacejet(67)', num: 18447 },
+        { id: 8, title: 'Gofirst(1)', num: 19499 }
     ]
     const timeDatas = [
         { id: 1, title: 'Early Morning', img: morningSunset, time: '00:00 - 04:59' },
@@ -43,142 +49,133 @@ const FlightsMoreDetails = () => {
                 <div className='rounded px-2 h-100'>
 
                     {/* =============Departure country section=============== */}
-                    <div className='border border-secondary mb-5 mx-2'>
-                        <div className='px-4'>
-                            <h6 className='font-bold text-center py-3' style={{ fontSize: '22px' }}>FILTER BY</h6>
+                    <div className='mb-5 mx-2'>
+
+                        {/* =============Filter section=============== */}
+                        <div className='d-flex align-items-center justify-content-center text-white rounded py-3 text-center mb-4 mx-2' style={{ background: '#02A3C1' }}>
+                            <h6 className='font-semibold me-3 m-0' style={{ fontSize: '18px' }}>Filter By</h6>
+                            <FontAwesomeIcon className='m-0' icon={faFilter}></FontAwesomeIcon>
                         </div>
 
-                        {/* stops part */}
-                        <div className='mt-4'>
-                            <div className="d-flex justify-content-between px-4">
-                                <div>
-                                    <p className='font-bold'>STOP</p>
+                        <div className='border border-secondary rounded'>
+                            {/* =============Budget Range section=============== */}
+                            <div className='bg-light mb-2'>
+                                <div className='py-1 text-center' style={{ background: '#02A3C1' }}>
+                                    <h6 className='font-semibold text-white' style={{ fontSize: '18px' }}>Budget Range</h6>
                                 </div>
-                                <div>
-                                    <p className='font-bold'>FROM</p>
-                                </div>
-                            </div>
-                            {
-                                stopsDatas.map(stopsData => (
-                                    <div key={stopsData.id} className="d-flex justify-content-between px-4 font-semibold">
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                                            <label class="form-check-label" for="inlineCheckbox1">{stopsData.title}</label>
-                                        </div>
-                                        <div>
-                                            <p>Rs {stopsData.num}</p>
-                                        </div>
+                                <div className='text-center bg-white py-3'>
+                                    <p className='m-0' style={{ fontSize: '14px' }}>Rs 10,000 To 100,000</p>
+                                    <div>
+                                        <input className='' type="range" min="0" max="100" />
                                     </div>
-                                ))
-                            }
-                        </div>
-                        {/* airlines part */}
-                        <div className='mt-4'>
-                            <div className="d-flex justify-content-between px-4">
-                                <div>
-                                    <p className='font-bold'>AIRLINES</p>
-                                </div>
-                                <div>
-                                    <p className='font-bold'>FROM</p>
                                 </div>
                             </div>
-                            {
-                                airlinesDatas.map(airlinesData => (
-                                    <div key={airlinesData.id} className="d-flex justify-content-between px-4 font-semibold">
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                                            <label class="form-check-label" for="inlineCheckbox1">{airlinesData.title}</label>
-                                        </div>
-                                        <div>
-                                            <p>Rs {airlinesData.num}</p>
-                                        </div>
-                                    </div>
-                                ))
-                            }
-                        </div>
-                        {/* =============TRAVEL & BAGGAGE part=============== */}
-                        <div className='mt-4'>
-                            <div className="d-flex justify-content-between px-4">
-                                <div>
-                                    <p className='font-bold'>TRAVEL & BAGGAGE</p>
+                            {/* Popular Filters part */}
+                            <div className=''>
+                                <div className='py-2 mb-1 text-center' style={{ background: '#02A3C1' }}>
+                                    <h6 className='font-semibold text-white m-0' style={{ fontSize: '18px' }}>Popular Filters</h6>
                                 </div>
-                                <div>
-                                    <p className='font-bold'>FROM</p>
+                                <div className="py-4">
+                                    {
+                                        popularFilters.map(popularFilter => (
+                                            <div key={popularFilter.id} className="d-flex justify-content-between px-4">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                                    <label class="form-check-label" for="inlineCheckbox1">{popularFilter.title}</label>
+                                                </div>
+                                                <div>
+                                                    <p>Rs {popularFilter.num}/-</p>
+                                                </div>
+                                            </div>
+                                        ))
+                                    }
                                 </div>
                             </div>
-                            {
-                                travelDatas.map(travelData => (
-                                    <div key={travelData.id} className="d-flex justify-content-between px-4 font-semibold">
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                                            <label class="form-check-label" for="inlineCheckbox1">{travelData.title}</label>
-                                        </div>
-                                        <div>
-                                            <p>Rs {travelData.num}</p>
-                                        </div>
-                                    </div>
-                                ))
-                            }
-                        </div>
-                        {/* =============departure part=============== */}
-                        <div className='mt-4'>
-                            <div className="px-4">
-                                <p className='font-bold'>DEPARTURE TIME IN HYDERABAD</p>
+                            {/* stops part */}
+                            <div className=''>
+                                <div className='py-2 mb-1 text-center' style={{ background: '#02A3C1' }}>
+                                    <h6 className='font-semibold text-white m-0' style={{ fontSize: '18px' }}>Stops</h6>
+                                </div>
+                                <div className="py-4">
+                                    {
+                                        stopsDatas.map(stopsData => (
+                                            <div key={stopsData.id} className="d-flex justify-content-between px-4">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                                    <label class="form-check-label" for="inlineCheckbox1">{stopsData.title}</label>
+                                                </div>
+                                                <div>
+                                                    <p>Rs {stopsData.num}/-</p>
+                                                </div>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
                             </div>
+                            {/* airlines part */}
+                            <div className=''>
+                                <div className='py-2 mb-1 text-center' style={{ background: '#02A3C1' }}>
+                                    <h6 className='font-semibold text-white m-0' style={{ fontSize: '18px' }}>Airlines</h6>
+                                </div>
+                                <div className="py-4">
+                                    {
+                                        airlinesDatas.map(airlinesData => (
+                                            <div key={airlinesData.id} className="d-flex justify-content-between px-4">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                                    <label class="form-check-label" for="inlineCheckbox1">{airlinesData.title}</label>
+                                                </div>
+                                                <div>
+                                                    <p>Rs {airlinesData.num}/-</p>
+                                                </div>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                            {/* =============departure part=============== */}
+                            <div className=''>
+                                <div className='py-2 mb-1 text-center' style={{ background: '#02A3C1' }}>
+                                    <h6 className='font-semibold text-white m-0' style={{ fontSize: '16px' }}>DEPARTURE TIME IN HYDERABAD</h6>
+                                </div>
 
-                            <div className="px-5 d-md-flex justify-content-between">
-                                {
-                                    timeDatas.slice(0, 2).map(timeData => (
-                                        <div key={timeData.id} className='px-3 mb-3 text-center'>
-                                            <img src={timeData.img} alt="" />
-                                            <p className='m-0 font-semibold'>{timeData.title}</p>
-                                            <p className='m-0 font-semibold'>{timeData.time}</p>
-                                        </div>
-                                    ))
-                                }
-                            </div>
-                            <div className="px-5 d-md-flex justify-content-between">
-                                {
-                                    timeDatas.slice(2, 4).map(timeData => (
-                                        <div key={timeData.id} className='px-3 mb-3 text-center'>
-                                            <img src={timeData.img} alt="" />
-                                            <p className='m-0 font-semibold'>{timeData.title}</p>
-                                            <p className='m-0 font-semibold'>{timeData.time}</p>
-                                        </div>
-                                    ))
-                                }
-                            </div>
+                                <div className="d-md-flex justify-content-center">
+                                    {
+                                        timeDatas.map(timeData => (
+                                            <div key={timeData.id} className='card shadow me-lg-1 mb-3 text-center'>
+                                                <img src={timeData.img} alt="" className='width_87' />
+                                                <div className="">
+                                                    <p className='m-0' style={{ fontSize: '12px' }}>{timeData.title}</p>
+                                                    <p className='m-0' style={{ fontSize: '12px' }}>{timeData.time}</p>
+                                                </div>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
 
-                        </div>
-                        {/* =============arrival part=============== */}
-                        <div className='mt-4'>
-                            <div className="px-4">
-                                <p className='font-bold'>ARRIVAL TIME IN MEECA</p>
-                            </div>
 
-                            <div className="px-5 d-md-flex justify-content-between">
-                                {
-                                    timeDatas.slice(0, 2).map(timeData => (
-                                        <div key={timeData.id} className='px-3 mb-3 text-center'>
-                                            <img src={timeData.img} alt="" />
-                                            <p className='m-0 font-semibold'>{timeData.title}</p>
-                                            <p className='m-0 font-semibold'>{timeData.time}</p>
-                                        </div>
-                                    ))
-                                }
                             </div>
-                            <div className="px-5 d-md-flex justify-content-between">
-                                {
-                                    timeDatas.slice(2, 4).map(timeData => (
-                                        <div key={timeData.id} className='px-3 mb-3 text-center'>
-                                            <img src={timeData.img} alt="" />
-                                            <p className='m-0 font-semibold'>{timeData.title}</p>
-                                            <p className='m-0 font-semibold'>{timeData.time}</p>
-                                        </div>
-                                    ))
-                                }
-                            </div>
+                            {/* =============arrival part=============== */}
+                            <div className=''>
+                                <div className='py-2 mb-1 text-center' style={{ background: '#02A3C1' }}>
+                                    <h6 className='font-semibold text-white m-0' style={{ fontSize: '16px' }}>DEPARTURE TIME IN HYDERABAD</h6>
+                                </div>
 
+                                <div className="d-md-flex justify-content-center">
+                                    {
+                                        timeDatas.map(timeData => (
+                                            <div key={timeData.id} className='card shadow me-lg-1 mb-3 text-center'>
+                                                <img src={timeData.img} alt="" className='width_87' />
+                                                <div className="">
+                                                    <p className='m-0' style={{ fontSize: '12px' }}>{timeData.title}</p>
+                                                    <p className='m-0' style={{ fontSize: '12px' }}>{timeData.time}</p>
+                                                </div>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -243,10 +240,10 @@ const FlightsMoreDetails = () => {
                                 <div className="width_20 pt-4 d-flex flex-column align-items-center ">
                                     <h5 className="font-bold m-0">₹ 80,000</h5>
                                     <p className="m-0">Per Person</p>
-                                    <button type='button' onClick={()=>setShow(!show)}
-                                    className="flight_view_details_btn">
+                                    <button type='button' onClick={() => setShow(!show)}
+                                        className="flight_view_details_btn">
                                         View Details
-                                        </button>
+                                    </button>
                                 </div>
                             </div>
                             {
