@@ -4,7 +4,7 @@ const BaggageTab = () => {
     return (
         <section className='pt-2 mb-4'>
             <div className='px-4'>
-                <div className="border border-secondary rounded">
+                <div className="rounded" style={{background: '#F5F5F5'}}>
                     <div className="px-4">
                         <table class="table">
                             <thead>
