@@ -10,7 +10,7 @@ const FlightsDetails = () => {
 
     return (
         <div>
-            <div className='border-bottom pt-2 border-dark'>
+            <div className='pt-3 '>
                 <div className='px-4'>
                     <div className='d-md-flex mb-2 align-items-center'>
                         <div className='me-2'>
