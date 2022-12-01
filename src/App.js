@@ -12,6 +12,7 @@ import HajjDetails from './Pages/HajjDetails';
 import LandDetails from './Pages/LandDetails';
 import Flights from './Pages/Flights';
 import Hotel from './Pages/Hotel';
+import FlightBooking from './Pages/FlightBooking';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/hajj" element={<Hajj />} />
         <Route path="/land" element={<Land />} />
         <Route path="/flights" element={<Flights />} />
+        <Route path="/flightbooking" element={<FlightBooking />} />
         <Route path="/hotel" element={<Hotel />} />
         {/* <Route path="/umrah/packageDetails/:id" element={<PackageDetails />} /> */}
         <Route path="/umrah/packageDetails" element={<PackageDetails />} />
