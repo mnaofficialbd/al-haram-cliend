@@ -1,7 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
-import slideImg from '../../Assets/packageDetails/slideImg.png'
+import slideImg from '../../Assets/Hotel/hotelSliderImg.png'
 
 const HotelSlideSidebar = () => {
 
@@ -10,7 +10,7 @@ const HotelSlideSidebar = () => {
     ]
     return (
         <section className='mx-4'>
-            <div className="mt-5 d-flex justify-content-center">
+            <div className="mt-4 d-flex justify-content-center">
                 <div className="details_slide px-5">
                     <div className="mb-3">
                         <Swiper 

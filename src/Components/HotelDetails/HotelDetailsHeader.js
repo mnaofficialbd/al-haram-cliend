@@ -1,15 +1,15 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload, faShareNodes, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faDownload, faMapLocationDot, faShareNodes, faStar } from '@fortawesome/free-solid-svg-icons';
 
 const HotelDetailsHeader = () => {
     return (
-        <section className='mt-5 pt-5 mx-5'>
-            <div className='pt-5 mx-5 px-5'>
+        <section className='mt-4 pt-5 mx-5'>
+            <div className='mx-5 px-5'>
                 <div className="ms-4">
                     <div className='d-md-flex align-items-center'>
                         <div className='me-4'>
-                            <h4 className="classic_umrah_title m-0 pe-4" > Umrah Package</h4>
+                            <h4 className="classic_umrah_title m-0 pe-4" >Universal Luxury Grand Hotel</h4>
                         </div>
                         <div className="d-flex">
                             <div className="d-flex align-items-center me-2">
@@ -24,12 +24,10 @@ const HotelDetailsHeader = () => {
                         </div>
                     </div>
                     <div className='card_text_div'>
-                        <div className="d-md-flex font-semibold" style={{ fontSize: "16px", color: '#757575' }}>
-                            <p className='m-0 pe-2'>Package By <a href="/" className=''>Al Bushra Tours & Travels</a> |</p>
-                            <div className='d-md-flex'>
-                                <p className='m-0 pe-2'>Package ID : 2489576 |</p>
-                                <p className='m-0'>Published Date: 11 Aug 22</p>
-                            </div>
+                        <div className="d-flex align-items-center font-semibold" style={{ fontSize: "16px", color: '#757575' }}>
+                        <FontAwesomeIcon className='me-2' style={{ width: "18px", height: "18px" }} icon={faMapLocationDot}></FontAwesomeIcon>
+                            <p className='m-0'>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A</p>
+                            
                         </div>
                         <div className="d-flex">
                             <button className='details-btn'>

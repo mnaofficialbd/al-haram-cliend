@@ -13,12 +13,13 @@ import LandDetails from './Pages/LandDetails';
 import Flights from './Pages/Flights';
 import Hotel from './Pages/Hotel';
 import FlightBooking from './Pages/FlightBooking';
+import HotelDetails from './Pages/HotelDetails';
 
 function App() {
   return (
     <>
       <Navber />
-    <SubNavber />
+      <SubNavber />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/umrah" element={<Umrah />} />
@@ -31,6 +32,7 @@ function App() {
         <Route path="/umrah/packageDetails" element={<PackageDetails />} />
         <Route path="/hajj/hajjDetails" element={<HajjDetails />} />
         <Route path="/land/landDetails" element={<LandDetails />} />
+        <Route path="/hotel/hotelDetails" element={<HotelDetails />} />
       </Routes>
       <Footer />
 
