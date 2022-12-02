@@ -86,7 +86,7 @@ const HotelDetails = () => {
                 <p className='text-end mb-1 pe-5 me-2'>1,258 Packages Found</p>
             </div>
             <div className='d-md-flex justify-content-center'>
-                <div class="d-flex flex-column flex-shrink-0 px-2 umrahSideBar" >
+                <div class="d-flex flex-column flex-shrink-0 px-2 hotel_SideBar" >
                     <div className='rounded px-2 h-100'>
 
                         {/* =============Filter section=============== */}
@@ -280,7 +280,9 @@ const HotelDetails = () => {
                                     </div>
                                 </div>
                                 <div className='mt-4'>
-                                <p className="font-semibold text-capitalize">business & shopping hubs</p>
+                                    <div className="mx-4">
+                                        <p className="font-semibold text-capitalize">business & shopping hubs</p>
+                                    </div>
                                     {
                                         businessDatas.map(businessData => (
                                             <div key={businessData.id} className="d-flex justify-content-between bg-white px-4">
@@ -296,7 +298,9 @@ const HotelDetails = () => {
                                     }
                                 </div>
                                 <div className='mt-4'>
-                                <p className="font-semibold text-capitalize">near transit hubs</p>
+                                    <div className="mx-4">
+                                        <p className="font-semibold text-capitalize">near transit hubs</p>
+                                    </div>
                                     {
                                         transitDatas.map(transitData => (
                                             <div key={transitData.id} className="d-flex justify-content-between bg-white px-4">
@@ -312,7 +316,9 @@ const HotelDetails = () => {
                                     }
                                 </div>
                                 <div className='mt-2'>
-                                    <p className="font-semibold text-capitalize">known for dining & shopping</p>
+                                    <div className="mx-4">
+                                        <p className="font-semibold text-capitalize">known for dining & shopping</p>
+                                    </div>
                                     {
                                         diningDatas.map(diningData => (
                                             <div key={diningData.id} className="d-flex justify-content-between bg-white px-4">
@@ -333,7 +339,7 @@ const HotelDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className="umrahCardSection">
+                <div className="hotel_CardSection">
 
                     {/* ============================== */}
 
@@ -361,11 +367,11 @@ const HotelDetails = () => {
                             <div key={roomData.id} className='mx-3 mb-4 bg-light shadow'>
                                 <div className='d-md-flex align-items-center'>
                                     <div className='card_img'>
-                                        <img src={roomImg} alt="" className='width_90' />
+                                        <img src={roomImg} alt="" className='' />
                                     </div>
                                     <div className='mx-3 d-flex justify-content-between align-items-center w-100'>
                                         <div className="width_70 border-end border-dark">
-                                            <div className="d-flex mb-2 justify-content-between">
+                                            <div className="d-flex mb-3 justify-content-between">
                                                 <div className="d-flex align-items-center">
                                                     <FontAwesomeIcon className='me-2' style={{ color: 'rgb(230, 255, 5)', width: "12px", height: "12px" }} icon={faStar}></FontAwesomeIcon>
                                                     <FontAwesomeIcon className='me-2' style={{ color: 'rgb(230, 255, 5)', width: "12px", height: "12px" }} icon={faStar}></FontAwesomeIcon>
@@ -377,25 +383,27 @@ const HotelDetails = () => {
                                                 </div>
                                             </div>
                                             <div>
-                                                <h4 className="mb-1 classic_umrah_title" >Universal Luxury Grand Hotel</h4>
-                                                <div className='mb-1'>
-                                                    <div className="d-flex align-items-center m-0">
+                                                <div>
+                                                    <h4 className="mb-1 classic_umrah_title" >Universal Luxury Grand Hotel</h4>
+                                                </div>
+                                                <div className='my-2'>
+                                                    <div className="d-flex align-items-center py-3 m-0">
                                                         <FontAwesomeIcon className='me-2' icon={faMapLocationDot}></FontAwesomeIcon>
-                                                        <p className='m-0'>28800 Orchard Lake Road,</p>
+                                                        <p className='m-0' style={{ fontSize: '14px' }}>28800 Orchard Lake Road,</p>
                                                     </div>
-                                                    <p className='m-0'>Suite 180 Farmington Hills, U.S.A</p>
+                                                    <p className='pb-3 m-0' style={{ fontSize: '14px' }}>Suite 180 Farmington Hills, U.S.A</p>
                                                 </div>
 
-                                                <div>
+                                                <div className='mb-2'>
                                                     <button className="details-btn">Breakfast Included</button>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="w-25 d-flex flex-column align-items-end text-end">
-                                            <h5 className='m-0 pb-1'>$ 2975</h5>
-                                            <p className='m-0' style={{ fontSize: '13px' }}>2565 Taxes & fees</p>
-                                            <p className='m-0' style={{ fontSize: '11px' }}>Per Night</p>
-                                            <button className="details-btn my-1">Book Now</button>
+                                            <h5 className='m-0 font-semibold pb-2'>$ 2975</h5>
+                                            <p className='m-0 py-1' style={{ fontSize: '13px' }}>2565 Taxes & fees</p>
+                                            <p className='m-0 pb-2' style={{ fontSize: '11px' }}>Per Night</p>
+                                            <button className="details-btn my-2">Book Now</button>
                                             <p className='m-0 pt-1' style={{ fontSize: '11px' }}>Cancellation Charges Apply</p>
                                         </div>
 

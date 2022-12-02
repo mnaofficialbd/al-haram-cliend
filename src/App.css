@@ -257,6 +257,12 @@
 .flights_CardSection{
   width: 63%;
 }
+.hotel_SideBar{
+  width: 25%;
+}
+.hotel_CardSection{
+  width: 68%;
+}
 .details_slide{
   width: 60%;
 }
