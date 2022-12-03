@@ -10,12 +10,7 @@ import HotelAmenitiesTab from './HotelAmenitiesTab';
 import HotelRoomsTab from './HotelRoomsTab';
 import HotelSimilarProTab from './HotelSimilarProTab';
 import HotelLocationTab from './HotelLocationTab';
-// import InformationSection from './InformationSection';
-// import TermsConditions from './TermsConditions';
-// import RoomSharing from './RoomSharing';
-// import RoomSharingTable from './RoomSharingTable';
-// import Itinerary from './Itinerary';
-// import UserReviews from './UserReviews';
+import HotelPropertyRules from './HotelPropertyRules';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -83,7 +78,7 @@ export default function HotelAllDetailsTab() {
                 <HotelAmenitiesTab />
             </TabPanel>
             <TabPanel value={value} index={4}>
-                <HotelLocationTab />
+                <HotelPropertyRules />
             </TabPanel>
             <TabPanel value={value} index={5}>
                 <HotelUserReviews />
