@@ -4,13 +4,13 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import OverviewSection from './OverviewSection'
-import InformationSection from './InformationSection';
-import TermsConditions from './TermsConditions';
+// import OverviewSection from './OverviewSection'
+// import InformationSection from './InformationSection';
+// import TermsConditions from './TermsConditions';
 // import RoomSharing from './RoomSharing';
-import RoomSharingTable from './RoomSharingTable';
-import Itinerary from './Itinerary';
-import UserReviews from './UserReviews';
+// import RoomSharingTable from './RoomSharingTable';
+// import Itinerary from './Itinerary';
+// import UserReviews from './UserReviews';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -45,7 +45,7 @@ function a11yProps(index) {
     };
 }
 
-export default function PackageAllDetailsTab() {
+export default function HotelAllDetailsTab() {
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
@@ -53,35 +53,38 @@ export default function PackageAllDetailsTab() {
     };
 
     return (
-        <Box sx={{ width: '92%' ,marginTop: '50px' }}>
-            <Box sx={{ borderBottom: 1, borderColor: 'divider'}} >
+        <Box sx={{ width: '100%' ,marginTop: '50px' }}>
+            <Box sx={{ borderBottom: 1,  borderColor: 'divider'}} >
                 <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" centered>
-                    <Tab label="Overview" {...a11yProps(0)} />
-                    <Tab label="Important Information" {...a11yProps(1)} />
-                    <Tab label="Room Sharing" {...a11yProps(2)} />
-                    <Tab label="Itinerary" {...a11yProps(3)} />
-                    <Tab label="User Reviews" {...a11yProps(4)} />
-                    <Tab label="Terms & Conditions" {...a11yProps(5)} />
+                    <Tab className='mx-4' label="Rooms" {...a11yProps(0)} />
+                    <Tab className='me-4' label="Overview" {...a11yProps(1)} />
+                    <Tab className='me-4' label="Location" {...a11yProps(2)} />
+                    <Tab className='me-4' label="Amenities" {...a11yProps(3)} />
+                    <Tab className='me-4' label="Property Rules" {...a11yProps(4)} />
+                    <Tab className='me-4' label="User Reviews" {...a11yProps(5)} />
+                    <Tab className='' label="Similar Properties" {...a11yProps(6)} />
                 </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
-                <OverviewSection />
+                {/* <OverviewSection /> */}
             </TabPanel>
             <TabPanel value={value} index={1}>
-                <InformationSection />
+                {/* <OverviewSection /> */}
             </TabPanel>
             <TabPanel value={value} index={2}>
-                {/* <RoomSharing /> */}
-                <RoomSharingTable />
+                {/* <InformationSection /> */}
             </TabPanel>
             <TabPanel value={value} index={3}>
-                <Itinerary />
+                {/* <RoomSharingTable /> */}
             </TabPanel>
             <TabPanel value={value} index={4}>
-                <UserReviews />
+                {/* <Itinerary /> */}
             </TabPanel>
             <TabPanel value={value} index={5}>
-                <TermsConditions />
+                {/* <UserReviews /> */}
+            </TabPanel>
+            <TabPanel value={value} index={6}>
+                {/* <TermsConditions /> */}
             </TabPanel>
         </Box>
     );

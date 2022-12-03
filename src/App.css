@@ -27,6 +27,9 @@
 .App-link {
   color: #61dafb;
 }
+body p{
+  margin: 0px;
+}
 
 /* ===================
       Custom CSS
@@ -258,10 +261,10 @@
   width: 63%;
 }
 .hotel_SideBar{
-  width: 25%;
+  width: 20.9%;
 }
 .hotel_CardSection{
-  width: 68%;
+  width: 63%;
 }
 .details_slide{
   width: 60%;

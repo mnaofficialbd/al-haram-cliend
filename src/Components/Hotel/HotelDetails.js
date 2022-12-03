@@ -1,6 +1,7 @@
 import { faFilter, faMapLocationDot, faSort, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import roomImg from '../../Assets/Hotel/RoomImg.png';
 
 const HotelDetails = () => {
@@ -87,7 +88,7 @@ const HotelDetails = () => {
             </div>
             <div className='d-md-flex justify-content-center'>
                 <div class="d-flex flex-column flex-shrink-0 px-2 hotel_SideBar" >
-                    <div className='rounded px-2 h-100'>
+                    <div className='rounded h-100'>
 
                         {/* =============Filter section=============== */}
                         <div className='d-flex align-items-center justify-content-center text-white rounded py-2 text-center mb-3' style={{ background: '#02A3C1' }}>
@@ -106,13 +107,13 @@ const HotelDetails = () => {
                                 <div className='mt-2'>
                                     {
                                         suggestDatas.map(suggestData => (
-                                            <div key={suggestData.id} className="d-flex justify-content-between bg-white px-4">
+                                            <div key={suggestData.id} className="d-flex justify-content-between bg-white align-items-center px-2">
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
                                                     <label class="form-check-label text-capitalize" style={{ fontSize: '14px' }} for="inlineCheckbox1">{suggestData.title}</label>
                                                 </div>
                                                 <div>
-                                                    <p style={{ fontSize: '14px' }}>({suggestData.num})</p>
+                                                    <p className='m-0' style={{ fontSize: '14px' }}>({suggestData.num})</p>
                                                 </div>
                                             </div>
                                         ))
@@ -129,13 +130,13 @@ const HotelDetails = () => {
                                 <div className='mt-2'>
                                     {
                                         priceDatas.map(priceData => (
-                                            <div key={priceData.id} className="d-flex justify-content-between bg-white px-4">
+                                            <div key={priceData.id} className="d-flex align-items-center justify-content-between bg-white px-4">
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
                                                     <label class="form-check-label text-capitalize" style={{ fontSize: '14px' }} for="inlineCheckbox1">{priceData.title}</label>
                                                 </div>
                                                 <div>
-                                                    <p style={{ fontSize: '14px' }}>({priceData.num})</p>
+                                                    <p className='m-0' style={{ fontSize: '14px' }}>({priceData.num})</p>
                                                 </div>
                                             </div>
                                         ))
@@ -400,11 +401,11 @@ const HotelDetails = () => {
                                             </div>
                                         </div>
                                         <div className="w-25 d-flex flex-column align-items-end text-end">
-                                            <h5 className='m-0 font-semibold pb-2'>$ 2975</h5>
-                                            <p className='m-0 py-1' style={{ fontSize: '13px' }}>2565 Taxes & fees</p>
+                                        <h5 className='font-semibold pt-2 my-3 text-end' style={{ fontSize: '24px', color: '#02A3C1' }}>$ 2975</h5>
+                                            <p className='m-0 py-3' style={{ fontSize: '13px' }}>2565 Taxes & fees</p>
                                             <p className='m-0 pb-2' style={{ fontSize: '11px' }}>Per Night</p>
-                                            <button className="details-btn my-2">Book Now</button>
-                                            <p className='m-0 pt-1' style={{ fontSize: '11px' }}>Cancellation Charges Apply</p>
+                                            <NavLink to='/hotel/hotelDetails' className=' mt-3 details-btn'>Book Now</NavLink>
+                                            {/* <p className='m-0 pt-1' style={{ fontSize: '11px' }}>Cancellation Charges Apply</p> */}
                                         </div>
 
                                     </div>

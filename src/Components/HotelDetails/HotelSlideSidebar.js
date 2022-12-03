@@ -21,7 +21,7 @@ const HotelSlideSidebar = () => {
                                 slidersData.map(sliderData => (
                                     <SwiperSlide key={sliderData.id}>
                                         <div>
-                                            <img src={slideImg} alt="" style={{height: '497px'}} className='' />
+                                            <img src={slideImg} alt=""  style={{height: '578px'}} className='' />
                                         </div>
                                     </SwiperSlide>
                                 ))
@@ -35,45 +35,34 @@ const HotelSlideSidebar = () => {
                     <div className='rounded py-3'>
                         <div className='p-3' >
                             <div>
-                                <label for="formFile" class='mb-1 font-semibold text-white' style={{ fontSize: '18px' }}>Departure City</label>
-                                <select class="sidebar_select_btn form-select form-select-lg mb-3" aria-label=".form-select-lg example" style={{ color: '#757575', fontSize: '16px' }}>
-                                    <option selected>Ex Mumbai</option>
-                                    <option value="1">Kolkata</option>
-                                    <option value="2">Hydrebad</option>
-                                    <option value="3">Dilhi</option>
+                                <label for="formFile" class='mb-1 font-semibold text-white' style={{ fontSize: '18px' }}>Check In</label>
+                                <input type="text" placeholder='11 Dec 2022' class="sidebar_select_btn border-0 px-2 mb-3" style={{ color: '#757575', fontSize: '16px' }} />
+                            </div>
+                            <div>
+                                <label for="formFile" class='mb-1 font-semibold text-white' style={{ fontSize: '18px' }}>Check Out</label>
+                                <input type="text" placeholder='11 Dec 2022' class="sidebar_select_btn border-0 px-2 mb-3" style={{ color: '#757575', fontSize: '16px' }} />
+                            </div>
+                            <div>
+                                <label for="formFile" class='mb-1 font-semibold text-white' style={{ fontSize: '18px' }}>Room Type</label>
+                                <input type="text" placeholder='Luxury' class="sidebar_select_btn border-0 px-2 mb-3" style={{ color: '#757575', fontSize: '16px' }} />
+                            </div>
+                            <div>
+                                <label for="formFile" class=' font-semibold text-white' style={{ fontSize: '18px' }}>No of Person</label>
+                                <select class="sidebar_select_btn mt-2 form-select form-select-lg mb-3" aria-label=".form-select-lg example" style={{ color: '#757575', fontSize: '16px' }}>
+                                    <option selected>2 Adults</option>
+                                    <option value="1">3 Adults</option>
+                                    <option value="2">4 Adults</option>
                                 </select>
                             </div>
                             <div>
-                                <label for="formFile" class='mb-1 font-semibold text-white' style={{ fontSize: '18px' }}>Departure Date</label>
-                                <select class="sidebar_select_btn form-select form-select-lg mb-3" aria-label=".form-select-lg example" style={{ color: '#757575', fontSize: '16px' }}>
-                                    <option selected>11 Oct 2022</option>
-                                    <option value="1">12 Oct 2022</option>
-                                    <option value="2">13 Oct 2022</option>
-                                    <option value="3">14 Oct 2022</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="formFile" class=' font-semibold text-white' style={{ fontSize: '18px' }}>Package Category</label>
+                                <label for="formFile" class=' font-semibold text-white' style={{ fontSize: '18px' }}>No of Room</label>
                                 <select class="sidebar_select_btn mt-2 form-select form-select-lg mb-4" aria-label=".form-select-lg example" style={{ color: '#757575', fontSize: '16px' }}>
-                                    <option selected>Luxury</option>
-                                    <option value="1">Simple</option>
-                                    <option value="2">VIP</option>
+                                    <option selected>2 Rooms</option>
+                                    <option value="1">3 Rooms</option>
+                                    <option value="2">4 Rooms</option>
                                 </select>
                             </div>
-                            <div className='bg-white d-flex justify-content-between mb-4 px-4 align-items-center rounded sidebar_select_btn' >
-                                <div>
-                                    <p className='m-0' style={{ color: '#757575', fontSize: '16px' }}>Per Person</p>
-                                </div>
-                                <div>
-                                    <h4 className='m-0' style={{ color: '#02A3C1', fontSize: '18px' }}>₹ 18000</h4>
-                                </div>
-                            </div>
-                            <div className='mt-3'>
-                                <button className='package_details_btn sidebar_select_btn font-semibold'>
-                                    Make An Enquiry
-                                </button>
-                            </div>
-                            <div className='mt-3'>
+                            <div className='mt-5'>
                                 <button className='package_details_btn sidebar_select_btn font-semibold'>
                                     Book Now
                                 </button>
