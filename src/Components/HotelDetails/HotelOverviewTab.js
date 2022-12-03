@@ -3,8 +3,8 @@ import React from 'react';
 const HotelOverviewTab = () => {
     return (
         <section className='container px-5'>
-            <div className="mx-4">
-                <div class=" mx-5 p-2 shadow">
+            <div className="mx-3">
+                <div class="p-3 shadow">
                     <div className='p-2'>
                         <h3 className='font-bold' style={{
                             fontSize: '24px', color: '#757575'
