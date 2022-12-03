@@ -257,14 +257,18 @@ body p{
 .flights_SideBar{
   width: 27%;
 }
-.flights_CardSection{
+.flights_CardSection,
+.hotel_CardSection{
   width: 63%;
+}
+.hotel_room_CardSection{
+  width: 65%;
 }
 .hotel_SideBar{
   width: 20.9%;
 }
-.hotel_CardSection{
-  width: 63%;
+.rooms_tab_SideBar{
+  width: 16%;
 }
 .details_slide{
   width: 60%;
