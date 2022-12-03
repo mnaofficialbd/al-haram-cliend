@@ -14,6 +14,7 @@ import Flights from './Pages/Flights';
 import Hotel from './Pages/Hotel';
 import FlightBooking from './Pages/FlightBooking';
 import HotelDetails from './Pages/HotelDetails';
+import Bus from './Pages/Bus';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/flights" element={<Flights />} />
         <Route path="/flightbooking" element={<FlightBooking />} />
         <Route path="/hotel" element={<Hotel />} />
+        <Route path="/bus" element={<Bus />} />
         {/* <Route path="/umrah/packageDetails/:id" element={<PackageDetails />} /> */}
         <Route path="/umrah/packageDetails" element={<PackageDetails />} />
         <Route path="/hajj/hajjDetails" element={<HajjDetails />} />
