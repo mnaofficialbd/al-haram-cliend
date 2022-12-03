@@ -9,6 +9,7 @@ import HotelUserReviews from './HotelUserReviews';
 import HotelAmenitiesTab from './HotelAmenitiesTab';
 import HotelRoomsTab from './HotelRoomsTab';
 import HotelSimilarProTab from './HotelSimilarProTab';
+import HotelLocationTab from './HotelLocationTab';
 // import InformationSection from './InformationSection';
 // import TermsConditions from './TermsConditions';
 // import RoomSharing from './RoomSharing';
@@ -76,7 +77,7 @@ export default function HotelAllDetailsTab() {
                 <HotelOverviewTab />
             </TabPanel>
             <TabPanel value={value} index={2}>
-                {/* <InformationSection /> */}
+                <HotelLocationTab />
             </TabPanel>
             <TabPanel value={value} index={3}>
                 <HotelAmenitiesTab />

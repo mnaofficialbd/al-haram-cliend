@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Pagination } from "swiper";
+import { FreeMode, Pagination,Navigation, Keyboard } from "swiper";
 import hotelSliderImg from '../../Assets/Hotel/hotelSilimarProImg.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-regular-svg-icons';
@@ -11,12 +11,13 @@ const HotelSimilarProTab = () => {
     return (
         <section className='container px-5'>
             <div className="mx-3 shadow">
+                <h3 className="font-bold px-5">Similar Hotels</h3>
                 <div class="py-2">
 
                     {/* slider */}
                     <div>
-                        <Swiper spaceBetween={30} slidesPerView={3} freeMode={true}
-                            pagination={{ clickable: true }} modules={[FreeMode, Pagination]} className='px-4 pb-5'>
+                        <Swiper spaceBetween={30} slidesPerView={3} navigation={true} freeMode={true} keyboard={true}
+                            pagination={{ clickable: true }} modules={[FreeMode,Navigation,Keyboard, Pagination]} className='px-5 pb-5'>
                             <div>
                                 {
                                     datas.map(data => (
