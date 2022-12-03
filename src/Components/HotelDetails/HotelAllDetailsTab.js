@@ -83,7 +83,7 @@ export default function HotelAllDetailsTab() {
                 <HotelAmenitiesTab />
             </TabPanel>
             <TabPanel value={value} index={4}>
-                {/* <Itinerary /> */}
+                <HotelLocationTab />
             </TabPanel>
             <TabPanel value={value} index={5}>
                 <HotelUserReviews />
