@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OverviewSection = () => {
+const HotelOverviewTab = () => {
     return (
         <section className='container px-5'>
             <div className="mx-4">
@@ -8,7 +8,7 @@ const OverviewSection = () => {
                     <div className='p-2'>
                         <h3 className='font-bold' style={{
                             fontSize: '24px', color: '#757575'
-                        }}>About 10 Days Umrah Package </h3>
+                        }}>About Universal Luxury Grand Hotel </h3>
                         <p className='font-bold' style={{ fontSize: '18px' }}>Live in luxury at the Hotel Almati Inn which offers a luxurious stay to its guests with modern amenities and services.</p>
                     </div>
                     <div className='px-2' style={{ color: '#757575', fontSize: '16px' }}>
@@ -22,4 +22,4 @@ const OverviewSection = () => {
     );
 };
 
-export default OverviewSection;
+export default HotelOverviewTab;

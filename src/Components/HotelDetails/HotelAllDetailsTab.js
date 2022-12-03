@@ -4,7 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-// import OverviewSection from './OverviewSection'
+import HotelOverviewTab from './HotelOverviewTab'
 // import InformationSection from './InformationSection';
 // import TermsConditions from './TermsConditions';
 // import RoomSharing from './RoomSharing';
@@ -69,7 +69,7 @@ export default function HotelAllDetailsTab() {
                 {/* <OverviewSection /> */}
             </TabPanel>
             <TabPanel value={value} index={1}>
-                {/* <OverviewSection /> */}
+                <HotelOverviewTab />
             </TabPanel>
             <TabPanel value={value} index={2}>
                 {/* <InformationSection /> */}
