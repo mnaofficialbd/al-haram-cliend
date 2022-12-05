@@ -257,6 +257,9 @@ body p{
 .flights_SideBar{
   width: 27%;
 }
+.bus_SideBar{
+  width: 24%;
+}
 .flights_CardSection,
 .hotel_CardSection{
   width: 63%;
