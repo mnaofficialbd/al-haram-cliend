@@ -83,8 +83,8 @@ const HotelDetails = () => {
     return (
         <section className='mt-4 pt-4'>
 
-            <div className='container pe-5 me-5'>
-                <p className='text-end mb-1 pe-5 me-2'>1,258 Packages Found</p>
+            <div className='container pe-4 me-5'>
+                <p className='text-end mb-1 pe-5'>1,258 Hotels Found</p>
             </div>
             <div className='d-md-flex justify-content-center'>
                 <div class="d-flex flex-column flex-shrink-0 px-2 hotel_SideBar" >
@@ -380,7 +380,7 @@ const HotelDetails = () => {
                                                     <FontAwesomeIcon className='me-2' style={{ color: 'rgb(230, 255, 5)', width: "12px", height: "12px" }} icon={faStar}></FontAwesomeIcon>
                                                 </div>
                                                 <div>
-                                                    <p className='m-0 pe-2' style={{ fontSize: '12px' }}>2676 Reviews</p>
+                                                    <p className='m-0 pe-3' style={{ fontSize: '12px' }}>2676 Reviews</p>
                                                 </div>
                                             </div>
                                             <div>

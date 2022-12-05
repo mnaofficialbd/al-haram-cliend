@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import morningSunset from '../../Assets/Flights/Sunset.png';
 import morningSun from '../../Assets/Flights/Sun.png';
 import afternoonSunset from '../../Assets/Flights/afternoonSunset.png';
 import eveningMoon from '../../Assets/Flights/moon.png';
-import indigoLogo from '../../Assets/Flights/indiGoLogo.png';
+import bociLogo from '../../Assets/Hotel/bociLogo.png';
 import { faCircle } from '@fortawesome/free-regular-svg-icons';
-import { faFilter } from '@fortawesome/free-solid-svg-icons';
+import { faChair, faFilter } from '@fortawesome/free-solid-svg-icons';
 
 const BusMoreDetails = () => {
 
+    const [boadingShow, setBoadingShow] = useState(false)
+    const [amenitShow, setAmenitShow] = useState(false)
+    const [cancelPShow, setCancelPShow] = useState(false)
 
     const cardDatas = [
         { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }
@@ -69,8 +72,8 @@ const BusMoreDetails = () => {
 
     return (
         <section className='mt-5 pt-4 '>
-            <div className='container pe-5 me-4'>
-                <p className='text-end mb-1 pe-3'>1,258 Packages Found</p>
+            <div className='container pe-5 me-5'>
+                <p className='text-end mb-1 pe-2'>1,258 Buses Found</p>
             </div>
             <div className='d-md-flex justify-content-center'>
                 <div class="d-flex flex-column flex-shrink-0 bus_SideBar" >
@@ -271,37 +274,38 @@ const BusMoreDetails = () => {
 
                 {/* details part */}
                 <div className="flights_CardSection">
-                    <div className='mx-3 text-white pt-2 shadow' style={{ background: '#02A3C1' }}>
+                    <div className='mx-3 text-white py-3 shadow' style={{ background: '#02A3C1' }}>
                         <div className='d-md-flex justify-content-center align-items-center'>
                             <div className="width_20 text-center">
-                                <p className="font-bold">AIRLINE</p>
+                                <p className="font-bold">Bus Operator</p>
                             </div>
                             <div className="width_20 text-center">
-                                <p className="font-bold">DEPARTURE</p>
+                                <p className="font-bold">Departure</p>
                             </div>
                             <div className="width_20 text-center">
-                                <p className="font-bold">DURATION</p>
+                                <p className="font-bold">Duration</p>
                             </div>
                             <div className="width_20 text-center">
-                                <p className="font-bold">ARRIVAL</p>
+                                <p className="font-bold">Arrival</p>
                             </div>
                             <div className="width_20 text-center">
-                                <p className="font-bold">PRICE</p>
+                                <p className="font-bold">Price</p>
                             </div>
                         </div>
                     </div>
                     {
                         cardDatas.map(cardData => (
-                            <div key={cardData.id} className='mx-3 rounded border border-dark  my-3 bg-light shadow'>
+                            <div key={cardData.id} className='mx-3 rounded border border-dark  my-3 bg-white shadow'>
                                 <div className='d-md-flex border-bottom pb-2 border-dark align-items-center'>
 
                                     <div className="width_20 d-flex align-items-center justify-content-center">
                                         <div>
-                                            <img src={indigoLogo} alt="" style={{ width: "60px" }} />
+                                            <img src={bociLogo} alt="" style={{ width: "60px" }} />
                                         </div>
                                         <div>
-                                            <h6 className='m-0'>INDIGO</h6>
-                                            <p className="m-0" style={{ fontSize: '12px' }}>(IN-855)</p>
+                                            <h6 className='m-0'>B TRAVELS</h6>
+                                            <p className="m-0" style={{ fontSize: '10px' }}>VOLVO AC MULTI AXLE</p>
+                                            <p className="m-0" style={{ fontSize: '10px' }}>SEATER/SLEEPER (2+1)</p>
                                         </div>
                                     </div>
                                     <div className="width_20 d-flex flex-column align-items-center">
@@ -325,13 +329,61 @@ const BusMoreDetails = () => {
                                         <h6 className='m-0'>MECCA</h6>
                                     </div>
                                     <div className="width_20 pt-4 d-flex flex-column align-items-center ">
-                                        <h5 className="font-bold m-0">₹ 80,000</h5>
+                                        <h5 className="font-bold m-0">₹ 1,995</h5>
                                         <p className="m-0">Per Person</p>
                                         <button type='button' className="flight_view_details_btn mt-2">
-                                            View Details
+                                            SELECT SEAT
                                         </button>
                                     </div>
                                 </div>
+                                <div className="d-flex justify-content-between px-3 py-2">
+                                    <div className="d-flex">
+                                        <div className='border-end border-dark px-3'>
+                                            {/* <button type='button' onClick={() => setShow(!show)}
+                                            className="flight_view_details_btn mt-2">
+                                            View Details
+                                        </button> */}
+                                            <p className='text-capitalize' type='button' onClick={() => setBoadingShow(!boadingShow)}>boarding & dropping points</p>
+                                        </div>
+                                        <div className='border-end border-dark px-3'>
+                                            <p className='text-capitalize'  type='button' onClick={() => setAmenitShow(!amenitShow)}>amenities</p>
+                                        </div>
+                                        <div className='px-3'>
+                                            <p className='text-capitalize' type='button' onClick={() => setCancelPShow(!cancelPShow)}>cancellation policy</p>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex">
+
+                                        <div className='me-2'>
+                                            <FontAwesomeIcon icon={faChair}></FontAwesomeIcon>
+                                        </div>
+                                        <p className='text-uppercase'>21 seats left</p>
+                                    </div>
+                                </div>
+                                {
+                                    boadingShow && (
+                                    <div className='text-center'>
+                                        <hr />
+                                        <h6>Boarding & Dropping Points Tab</h6>
+                                        </div>
+                                    )
+                                }
+                                {
+                                    amenitShow && (
+                                        <div className='text-center'>
+                                            <hr />
+                                            <h6>Anenities Tab</h6>
+                                            </div>
+                                        )
+                                }
+                                {
+                                    cancelPShow && (
+                                        <div className='text-center'>
+                                            <hr />
+                                            <h6>Cancellation Policy Tab</h6>
+                                            </div>
+                                        )
+                                }
                             </div>
                         ))
                     }
