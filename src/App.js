@@ -15,6 +15,7 @@ import Hotel from './Pages/Hotel';
 import FlightBooking from './Pages/FlightBooking';
 import HotelDetails from './Pages/HotelDetails';
 import Bus from './Pages/Bus';
+import Cabs from './Pages/Cabs';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/hajj" element={<Hajj />} />
         <Route path="/land" element={<Land />} />
         <Route path="/flights" element={<Flights />} />
+        <Route path="/cabs" element={<Cabs />} />
         <Route path="/flightbooking" element={<FlightBooking />} />
         <Route path="/hotel" element={<Hotel />} />
         <Route path="/bus" element={<Bus />} />
