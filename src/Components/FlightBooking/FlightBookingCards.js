@@ -14,7 +14,7 @@ const FlightBookingCards = () => {
             {
                         cardDatas.map(cardData => (
                             <div key={cardData.id} className='mx-3 rounded border border-dark  my-3 bg-light shadow'>
-                                <div className='d-md-flex border-bottom pb-2 border-dark align-items-center'>
+                                <div className='d-md-flex pb-2 align-items-center'>
 
                                     <div className="width_20 d-flex align-items-center justify-content-center">
                                         <div>
