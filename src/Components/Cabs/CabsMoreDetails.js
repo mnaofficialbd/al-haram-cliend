@@ -1,22 +1,19 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import bociLogo from '../../Assets/Hotel/bociLogo.png';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { faCircle } from '@fortawesome/free-regular-svg-icons';
+import carImg from '../../Assets/Cabs/carImg.png';
+import { faCar, faChair, faClock, faFileInvoiceDollar, faLocationDot, faShield, faSuitcase } from '@fortawesome/free-solid-svg-icons';
 
 const CabsMoreDetails = () => {
 
     const cardDatas = [
         { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }
     ]
-    
-    
-    
+
 
     return (
         <section className='mt-5 pt-4 '>
             <div className='d-md-flex justify-content-center'>
-                <div class="d-flex flex-column flex-shrink-0 bus_SideBar" >
+                <div class="d-flex flex-column flex-shrink-0 cubs_SideBar" >
                     <div className='rounded px-2 h-100'>
 
                         {/* =============Departure country section=============== */}
@@ -125,7 +122,7 @@ const CabsMoreDetails = () => {
                                             <h6 className='m-0 text-uppercase' style={{ fontSize: '16px' }}>best prices ever!</h6>
                                             <p className='text-capitalize'>Book your cab at pocket-friendly rates! No need to compare</p>
                                         </div>
-                                        
+
 
                                     </div>
                                 </div>
@@ -136,50 +133,77 @@ const CabsMoreDetails = () => {
                 </div>
 
                 {/* details part */}
-                <div className="flights_CardSection">
+                <div className="cubs_CardSection">
 
                     {
                         cardDatas.map(cardData => (
                             <div key={cardData.id} className='mx-3 rounded border border-dark  mb-4 bg-white shadow'>
-                                <div className='d-md-flex border-bottom pb-2 border-dark align-items-center'>
-
-                                    <div className="width_20 d-flex align-items-center justify-content-center">
-                                        <div>
-                                            <img src={bociLogo} alt="" style={{ width: "60px" }} />
+                                <div className=' d-md-flex justify-content-around w-100 text-uppercase'>
+                                    <div className='w-25 py-3 px-2'>
+                                        <div className='mb-4 pb-3'>
+                                            <h4 className='m-0'>TOYOTA CAMRY</h4>
+                                            <p className='text-center'>TL-767854</p>
                                         </div>
-                                        <div>
-                                            <h6 className='m-0'>B TRAVELS</h6>
-                                            <p className="m-0" style={{ fontSize: '10px' }}>VOLVO AC MULTI AXLE</p>
-                                            <p className="m-0" style={{ fontSize: '10px' }}>SEATER/SLEEPER (2+1)</p>
+                                        <div className=''>
+                                            <img src={carImg} alt="" />
                                         </div>
                                     </div>
-                                    <div className="width_20 d-flex flex-column align-items-center">
-                                        <h5 className="m-0 font-bold">21:40</h5>
-                                        <h6 className='m-0'>DELHI</h6>
-                                    </div>
-
-                                    <div className="width_20 d-flex flex-column justify-content-center align-items-center">
-                                        <p className='m-0' style={{ fontSize: '10px' }}>3H 20M (DIRECT)</p>
-                                        <div className='d-flex align-items-center'>
-                                            <FontAwesomeIcon className='' style={{ width: "12px", height: "12px" }} icon={faCircle}></FontAwesomeIcon>
-                                            <p className="m-0">--------------</p>
-                                            <FontAwesomeIcon className='' style={{ width: "12px", height: "12px" }} icon={faCircle}></FontAwesomeIcon>
-
+                                    <div className='py-3 px-4 width_70'>
+                                        <div className="d-flex mb-2 align-items-center" style={{ fontSize: '13px' }}>
+                                            <h5 className='me-2 m-0' style={{ fontSize: '18px' }}>toyota camry or similar</h5>
+                                            <p className='me-2' >white</p>
+                                            <div className='border border-dark ms-2 px-2'>
+                                                <p>649 rating</p>
+                                            </div>
                                         </div>
-                                        <p className='m-0' style={{ fontSize: '10px' }}>NON-STOP</p>
+                                        <div className="d-flex font-semibold" style={{ fontSize: '13px' }}>
+                                            <div className="d-flex me-2 pe-2">
+                                                <div className='me-2'>
+                                                    <FontAwesomeIcon icon={faCar}></FontAwesomeIcon>
+                                                </div>
+                                                <p>1 unit</p>
+                                            </div>
+                                            <div className="d-flex me-2 pe-2">
+                                                <div className='me-2'><FontAwesomeIcon icon={faChair}></FontAwesomeIcon> </div>
+                                                <p>4 seats</p>
+                                            </div>
+                                            <div className="d-flex me-2 pe-1">
+                                                <div className='me-2'><FontAwesomeIcon icon={faSuitcase}></FontAwesomeIcon> </div>
+                                                <p>2 luggage bags</p>
+                                            </div>
+                                            <div className="d-flex ms-1">
+                                                <div className='me-2'><FontAwesomeIcon icon={faClock}></FontAwesomeIcon> </div>
+                                                <p>123 km</p>
+                                            </div>
+                                        </div>
+                                        <div className="d-flex justify-content-between align-items-center py-4 w-100">
+                                            <div className='' style={{ fontSize: '13px' }}>
+                                                <h6 style={{ fontSize: '16px' }}>Best Priced Car With Best Promise</h6>
+                                                <li className='mb-2'>Toll and State Tax: Included</li>
+                                                <li className='mb-2'>Free cancellation</li>
+                                                <li>24/7 customer helpline</li>
+                                            </div>
+                                            <div>
+                                                <h4>rs 28700.00</h4>
+                                                <button className="details-btn">BOOK NOW</button>
+                                            </div>
+                                        </div>
+                                        <div className="d-flex">
+                                            <div className="my-2 me-3">
+                                                <button className="d-flex align-items-center payment_btn">
+                                                    <FontAwesomeIcon className='me-2' icon={faShield}></FontAwesomeIcon>
+                                                    SAFETY STANDARD & RESTRICTIONS
+                                                </button>
+                                            </div>
+                                            <div className="my-2">
+                                                <button className="d-flex align-items-center payment_btn">
+                                                    <FontAwesomeIcon className='me-2' icon={faFileInvoiceDollar}></FontAwesomeIcon>
+                                                    PARTIAL PAYMENT
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <div className="width_20 d-flex flex-column align-items-center">
-                                        <h5 className="m-0 font-bold">23:55</h5>
-                                        <h6 className='m-0'>MECCA</h6>
-                                    </div>
-                                    <div className="width_20 pt-4 d-flex flex-column align-items-center ">
-                                        <h5 className="font-bold m-0">₹ 1,995</h5>
-                                        <p className="m-0">Per Person</p>
-                                        <button type='button' className="flight_view_details_btn mt-2">
-                                            SELECT SEAT
-                                        </button>
-                                    </div>
                                 </div>
 
 

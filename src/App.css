@@ -158,6 +158,16 @@ body p{
   background-color: white;
   text-decoration: none;
 }
+.payment_btn {
+  border: 1px solid #02A3C1;
+  color: #02A3C1;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 4px 15px;
+  background-color: white;
+  text-decoration: none;
+}
+.payment_btn:hover,
 .search-btn:hover,
 .flight_view_details_btn:hover,
 .custom_btn:hover,
@@ -260,9 +270,15 @@ body p{
 .bus_SideBar{
   width: 24%;
 }
+.cubs_SideBar{
+  width: 24%;
+}
 .flights_CardSection,
 .hotel_CardSection{
   width: 63%;
+}
+.cubs_CardSection{
+  width: 67%;
 }
 .hotel_room_CardSection{
   width: 65%;
